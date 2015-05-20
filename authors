@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+export AUTHORS="$(git log --format='%an <%ae>' HEAD -n1)"  
+echo $AUTHORS > ./AUTHORS

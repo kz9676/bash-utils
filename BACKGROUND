@@ -1,1 +1,6 @@
-I need a tool that would automate creation and management of source code modules. Invoking such tool from command line would produce a source code module. Such source code module would contain a fixed set of empty boilerplate files. The boilerplate files would describe the source code module and define its format and structure. Example boilerplate files could be - README, INSTALL, CHANGELOG, VERSION, etc.
+I need a tool that would automate creation and maintenance of source code
+modules. Invoked from command line, such tool would produce a source code
+module. Produced source code module would contain a fixed set of empty
+boilerplate files. The boilerplate files would describe the source code module
+and define its format and structure. Example boilerplate files could be -
+README, INSTALL, CHANGELOG, VERSION, etc.

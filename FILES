@@ -2,14 +2,16 @@
 ├── [kostya.z          46 May 19 16:53]  ./AUTHORS
 ├── [kostya.z         107 May 19 16:53]  ./authors
 ├── [kostya.z         414 May 19 20:57]  ./BACKGROUND
-├── [kostya.z           0 May 19 15:02]  ./BUILD
-├── [kostya.z           0 May 19 14:21]  ./CHANGELOG
+├── [kostya.z           0 May 20  0:08]  ./BUILD
+├── [kostya.z         534 May 19 22:19]  ./CHANGELOG
+├── [kostya.z         102 May 19 22:22]  ./changelog
 ├── [kostya.z           0 May 19 14:36]  ./DEFECTS
 ├── [kostya.z           0 May 19 14:58]  ./DESCRIPTION
 ├── [kostya.z           0 May 19 14:20]  ./DESIGN
-├── [kostya.z           0 May 19 21:08]  ./FILES
-├── [kostya.z          42 May 19 21:08]  ./files
+├── [kostya.z           0 May 20  0:13]  ./FILES
+├── [kostya.z          42 May 19 22:21]  ./files
 ├── [kostya.z           0 May 19 15:02]  ./INSTALL
+├── [kostya.z         134 May 20  0:13]  ./install
 ├── [kostya.z           0 May 19 14:21]  ./LICENSE
 ├── [kostya.z           0 May 19 14:20]  ./README
 ├── [kostya.z           0 May 19 14:20]  ./REQUIREMENTS
@@ -22,4 +24,4 @@
 ├── [kostya.z           0 May 19 15:02]  ./TEST
 └── [kostya.z           0 May 19 14:21]  ./VERSION
 
-0 directories, 22 files
+0 directories, 24 files

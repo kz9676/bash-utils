@@ -1,0 +1,25 @@
+.
+├── [kostya.z          46 May 19 16:53]  ./AUTHORS
+├── [kostya.z         107 May 19 16:53]  ./authors
+├── [kostya.z         414 May 19 20:57]  ./BACKGROUND
+├── [kostya.z           0 May 19 15:02]  ./BUILD
+├── [kostya.z           0 May 19 14:21]  ./CHANGELOG
+├── [kostya.z           0 May 19 14:36]  ./DEFECTS
+├── [kostya.z           0 May 19 14:58]  ./DESCRIPTION
+├── [kostya.z           0 May 19 14:20]  ./DESIGN
+├── [kostya.z           0 May 19 21:08]  ./FILES
+├── [kostya.z          42 May 19 21:08]  ./files
+├── [kostya.z           0 May 19 15:02]  ./INSTALL
+├── [kostya.z           0 May 19 14:21]  ./LICENSE
+├── [kostya.z           0 May 19 14:20]  ./README
+├── [kostya.z           0 May 19 14:20]  ./REQUIREMENTS
+├── [kostya.z           0 May 19 14:35]  ./TASKS
+├── [kostya.z           0 May 19 16:07]  ./template.bash
+├── [kostya.z           0 May 19 16:07]  ./template.c
+├── [kostya.z           0 May 19 16:07]  ./template.java
+├── [kostya.z           0 May 19 16:07]  ./template.python
+├── [kostya.z           0 May 19 16:07]  ./template.ruby
+├── [kostya.z           0 May 19 15:02]  ./TEST
+└── [kostya.z           0 May 19 14:21]  ./VERSION
+
+0 directories, 22 files

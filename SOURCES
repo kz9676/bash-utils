@@ -1,0 +1,18 @@
+Source code can be obtained on GitHub (https://github.com/kz9676/srcmod). I
+follow the Gitflow branching model. Under this model, I have two active
+branches - master and develop:
+
+    * origin/master     - is the main branch where the source code of HEAD
+                          always reflects a production-ready state.
+    * origin/develop    - is the main branch where the source code of HEAD
+                          always reflects a state with the latest delivered
+                          development changes for the next release
+
+Next to main branches "master" and "develop", we use supporting branches to aid
+parallel development, tracking of features, preparation for production release
+and quick fixes for live production defects. Supporting branches include the
+following:
+
+    * Feature branches
+    * Release branches
+    * Hotfix branches

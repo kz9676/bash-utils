@@ -1,0 +1,6 @@
+* d0cc87c 2015-05-19 | Added FILES maintenance script (HEAD, origin/develop, develop) [Kostya Zolotarov]
+* f9e4abb 2015-05-19 | Formatted background text and updated authors maintenance script [Kostya Zolotarov]
+* 364bfab 2015-05-19 | Added authors maintenance script [Kostya Zolotarov]
+* 434426e 2015-05-19 | Added bash, c, java, python and ruby templates [Kostya Zolotarov]
+* 80eeddc 2015-05-19 | Added high level background [Kostya Zolotarov]
+* e4b1dfd 2015-05-19 | Initialized repository (origin/master, master) [Kostya Zolotarov]

@@ -1,4 +1,7 @@
-* d0cc87c 2015-05-19 | Added FILES maintenance script (HEAD, origin/develop, develop) [Kostya Zolotarov]
+* 1d99bf7 2015-05-20 | Aliased 'git commit' (HEAD, origin/develop, develop) [Kostya Zolotarov]
+* 074e008 2015-05-19 | Added install script [Kostya Zolotarov]
+* fe5322d 2015-05-19 | Added CHANGELOG maintenance script [Kostya Zolotarov]
+* d0cc87c 2015-05-19 | Added FILES maintenance script [Kostya Zolotarov]
 * f9e4abb 2015-05-19 | Formatted background text and updated authors maintenance script [Kostya Zolotarov]
 * 364bfab 2015-05-19 | Added authors maintenance script [Kostya Zolotarov]
 * 434426e 2015-05-19 | Added bash, c, java, python and ruby templates [Kostya Zolotarov]

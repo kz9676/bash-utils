@@ -1,4 +1,4 @@
 #!/usr/bin/env bash 
 
-export SRCMOD_SCRIPTS='./authors; ./changelog; ./files;'
-echo "alias commit='$SRCMOD_SCRIPTS git commit'" > ~/.bash_aliases
+SRCMOD_SCRIPTS='!./authors'
+git config --local alias.commit '!./authors'

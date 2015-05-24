@@ -1,4 +1,6 @@
-* 298826f 2015-05-23 | Created uninstall script (HEAD, origin/develop, develop) [Kostya Zolotarov]
+* adfcaad 2015-05-23 | Added TODO parsing (HEAD, origin/develop, develop) [Kostya Zolotarov]
+* 505ea37 2015-05-23 | Added build and tasks scripts; Added license to all the scripts [Kostya Zolotarov]
+* 298826f 2015-05-23 | Created uninstall script [Kostya Zolotarov]
 * 1fbe78c 2015-05-20 | Added cpp template [Kostya Zolotarov]
 * e723f9a 2015-05-20 | Added branching model description [Kostya Zolotarov]
 * 0bfdfdd 2015-05-20 | Added license (origin/master, master) [Kostya Zolotarov]

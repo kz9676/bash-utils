@@ -30,3 +30,7 @@ SOFTWARE.
 '
 
 # TODO - Run all srcmod scripts
+
+./authors 
+./changelog
+./files 

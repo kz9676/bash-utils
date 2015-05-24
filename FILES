@@ -1,29 +1,30 @@
 .
-├── [kostya.z          46 May 21 14:52]  ./AUTHORS
-├── [kostya.z         107 May 20 14:13]  ./authors
+├── [kostya.z          46 May 23 17:31]  ./AUTHORS
+├── [kostya.z         150 May 23 17:33]  ./authors
 ├── [kostya.z         414 May 20 14:13]  ./BACKGROUND
 ├── [kostya.z           0 May 20 14:13]  ./BUILD
-├── [kostya.z         931 May 21 14:52]  ./CHANGELOG
-├── [kostya.z         102 May 20 14:13]  ./changelog
+├── [kostya.z         997 May 23 17:37]  ./CHANGELOG
+├── [kostya.z         130 May 23 17:33]  ./changelog
 ├── [kostya.z           0 May 19 14:36]  ./DEFECTS
 ├── [kostya.z           0 May 20 14:13]  ./DESCRIPTION
 ├── [kostya.z           0 May 19 14:20]  ./DESIGN
-├── [kostya.z           0 May 21 14:52]  ./FILES
-├── [kostya.z          42 May 20 14:13]  ./files
+├── [kostya.z           0 May 23 17:37]  ./FILES
+├── [kostya.z          70 May 23 17:34]  ./files
 ├── [kostya.z           0 May 20 14:13]  ./INSTALL
-├── [kostya.z          95 May 20 23:41]  ./install
+├── [kostya.z         217 May 23 17:27]  ./install
 ├── [kostya.z        1083 May 20 14:13]  ./LICENSE
 ├── [kostya.z           0 May 19 14:20]  ./README
 ├── [kostya.z           0 May 19 14:20]  ./REQUIREMENTS
-├── [kostya.z         858 May 20 14:31]  ./SOURCES
-├── [kostya.z           0 May 19 14:35]  ./TASKS
+├── [kostya.z         858 May 23 17:27]  ./SOURCES
+├── [kostya.z           0 May 23 17:35]  ./TASKS
 ├── [kostya.z           0 May 20 14:13]  ./template.bash
 ├── [kostya.z           0 May 20 14:13]  ./template.c
-├── [kostya.z           0 May 20 23:34]  ./template.cpp
+├── [kostya.z           0 May 23 17:27]  ./template.cpp
 ├── [kostya.z           0 May 20 14:13]  ./template.java
 ├── [kostya.z           0 May 20 14:13]  ./template.python
 ├── [kostya.z           0 May 20 14:13]  ./template.ruby
 ├── [kostya.z           0 May 20 14:13]  ./TEST
+├── [kostya.z         184 May 23 17:27]  ./uninstall
 └── [kostya.z           0 May 19 14:21]  ./VERSION
 
-0 directories, 26 files
+0 directories, 27 files

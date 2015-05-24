@@ -29,6 +29,4 @@ SOFTWARE.
 
 '
 
-# TODO - Add verbose output
-
-tree -Dfus > ./FILES
+# TODO - Run all srcmod scripts

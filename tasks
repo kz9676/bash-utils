@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash 
 
 : '
 
@@ -29,6 +29,4 @@ SOFTWARE.
 
 '
 
-# TODO - Add verbose output
-
-tree -Dfus > ./FILES
+# TODO - Collect todo's from srcmod files and list them inside TASKS file

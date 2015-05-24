@@ -1,0 +1,7 @@
+#!/usr/bin/env bash 
+
+PACKAGE_NAME=srcmod
+
+rm -v ~/Programs/${PACKAGE_NAME}_build_files
+rm -v ~/Programs/${PACKAGE_NAME}_build_authors
+rm -v ~/Programs/${PACKAGE_NAME}_build_changelog

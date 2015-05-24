@@ -1,4 +1,7 @@
 #!/usr/bin/env bash 
 
-SRCMOD_SCRIPTS='!./authors'
-git config --local alias.commit '!./authors'
+PACKAGE_NAME=srcmod
+
+cp -Rv ./files ~/Programs/${PACKAGE_NAME}_build_files
+cp -Rv ./authors ~/Programs/${PACKAGE_NAME}_build_authors
+cp -Rv ./changelog ~/Programs/${PACKAGE_NAME}_build_changelog

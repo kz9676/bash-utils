@@ -31,6 +31,7 @@ SOFTWARE.
 
 PACKAGE_NAME=srcmod
 
-cp -Rv ./files ~/Programs/${PACKAGE_NAME}_build_files
+cp -Rv ./build ~/Programs/${PACKAGE_NAME}_build
 cp -Rv ./authors ~/Programs/${PACKAGE_NAME}_build_authors
 cp -Rv ./changelog ~/Programs/${PACKAGE_NAME}_build_changelog
+cp -Rv ./files ~/Programs/${PACKAGE_NAME}_build_files

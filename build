@@ -31,6 +31,8 @@ SOFTWARE.
 
 # TODO - Run all srcmod scripts
 
-./authors 
-./changelog
-./files 
+PACKAGE_NAME=srcmod
+
+${PACKAGE_NAME}_authors
+${PACKAGE_NAME}_changelog
+${PACKAGE_NAME}_files 

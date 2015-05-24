@@ -30,3 +30,16 @@ SOFTWARE.
 '
 
 # TODO - Collect todo's from srcmod files and list them inside TASKS file
+
+FILES=./*
+
+for file in $FILES
+do 
+    while read line 
+    do
+        echo $line | grep -q TODO 
+        if [ $? == 0 ]; then
+            echo $file $line
+        fi 
+    done < $file
+done

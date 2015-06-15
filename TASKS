@@ -1,1 +1,3 @@
-./uninstall rm -v ~/Programs/${package_name}_build_changelog
+./authors # TODO - Add verbose output
+./build # TODO - Run all srcmod scripts
+./files # TODO - Add verbose output

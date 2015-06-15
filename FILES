@@ -1,15 +1,15 @@
 .
-├── [kostya.zolotarov          46 Jun 14 23:00]  ./AUTHORS
+├── [kostya.zolotarov          52 Jun 15 14:24]  ./AUTHORS
 ├── [kostya.zolotarov        1362 Jun 13 14:53]  ./authors
 ├── [kostya.zolotarov         414 Jun 13 13:40]  ./BACKGROUND
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./BUILD
-├── [kostya.zolotarov        1359 Jun 13 14:54]  ./build
-├── [kostya.zolotarov        1369 Jun 14 23:00]  ./CHANGELOG
+├── [kostya.zolotarov        1382 Jun 15 14:11]  ./build
+├── [kostya.zolotarov        1475 Jun 15 14:24]  ./CHANGELOG
 ├── [kostya.zolotarov        1341 Jun 13 13:40]  ./changelog
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./DEFECTS
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./DESCRIPTION
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./DESIGN
-├── [kostya.zolotarov           0 Jun 14 23:00]  ./FILES
+├── [kostya.zolotarov           0 Jun 15 14:24]  ./FILES
 ├── [kostya.zolotarov        1282 Jun 13 13:40]  ./files
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./INSTALL
 ├── [kostya.zolotarov        1506 Jun 13 15:14]  ./install
@@ -17,8 +17,8 @@
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./README
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./REQUIREMENTS
 ├── [kostya.zolotarov         616 Jun 13 14:41]  ./SOURCES
-├── [kostya.zolotarov          61 Jun 14 22:15]  ./TASKS
-├── [kostya.zolotarov        2298 Jun 14 23:00]  ./tasks
+├── [kostya.zolotarov         114 Jun 15 14:24]  ./TASKS
+├── [kostya.zolotarov        2898 Jun 15 14:23]  ./tasks
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.bash
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.c
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.cpp

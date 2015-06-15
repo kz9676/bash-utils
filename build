@@ -36,3 +36,4 @@ package_name=srcmod
 ${package_name}_authors
 ${package_name}_changelog
 ${package_name}_files 
+${package_name}_tasks 

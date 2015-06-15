@@ -1,4 +1,5 @@
-* a2c2637 2015-05-23 | Fixed package name (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* cae9914 2015-06-14 | Half-finished version of tasks command (i'm tired and its late) (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* a2c2637 2015-05-23 | Fixed package name [Kostya Zolotarov]
 * 5f969a6 2015-05-23 | Added build to instal/uninstall scripts [Kostya Zolotarov]
 * 1451071 2015-05-23 | Activated build script [Kostya Zolotarov]
 * adfcaad 2015-05-23 | Added TODO parsing [Kostya Zolotarov]

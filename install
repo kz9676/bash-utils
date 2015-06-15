@@ -29,9 +29,10 @@ SOFTWARE.
 
 '
 
-PACKAGE_NAME=srcmod
+package_name=srcmod
 
-cp -Rv ./build ~/Programs/${PACKAGE_NAME}_build
-cp -Rv ./authors ~/Programs/${PACKAGE_NAME}_authors
-cp -Rv ./changelog ~/Programs/${PACKAGE_NAME}_changelog
-cp -Rv ./files ~/Programs/${PACKAGE_NAME}_files
+cp -Rv ./build ~/Programs/${package_name}_build
+cp -Rv ./authors ~/Programs/${package_name}_authors
+cp -Rv ./changelog ~/Programs/${package_name}_changelog
+cp -Rv ./files ~/Programs/${package_name}_files
+cp -Rv ./tasks ~/Programs/${package_name}_tasks

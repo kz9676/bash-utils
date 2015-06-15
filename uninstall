@@ -29,9 +29,9 @@ SOFTWARE.
 
 '
 
-PACKAGE_NAME=srcmod
+package_name=srcmod
 
-rm -v ~/Programs/${PACKAGE_NAME}_build
-rm -v ~/Programs/${PACKAGE_NAME}_build_authors
-rm -v ~/Programs/${PACKAGE_NAME}_build_files
-rm -v ~/Programs/${PACKAGE_NAME}_build_changelog
+rm -v ~/Programs/${package_name}_build
+rm -v ~/Programs/${package_name}_build_authors
+rm -v ~/Programs/${package_name}_build_files
+rm -v ~/Programs/${package_name}_build_changelog

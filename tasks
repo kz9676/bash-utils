@@ -31,15 +31,37 @@ SOFTWARE.
 
 # TODO - Collect todo's from srcmod files and list them inside TASKS file
 
-FILES=./*
+input_files=./*
+output_file=./TASKS
+exclude_files=(./tasks ./TASKS ./changelog ./CHANGELOG)
+search_keyword=TODO
+info="~~> INFO:" 
+warning="~~> WARNING:" 
+error="~~> ERROR:" 
+ok="~~> OK:" 
 
-for file in $FILES
-do 
-    while read line 
-    do
-        echo $line | grep -q TODO 
-        if [ $? == 0 ]; then
-            echo $file $line
+for input_file in $input_files;
+do
+    printf "$info Selecting $input_file...\n" >&2
+    # We skip over a fixed set of $exclude_files
+    for exclude_file in ${exclude_files[@]};
+    do 
+        printf "$info Comparing $input_file and $exclude_file...\n" >&2
+        if [ $input_file == $exclude_file ];
+        then
+            printf "$info Excluding $input_file...\n" >&2
+        else 
+            printf "$info Scanning $input_file...\n" >&2
+            # Scan $input_file for occurence of $search_keyword 
+            while read line; 
+            do 
+                echo $line | grep $search_keyword > /dev/null
+                if [ $? == 0 ];
+                then
+                    echo "$input_file $line"
+                fi
+            done < $input_file 
         fi 
-    done < $file
+    done
 done
+exit 0

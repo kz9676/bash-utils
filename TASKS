@@ -1,0 +1,1 @@
+./uninstall rm -v ~/Programs/${package_name}_build_changelog

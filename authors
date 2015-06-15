@@ -31,5 +31,5 @@ SOFTWARE.
 
 # TODO - Add verbose output
 
-REPOSITORY_AUTHORS="$(git log --format='%an <%ae>' HEAD -n1)"  
-echo $REPOSITORY_AUTHORS > ./AUTHORS
+repository_authors="$(git log --format='%an <%ae>' HEAD -n1)"  
+echo $repository_authors > ./AUTHORS

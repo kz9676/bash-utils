@@ -2,8 +2,8 @@
 
 : '
 
-This file is part of srcmod project - command-line tool to automate creation
-and maintenance of source code modules. 
+This file is part of srcmod project - command-line tool for automated setup and
+maintenance of source code modules. 
 
 The MIT License (MIT)
 

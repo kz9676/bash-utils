@@ -2,8 +2,8 @@
 
 : '
 
-This file is part of srcmod project - command-line tool to automate creation
-and maintenance of source code modules. 
+This file is part of srcmod project - command-line tool for automated setup and
+maintenance of source code modules. 
 
 The MIT License (MIT)
 
@@ -32,6 +32,8 @@ SOFTWARE.
 # TODO - Implement verbose output mechanism
 # TODO - Implement logging of file line numbers
 # TODO - Implement scanning of ./tasks file
+# TODO - Move message formatting to an external library
+# TODO - Implement error variable and error codes
 
 input_files=./*
 output_file=./TASKS
@@ -42,7 +44,7 @@ warning="~~> WARNING:"
 error="~~> ERROR:" 
 ok="~~> OK:" 
 
-# We wipe out our ./TASKS file on the startup, to avoid duplicate records
+# We wipe out ./TASKS file on the startup, to avoid duplicate records
 > $output_file
 # Pickup input files one by one 
 for input_file in $input_files

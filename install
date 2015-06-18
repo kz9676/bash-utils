@@ -2,8 +2,8 @@
 
 : '
 
-This file is part of srcmod project - command-line tool to automate creation
-and maintenance of source code modules. 
+This file is part of srcmod project - command-line tool for automated setup and
+maintenance of source code modules. 
 
 The MIT License (MIT)
 
@@ -31,6 +31,7 @@ SOFTWARE.
 
 package_name=srcmod
 
+cp -Rv ./setup ~/Programs/${package_name}_setup
 cp -Rv ./build ~/Programs/${package_name}_build
 cp -Rv ./authors ~/Programs/${package_name}_authors
 cp -Rv ./changelog ~/Programs/${package_name}_changelog

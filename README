@@ -13,7 +13,8 @@ README, INSTALL, CHANGELOG, VERSION, etc.
 
 CHANGELOG
 
-* 07de32f 2015-06-19 | Enabled library files uninstall (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* 8b32115 2015-06-19 | Added version command file (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* 07de32f 2015-06-19 | Enabled library files uninstall [Kostya Zolotarov]
 * 8d3f5d1 2015-06-19 | Added readme command [Kostya Zolotarov]
 * f9d7393 2015-06-19 | Applied logging library to setup and tasks commands [Kostya Zolotarov]
 * 5e5308a 2015-06-19 | Added logging library [Kostya Zolotarov]
@@ -43,30 +44,30 @@ CHANGELOG
 FILES
 
 .
-├── [kostya.zolotarov          46 Jun 19 15:11]  ./AUTHORS
+├── [kostya.zolotarov          46 Jun 19 16:49]  ./AUTHORS
 ├── [kostya.zolotarov        1361 Jun 15 14:44]  ./authors
 ├── [kostya.zolotarov         414 Jun 19 12:47]  ./BACKGROUND
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./BUILD
 ├── [kostya.zolotarov        1372 Jun 19 14:08]  ./build
-├── [kostya.zolotarov        1973 Jun 19 15:11]  ./CHANGELOG
+├── [kostya.zolotarov        2042 Jun 19 16:49]  ./CHANGELOG
 ├── [kostya.zolotarov        1340 Jun 15 14:44]  ./changelog
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./DEFECTS
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./DEPENDENCIES
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./DESCRIPTION
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./DESIGN
-├── [kostya.zolotarov           0 Jun 19 15:11]  ./FILES
+├── [kostya.zolotarov           0 Jun 19 16:49]  ./FILES
 ├── [kostya.zolotarov        1281 Jun 15 14:45]  ./files
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./INSTALL
 ├── [kostya.zolotarov        1747 Jun 19 14:07]  ./install
 ├── [kostya.zolotarov        1308 Jun 19 12:44]  ./library.logging.sh
 ├── [kostya.zolotarov        1507 Jun 19 12:23]  ./library.templates.sh
 ├── [kostya.zolotarov        1083 Jun 19 12:47]  ./LICENSE
-├── [kostya.zolotarov        6703 Jun 19 15:07]  ./README
+├── [kostya.zolotarov        6703 Jun 19 15:11]  ./README
 ├── [kostya.zolotarov        1880 Jun 19 14:00]  ./readme
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./REQUIREMENTS
 ├── [kostya.zolotarov        1771 Jun 19 13:10]  ./setup
 ├── [kostya.zolotarov         616 Jun 19 12:47]  ./SOURCES
-├── [kostya.zolotarov         136 Jun 19 15:07]  ./TASKS
+├── [kostya.zolotarov         136 Jun 19 15:11]  ./TASKS
 ├── [kostya.zolotarov        2837 Jun 19 14:13]  ./tasks
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.bash
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.c
@@ -76,8 +77,8 @@ FILES
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.ruby
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./TEST
 ├── [kostya.zolotarov        1322 Jun 19 15:04]  ./uninstall
-├── [kostya.zolotarov           0 Jun 19 12:47]  ./VERSION
-└── [kostya.zolotarov        1382 Jun 19 15:11]  ./version
+├── [kostya.zolotarov           8 Jun 19 16:49]  ./VERSION
+└── [kostya.zolotarov        2188 Jun 19 16:40]  ./version
 
 0 directories, 35 files
 
@@ -126,5 +127,8 @@ TASKS
 
 ./authors # TODO - Add verbose output
 ./files # TODO - Add verbose output
-./version # TODO - Implement automated incremental versioning
+
+VERSION
+
+0.0.0.0
 

@@ -1,4 +1,6 @@
-* f9d7393 2015-06-19 | Applied logging library to setup and tasks commands (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* 07de32f 2015-06-19 | Enabled library files uninstall (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* 8d3f5d1 2015-06-19 | Added readme command [Kostya Zolotarov]
+* f9d7393 2015-06-19 | Applied logging library to setup and tasks commands [Kostya Zolotarov]
 * 5e5308a 2015-06-19 | Added logging library [Kostya Zolotarov]
 * 789da07 2015-06-19 | Added templates library [Kostya Zolotarov]
 * 6829f68 2015-06-18 | Added setup command [Kostya Zolotarov]

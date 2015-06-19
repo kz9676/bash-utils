@@ -1,3 +1,2 @@
 ./authors # TODO - Add verbose output
 ./files # TODO - Add verbose output
-./setup # TODO - Move message formatting to an external library

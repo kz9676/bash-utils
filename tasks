@@ -32,17 +32,14 @@ SOFTWARE.
 # TODO - Implement verbose output mechanism
 # TODO - Implement logging of file line numbers
 # TODO - Implement scanning of ./tasks file
-# TODO - Move message formatting to an external library
 # TODO - Implement error variable and error codes
+
+. library.logging.sh
 
 input_files=./*
 output_file=./TASKS
 exclude_files=(./tasks $output_file ./changelog ./CHANGELOG)
 search_keyword=TODO
-info="~~> INFO:" 
-warning="~~> WARNING:" 
-error="~~> ERROR:" 
-ok="~~> OK:" 
 
 # We wipe out ./TASKS file on the startup, to avoid duplicate records
 > $output_file

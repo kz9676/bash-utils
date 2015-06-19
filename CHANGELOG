@@ -1,4 +1,6 @@
-* 6829f68 2015-06-18 | Added setup command (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* 5e5308a 2015-06-19 | Added logging library (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* 789da07 2015-06-19 | Added templates library [Kostya Zolotarov]
+* 6829f68 2015-06-18 | Added setup command [Kostya Zolotarov]
 * 06617ba 2015-06-15 | Working version of tasks command [Kostya Zolotarov]
 * cae9914 2015-06-14 | Half-finished version of tasks command (i'm tired and its late) [Kostya Zolotarov]
 * a2c2637 2015-05-23 | Fixed package name [Kostya Zolotarov]

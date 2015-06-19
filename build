@@ -35,3 +35,4 @@ ${package_name}_authors
 ${package_name}_changelog
 ${package_name}_files 
 ${package_name}_tasks 
+${package_name}_readme 

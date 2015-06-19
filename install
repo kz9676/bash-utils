@@ -31,9 +31,15 @@ SOFTWARE.
 
 package_name=srcmod
 
+# Commands
 cp -Rv ./setup ~/Programs/${package_name}_setup
 cp -Rv ./build ~/Programs/${package_name}_build
 cp -Rv ./authors ~/Programs/${package_name}_authors
 cp -Rv ./changelog ~/Programs/${package_name}_changelog
 cp -Rv ./files ~/Programs/${package_name}_files
+cp -Rv ./readme ~/Programs/${package_name}_readme
 cp -Rv ./tasks ~/Programs/${package_name}_tasks
+
+# Libraries
+cp -Rv ./library.logging.sh ~/Programs/library.logging.sh
+cp -Rv ./library.templates.sh ~/Programs/library.templates.sh

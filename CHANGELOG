@@ -1,4 +1,5 @@
-* 5e5308a 2015-06-19 | Added logging library (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* f9d7393 2015-06-19 | Applied logging library to setup and tasks commands (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* 5e5308a 2015-06-19 | Added logging library [Kostya Zolotarov]
 * 789da07 2015-06-19 | Added templates library [Kostya Zolotarov]
 * 6829f68 2015-06-18 | Added setup command [Kostya Zolotarov]
 * 06617ba 2015-06-15 | Working version of tasks command [Kostya Zolotarov]

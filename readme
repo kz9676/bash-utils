@@ -28,3 +28,23 @@ SOFTWARE.
 
 '
 
+. library.logging.sh
+. library.templates.sh
+
+output_file_name=README
+output_file_path=. 
+output_file=$output_file_path/$output_file_name
+
+> $output_file
+printf "$info Updating $output_file ...\n" >&2
+for source_module_file in ${source_module_templates[@]};
+do
+    if [ -s $source_module_file ];
+    then
+        source_module_file_text="$(<$source_module_file)"
+        printf "$info Writing section title for $source_module_file ... \n" >&2
+        printf "$source_module_file\n\n" >> $output_file
+        printf "$info Writing contents of $source_module_file ... \n" >&2
+        printf "$source_module_file_text\n\n" >> $output_file 
+    fi 
+done

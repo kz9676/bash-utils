@@ -31,7 +31,5 @@ SOFTWARE.
 
 package_name=srcmod
 
-rm -v ~/Programs/${package_name}_build
-rm -v ~/Programs/${package_name}_build_authors
-rm -v ~/Programs/${package_name}_build_files
-rm -v ~/Programs/${package_name}_build_changelog
+rm -rfv ~/Programs/${package_name}_*
+rm -rfv ~/Programs/library.*.sh

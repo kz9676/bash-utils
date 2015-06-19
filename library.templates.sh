@@ -29,26 +29,23 @@ SOFTWARE.
 
 '
 
-# TODO - Move message formatting to an external library
+# Files generated for every new source module
+source_module_templates=(
+    AUTHORS
+    BACKGROUND
+    BUILD
+    CHANGELOG
+    DEFECTS
+    DEPENDENCIES
+    DESCRIPTION
+    DESIGN
+    FILES
+    INSTALL
+    LICENSE
+    REQUIREMENTS
+    SOURCES
+    TASKS
+    TEST
+    VERSION
+)
 
-. library.templates.sh
-
-parent_directory_name=${PWD##*/}
-source_module_name=$parent_directory_name
-info="~~> INFO:" 
-warning="~~> WARNING:" 
-error="~~> ERROR:" 
-ok="~~> OK:" 
-
-printf "$info Initializing $source_module_name source module...\n" >&2
-for source_module_file in ${source_module_templates[@]};
-do
-    if [ ! -f $source_module_file ];
-    then
-        printf "$info Creating $source_module_file ...\n" >&2
-        touch $source_module_file 
-    else
-        printf "$warning Skipping creating $source_module_file. File already exists.\n" >&2
-    fi 
-    touch $source_module_file
-done

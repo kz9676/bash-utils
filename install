@@ -39,6 +39,7 @@ cp -Rv ./changelog ~/Programs/${package_name}_changelog
 cp -Rv ./files ~/Programs/${package_name}_files
 cp -Rv ./readme ~/Programs/${package_name}_readme
 cp -Rv ./tasks ~/Programs/${package_name}_tasks
+cp -Rv ./version ~/Programs/${package_name}_version
 
 # Libraries
 cp -Rv ./library.logging.sh ~/Programs/library.logging.sh

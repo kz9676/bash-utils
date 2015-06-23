@@ -1,4 +1,6 @@
-* 8b32115 2015-06-19 | Added version command file (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* f1c4ab4 2015-06-19 | Included version command in the install (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* b3bb4f4 2015-06-19 | Implemented incremental versioning [Kostya Zolotarov]
+* 8b32115 2015-06-19 | Added version command file [Kostya Zolotarov]
 * 07de32f 2015-06-19 | Enabled library files uninstall [Kostya Zolotarov]
 * 8d3f5d1 2015-06-19 | Added readme command [Kostya Zolotarov]
 * f9d7393 2015-06-19 | Applied logging library to setup and tasks commands [Kostya Zolotarov]

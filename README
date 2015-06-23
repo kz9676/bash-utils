@@ -4,16 +4,18 @@ Kostya Zolotarov <kostya.zolotarov@gmail.com>
 
 BACKGROUND
 
-I need a tool that would automate creation and maintenance of source code
-modules. Invoked from command line, such tool would produce a source code
-module. Produced source code module would contain a fixed set of empty
-boilerplate files. The boilerplate files would describe the source code module
-and define its format and structure. Example boilerplate files could be -
-README, INSTALL, CHANGELOG, VERSION, etc.
+I need a tool to automate creation and maintenance of source code modules.
+Invoked from command line, such tool would produce a source code module.
+Produced source code module would contain a fixed set of empty boilerplate
+files. The boilerplate files would describe the source code module and define
+its format and structure. Example boilerplate files could be - README, INSTALL,
+CHANGELOG, VERSION, etc.
 
 CHANGELOG
 
-* 8b32115 2015-06-19 | Added version command file (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* f1c4ab4 2015-06-19 | Included version command in the install (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* b3bb4f4 2015-06-19 | Implemented incremental versioning [Kostya Zolotarov]
+* 8b32115 2015-06-19 | Added version command file [Kostya Zolotarov]
 * 07de32f 2015-06-19 | Enabled library files uninstall [Kostya Zolotarov]
 * 8d3f5d1 2015-06-19 | Added readme command [Kostya Zolotarov]
 * f9d7393 2015-06-19 | Applied logging library to setup and tasks commands [Kostya Zolotarov]
@@ -44,31 +46,31 @@ CHANGELOG
 FILES
 
 .
-├── [kostya.zolotarov          46 Jun 19 16:49]  ./AUTHORS
+├── [kostya.zolotarov          46 Jun 23 15:16]  ./AUTHORS
 ├── [kostya.zolotarov        1361 Jun 15 14:44]  ./authors
-├── [kostya.zolotarov         414 Jun 19 12:47]  ./BACKGROUND
+├── [kostya.zolotarov         406 Jun 19 16:57]  ./BACKGROUND
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./BUILD
-├── [kostya.zolotarov        1372 Jun 19 14:08]  ./build
-├── [kostya.zolotarov        2042 Jun 19 16:49]  ./CHANGELOG
-├── [kostya.zolotarov        1340 Jun 15 14:44]  ./changelog
+├── [kostya.zolotarov        1397 Jun 19 17:30]  ./build
+├── [kostya.zolotarov        2201 Jun 23 15:16]  ./CHANGELOG
+├── [kostya.zolotarov        1408 Jun 23 15:15]  ./changelog
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./DEFECTS
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./DEPENDENCIES
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./DESCRIPTION
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./DESIGN
-├── [kostya.zolotarov           0 Jun 19 16:49]  ./FILES
+├── [kostya.zolotarov           0 Jun 23 15:16]  ./FILES
 ├── [kostya.zolotarov        1281 Jun 15 14:45]  ./files
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./INSTALL
-├── [kostya.zolotarov        1747 Jun 19 14:07]  ./install
+├── [kostya.zolotarov        1799 Jun 19 17:29]  ./install
 ├── [kostya.zolotarov        1308 Jun 19 12:44]  ./library.logging.sh
-├── [kostya.zolotarov        1507 Jun 19 12:23]  ./library.templates.sh
+├── [kostya.zolotarov        1520 Jun 23 14:46]  ./library.templates.sh
 ├── [kostya.zolotarov        1083 Jun 19 12:47]  ./LICENSE
-├── [kostya.zolotarov        6703 Jun 19 15:11]  ./README
+├── [kostya.zolotarov        6728 Jun 19 16:49]  ./README
 ├── [kostya.zolotarov        1880 Jun 19 14:00]  ./readme
 ├── [kostya.zolotarov           0 Jun 19 12:47]  ./REQUIREMENTS
 ├── [kostya.zolotarov        1771 Jun 19 13:10]  ./setup
 ├── [kostya.zolotarov         616 Jun 19 12:47]  ./SOURCES
-├── [kostya.zolotarov         136 Jun 19 15:11]  ./TASKS
-├── [kostya.zolotarov        2837 Jun 19 14:13]  ./tasks
+├── [kostya.zolotarov          74 Jun 19 16:49]  ./TASKS
+├── [kostya.zolotarov        2837 Jun 19 17:27]  ./tasks
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.bash
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.c
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.cpp
@@ -130,5 +132,5 @@ TASKS
 
 VERSION
 
-0.0.0.0
+0.0.0.1
 

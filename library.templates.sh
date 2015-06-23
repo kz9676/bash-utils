@@ -39,6 +39,7 @@ source_module_templates=(
     DEPENDENCIES
     DESCRIPTION
     DESIGN
+    FEATURES
     FILES
     INSTALL
     LICENSE

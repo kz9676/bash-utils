@@ -28,6 +28,8 @@ SOFTWARE.
 
 '
 
+# TODO: Implement README chapter sequences
+
 . library.logging.sh
 . library.templates.sh
 

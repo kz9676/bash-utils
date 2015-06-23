@@ -13,7 +13,9 @@ CHANGELOG, VERSION, etc.
 
 CHANGELOG
 
-* f1c4ab4 2015-06-19 | Included version command in the install (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* 4e2e6ce 2015-06-23 | Added description; Added README chapter sequences task (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* ff4d0a4 2015-06-23 | Added FEATURES template [Kostya Zolotarov]
+* f1c4ab4 2015-06-19 | Included version command in the install [Kostya Zolotarov]
 * b3bb4f4 2015-06-19 | Implemented incremental versioning [Kostya Zolotarov]
 * 8b32115 2015-06-19 | Added version command file [Kostya Zolotarov]
 * 07de32f 2015-06-19 | Enabled library files uninstall [Kostya Zolotarov]
@@ -43,33 +45,39 @@ CHANGELOG
 * 80eeddc 2015-05-19 | Added high level background [Kostya Zolotarov]
 * e4b1dfd 2015-05-19 | Initialized repository [Kostya Zolotarov]
 
+DESCRIPTION
+
+Command-line utility for automated creation and maintenance of source code
+modules.
+
 FILES
 
 .
-├── [kostya.zolotarov          46 Jun 23 15:16]  ./AUTHORS
+├── [kostya.zolotarov          46 Jun 23 15:57]  ./AUTHORS
 ├── [kostya.zolotarov        1361 Jun 15 14:44]  ./authors
-├── [kostya.zolotarov         406 Jun 19 16:57]  ./BACKGROUND
-├── [kostya.zolotarov           0 Jun 19 12:47]  ./BUILD
+├── [kostya.zolotarov         406 Jun 23 15:18]  ./BACKGROUND
+├── [kostya.zolotarov           0 Jun 23 15:18]  ./BUILD
 ├── [kostya.zolotarov        1397 Jun 19 17:30]  ./build
-├── [kostya.zolotarov        2201 Jun 23 15:16]  ./CHANGELOG
+├── [kostya.zolotarov        2364 Jun 23 15:57]  ./CHANGELOG
 ├── [kostya.zolotarov        1408 Jun 23 15:15]  ./changelog
-├── [kostya.zolotarov           0 Jun 19 12:47]  ./DEFECTS
-├── [kostya.zolotarov           0 Jun 19 12:47]  ./DEPENDENCIES
-├── [kostya.zolotarov           0 Jun 19 12:47]  ./DESCRIPTION
-├── [kostya.zolotarov           0 Jun 19 12:47]  ./DESIGN
-├── [kostya.zolotarov           0 Jun 23 15:16]  ./FILES
+├── [kostya.zolotarov           0 Jun 23 15:18]  ./DEFECTS
+├── [kostya.zolotarov           0 Jun 23 15:18]  ./DEPENDENCIES
+├── [kostya.zolotarov          84 Jun 23 15:54]  ./DESCRIPTION
+├── [kostya.zolotarov           0 Jun 23 15:18]  ./DESIGN
+├── [kostya.zolotarov           0 Jun 23 15:20]  ./FEATURES
+├── [kostya.zolotarov           0 Jun 23 15:57]  ./FILES
 ├── [kostya.zolotarov        1281 Jun 15 14:45]  ./files
-├── [kostya.zolotarov           0 Jun 19 12:47]  ./INSTALL
+├── [kostya.zolotarov           0 Jun 23 15:18]  ./INSTALL
 ├── [kostya.zolotarov        1799 Jun 19 17:29]  ./install
 ├── [kostya.zolotarov        1308 Jun 19 12:44]  ./library.logging.sh
 ├── [kostya.zolotarov        1520 Jun 23 14:46]  ./library.templates.sh
-├── [kostya.zolotarov        1083 Jun 19 12:47]  ./LICENSE
-├── [kostya.zolotarov        6728 Jun 19 16:49]  ./README
-├── [kostya.zolotarov        1880 Jun 19 14:00]  ./readme
-├── [kostya.zolotarov           0 Jun 19 12:47]  ./REQUIREMENTS
+├── [kostya.zolotarov        1083 Jun 23 15:18]  ./LICENSE
+├── [kostya.zolotarov        7029 Jun 23 15:54]  ./README
+├── [kostya.zolotarov        1924 Jun 23 15:50]  ./readme
+├── [kostya.zolotarov           0 Jun 23 15:18]  ./REQUIREMENTS
 ├── [kostya.zolotarov        1771 Jun 19 13:10]  ./setup
-├── [kostya.zolotarov         616 Jun 19 12:47]  ./SOURCES
-├── [kostya.zolotarov          74 Jun 19 16:49]  ./TASKS
+├── [kostya.zolotarov         616 Jun 23 15:18]  ./SOURCES
+├── [kostya.zolotarov         126 Jun 23 15:50]  ./TASKS
 ├── [kostya.zolotarov        2837 Jun 19 17:27]  ./tasks
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.bash
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.c
@@ -77,12 +85,12 @@ FILES
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.java
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.python
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.ruby
-├── [kostya.zolotarov           0 Jun 19 12:47]  ./TEST
+├── [kostya.zolotarov           0 Jun 23 15:18]  ./TEST
 ├── [kostya.zolotarov        1322 Jun 19 15:04]  ./uninstall
-├── [kostya.zolotarov           8 Jun 19 16:49]  ./VERSION
+├── [kostya.zolotarov           8 Jun 23 15:18]  ./VERSION
 └── [kostya.zolotarov        2188 Jun 19 16:40]  ./version
 
-0 directories, 35 files
+0 directories, 36 files
 
 LICENSE
 
@@ -129,8 +137,9 @@ TASKS
 
 ./authors # TODO - Add verbose output
 ./files # TODO - Add verbose output
+./readme # TODO: Implement README chapter sequences
 
 VERSION
 
-0.0.0.1
+0.0.0.2
 

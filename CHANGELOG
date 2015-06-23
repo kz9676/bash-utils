@@ -1,4 +1,6 @@
-* f1c4ab4 2015-06-19 | Included version command in the install (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* 4e2e6ce 2015-06-23 | Added description; Added README chapter sequences task (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* ff4d0a4 2015-06-23 | Added FEATURES template [Kostya Zolotarov]
+* f1c4ab4 2015-06-19 | Included version command in the install [Kostya Zolotarov]
 * b3bb4f4 2015-06-19 | Implemented incremental versioning [Kostya Zolotarov]
 * 8b32115 2015-06-19 | Added version command file [Kostya Zolotarov]
 * 07de32f 2015-06-19 | Enabled library files uninstall [Kostya Zolotarov]

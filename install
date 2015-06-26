@@ -29,18 +29,26 @@ SOFTWARE.
 
 '
 
-package_name=srcmod
+source ./config.srcmod
 
-# Commands
-cp -Rv ./setup ~/Programs/${package_name}_setup
-cp -Rv ./build ~/Programs/${package_name}_build
-cp -Rv ./authors ~/Programs/${package_name}_authors
-cp -Rv ./changelog ~/Programs/${package_name}_changelog
-cp -Rv ./files ~/Programs/${package_name}_files
-cp -Rv ./readme ~/Programs/${package_name}_readme
-cp -Rv ./tasks ~/Programs/${package_name}_tasks
-cp -Rv ./version ~/Programs/${package_name}_version
+application_executables_path=$application_path/$application_executables_directory
+application_libraries_path=$application_path/$application_libraries_directory
+application_settings_path=$application_path/$application_settings_directory
+application_logs_path=$application_path/$application_logs_directory
+
+# Executables
+cp -Rv ./setup $application_executables_path/${application_name}_setup
+cp -Rv ./build $application_executables_path/${application_name}_build
+cp -Rv ./authors $application_executables_path/${application_name}_authors
+cp -Rv ./changelog $application_executables_path/${application_name}_changelog
+cp -Rv ./files $application_executables_path/${application_name}_files
+cp -Rv ./readme $application_executables_path/${application_name}_readme
+cp -Rv ./tasks $application_executables_path/${application_name}_tasks
+cp -Rv ./version $application_executables_path/${application_name}_version
 
 # Libraries
-cp -Rv ./library.logging.sh ~/Programs/library.logging.sh
-cp -Rv ./library.templates.sh ~/Programs/library.templates.sh
+cp -Rv ./library.logging.sh $application_libraries_path/library.logging.sh
+cp -Rv ./library.templates.sh $application_libraries_path/library.templates.sh
+
+# Settings
+cp -Rv ./config.srcmod $application_settings_path/.srcmod

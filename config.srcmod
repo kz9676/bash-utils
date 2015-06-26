@@ -1,0 +1,6 @@
+application_name="srcmod"
+application_path=$HOME
+application_executables_directory="Programs"
+application_libraries_directory="Programs"
+application_settings_directory="Settings"
+application_logs_directory="Logs"

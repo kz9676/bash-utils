@@ -1,3 +1,10 @@
 ./authors # TODO - Add verbose output
+./authors # TODO - Implement reading application variables from .srcmod config file
+./build # TODO - Implement reading application variables from .srcmod config file
 ./files # TODO - Add verbose output
+./files # TODO - Implement reading application variables from .srcmod config file
 ./readme # TODO: Implement README chapter sequences
+./readme # TODO - Implement reading application variables from .srcmod config file
+./setup # TODO - Implement reading application variables from .srcmod config file
+./uninstall # TODO - Implement reading application variables from .srcmod config file
+./version # TODO - Implement reading application variables from .srcmod config file

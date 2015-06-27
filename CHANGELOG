@@ -1,4 +1,5 @@
-* 3d24eb7 2015-06-23 | Added description; Added README chapter sequences task (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* b557bd1 2015-06-26 | Added application configuration file (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* 3d24eb7 2015-06-23 | Added description; Added README chapter sequences task [Kostya Zolotarov]
 * ff4d0a4 2015-06-23 | Added FEATURES template [Kostya Zolotarov]
 * f1c4ab4 2015-06-19 | Included version command in the install [Kostya Zolotarov]
 * b3bb4f4 2015-06-19 | Implemented incremental versioning [Kostya Zolotarov]

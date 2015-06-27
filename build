@@ -29,6 +29,8 @@ SOFTWARE.
 
 '
 
+# TODO - Implement reading application variables from .srcmod config file
+
 package_name=srcmod
 
 ${package_name}_authors

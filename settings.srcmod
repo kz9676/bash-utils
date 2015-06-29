@@ -1,0 +1,24 @@
+application_name="srcmod"
+application_path=$HOME
+application_executables_directory="Programs"
+application_libraries_directory="Programs"
+application_settings_directory=""
+application_logs_directory="Logs"
+application_executable_files=(
+    setup
+    build
+    authors
+    changelog
+    files
+    readme
+    tasks
+    version
+)
+application_library_files=(
+    library.logging.sh
+    library.templates.sh
+)
+application_setting_files=(
+    settings.srcmod
+)
+

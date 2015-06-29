@@ -28,7 +28,7 @@ SOFTWARE.
 
 '
 
-# TODO: Implement README chapter sequences
+# TODO - Implement README chapter sequences
 # TODO - Implement reading application variables from .srcmod config file
 
 . library.logging.sh

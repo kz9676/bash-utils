@@ -29,6 +29,8 @@ SOFTWARE.
 
 '
 
+#TODO - Move source_module_templates to .srcmod configuration file
+
 # Files generated for every new source module
 source_module_templates=(
     AUTHORS

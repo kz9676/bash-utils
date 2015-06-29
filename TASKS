@@ -3,7 +3,8 @@
 ./build # TODO - Implement reading application variables from .srcmod config file
 ./files # TODO - Add verbose output
 ./files # TODO - Implement reading application variables from .srcmod config file
-./readme # TODO: Implement README chapter sequences
+./library.templates.sh #TODO - Move source_module_templates to .srcmod configuration file
+./readme # TODO - Implement README chapter sequences
 ./readme # TODO - Implement reading application variables from .srcmod config file
 ./setup # TODO - Implement reading application variables from .srcmod config file
 ./uninstall # TODO - Implement reading application variables from .srcmod config file

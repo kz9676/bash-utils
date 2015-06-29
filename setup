@@ -29,10 +29,8 @@ SOFTWARE.
 
 '
 
-# TODO - Implement reading application variables from .srcmod config file
-
+. ~/.srcmod
 . library.logging.sh
-. library.templates.sh
 
 parent_directory_name=${PWD##*/}
 source_module_name=$parent_directory_name

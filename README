@@ -13,8 +13,9 @@ CHANGELOG, VERSION, etc.
 
 CHANGELOG
 
-* 0ddc5b7 2015-06-27 | Added task to implement reading application variables from .srcmod configuration file (HEAD, development) [Kostya Zolotarov]
-* b557bd1 2015-06-26 | Added application configuration file (origin/development, origin/HEAD) [Kostya Zolotarov]
+* beb9eee 2015-06-29 | Install optimizations (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* 0ddc5b7 2015-06-27 | Added task to implement reading application variables from .srcmod configuration file [Kostya Zolotarov]
+* b557bd1 2015-06-26 | Added application configuration file [Kostya Zolotarov]
 * 3d24eb7 2015-06-23 | Added description; Added README chapter sequences task [Kostya Zolotarov]
 * ff4d0a4 2015-06-23 | Added FEATURES template [Kostya Zolotarov]
 * f1c4ab4 2015-06-19 | Included version command in the install [Kostya Zolotarov]
@@ -55,33 +56,31 @@ modules.
 FILES
 
 .
-├── [kostya.zolotarov          46 Jun 29 15:24]  ./AUTHORS
+├── [kostya.zolotarov          46 Jun 29 15:33]  ./AUTHORS
 ├── [kostya.zolotarov        1435 Jun 27 11:53]  ./authors
 ├── [kostya.zolotarov         406 Jun 23 15:18]  ./BACKGROUND
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./BUILD
 ├── [kostya.zolotarov        1472 Jun 27 11:53]  ./build
-├── [kostya.zolotarov        2572 Jun 29 15:24]  ./CHANGELOG
+├── [kostya.zolotarov        2635 Jun 29 15:33]  ./CHANGELOG
 ├── [kostya.zolotarov        1482 Jun 27 11:53]  ./changelog
-├── [kostya.zolotarov         461 Jun 29 15:19]  ./config.srcmod
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./DEFECTS
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./DEPENDENCIES
 ├── [kostya.zolotarov          84 Jun 23 15:54]  ./DESCRIPTION
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./DESIGN
 ├── [kostya.zolotarov           0 Jun 23 15:20]  ./FEATURES
-├── [kostya.zolotarov           0 Jun 29 15:24]  ./FILES
+├── [kostya.zolotarov           0 Jun 29 15:33]  ./FILES
 ├── [kostya.zolotarov        1355 Jun 27 11:54]  ./files
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./INSTALL
 ├── [kostya.zolotarov        2445 Jun 29 15:20]  ./install
 ├── [kostya.zolotarov        1308 Jun 19 12:44]  ./library.logging.sh
-├── [kostya.zolotarov        1588 Jun 29 13:54]  ./library.templates.sh
 ├── [kostya.zolotarov        1083 Jun 23 15:18]  ./LICENSE
-├── [kostya.zolotarov        7992 Jun 27 11:56]  ./README
+├── [kostya.zolotarov        8285 Jun 29 15:24]  ./README
 ├── [kostya.zolotarov        1999 Jun 27 11:57]  ./readme
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./REQUIREMENTS
-├── [kostya.zolotarov         456 Jun 29 15:23]  ./settings.srcmod
-├── [kostya.zolotarov        1846 Jun 27 11:54]  ./setup
+├── [kostya.zolotarov         695 Jun 29 15:30]  ./settings.srcmod
+├── [kostya.zolotarov        1760 Jun 29 15:31]  ./setup
 ├── [kostya.zolotarov         617 Jun 23 16:01]  ./SOURCES
-├── [kostya.zolotarov         709 Jun 27 11:56]  ./TASKS
+├── [kostya.zolotarov         800 Jun 29 15:24]  ./TASKS
 ├── [kostya.zolotarov        2911 Jun 27 11:55]  ./tasks
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.bash
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.c
@@ -91,10 +90,10 @@ FILES
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.ruby
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./TEST
 ├── [kostya.zolotarov        1397 Jun 27 11:55]  ./uninstall
-├── [kostya.zolotarov           8 Jun 27 11:56]  ./VERSION
+├── [kostya.zolotarov           8 Jun 29 15:24]  ./VERSION
 └── [kostya.zolotarov        2263 Jun 27 11:55]  ./version
 
-0 directories, 38 files
+0 directories, 36 files
 
 LICENSE
 
@@ -145,14 +144,12 @@ TASKS
 ./build # TODO - Implement reading application variables from .srcmod config file
 ./files # TODO - Add verbose output
 ./files # TODO - Implement reading application variables from .srcmod config file
-./library.templates.sh #TODO - Move source_module_templates to .srcmod configuration file
 ./readme # TODO - Implement README chapter sequences
 ./readme # TODO - Implement reading application variables from .srcmod config file
-./setup # TODO - Implement reading application variables from .srcmod config file
 ./uninstall # TODO - Implement reading application variables from .srcmod config file
 ./version # TODO - Implement reading application variables from .srcmod config file
 
 VERSION
 
-0.0.0.5
+0.0.0.6
 

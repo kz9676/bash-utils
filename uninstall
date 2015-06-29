@@ -46,7 +46,7 @@ done
 # Libraries
 for file in ${application_library_files[@]};
 do
-    library_file=$application_libraries_path/${application_name}_$file
+    library_file=$application_libraries_path/$file
     if [ -f $library_file ];
     then
         printf "$info Uninstalling $library_file ...\n" >&2

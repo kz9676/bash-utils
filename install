@@ -48,7 +48,7 @@ do
    if [ -f $file ];
    then
        printf "$info Installing $file ...\n" >&2
-       cp -v ./$file $application_libraries_path/${application_name}_$file
+       cp -v ./$file $application_libraries_path/$file
    fi 
 done
 

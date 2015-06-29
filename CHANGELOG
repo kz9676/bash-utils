@@ -1,4 +1,5 @@
-* 3546a92 2015-06-29 | Implemented settings loading for uninstall command (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* 9b827ee 2015-06-29 | Libraries install/uninstall fix (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* 3546a92 2015-06-29 | Implemented settings loading for uninstall command [Kostya Zolotarov]
 * a2f50c5 2015-06-29 | Moved templates to srcmod settings file [Kostya Zolotarov]
 * beb9eee 2015-06-29 | Install optimizations [Kostya Zolotarov]
 * 0ddc5b7 2015-06-27 | Added task to implement reading application variables from .srcmod configuration file [Kostya Zolotarov]

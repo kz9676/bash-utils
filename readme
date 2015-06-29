@@ -29,10 +29,9 @@ SOFTWARE.
 '
 
 # TODO - Implement README chapter sequences
-# TODO - Implement reading application variables from .srcmod config file
 
+. ~/.srcmod
 . library.logging.sh
-. library.templates.sh
 
 output_file_name=README
 output_file_path=. 

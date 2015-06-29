@@ -4,6 +4,10 @@ application_executables_directory="Programs"
 application_libraries_directory="Programs"
 application_settings_directory=
 application_logs_directory="Logs"
+application_executables_path=$application_path/$application_executables_directory
+application_libraries_path=$application_path/$application_libraries_directory
+application_settings_path=$application_path/$application_settings_directory
+application_logs_path=$application_path/$application_logs_directory
 application_executable_files=(
     setup
     build

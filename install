@@ -32,13 +32,7 @@ SOFTWARE.
 . ./settings.srcmod
 . library.logging.sh
 
-application_executables_path=$application_path/$application_executables_directory
-application_libraries_path=$application_path/$application_libraries_directory
-application_settings_path=$application_path/$application_settings_directory
-application_logs_path=$application_path/$application_logs_directory
-
 # Executables
-printf "$info Installing $application_name executables ...\n" >&2
 for file in ${application_executable_files[@]};
 do
    if [ -f $file ];
@@ -49,7 +43,6 @@ do
 done
 
 # Libraries
-printf "$info Installing $application_name libraries ...\n" >&2
 for file in ${application_library_files[@]};
 do
    if [ -f $file ];
@@ -60,7 +53,6 @@ do
 done
 
 # Settings
-printf "$info Installing $application_name settings ...\n" >&2
 for file in ${application_setting_files[@]};
 do
    if [ -f $file ];

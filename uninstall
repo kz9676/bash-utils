@@ -29,9 +29,39 @@ SOFTWARE.
 
 '
 
-# TODO - Implement reading application variables from .srcmod config file
+. ~/.srcmod
+. library.logging.sh
 
-package_name=srcmod
+# Executables
+for file in ${application_executable_files[@]};
+do 
+    executable_file=$application_executables_path/${application_name}_$file
+    if [ -f $executable_file ];
+    then
+        printf "$info Uninstalling $executable_file ...\n" >&2
+        rm -fv $executable_file 
+    fi 
+done
 
-rm -rfv ~/Programs/${package_name}_*
-rm -rfv ~/Programs/library.*.sh
+# Libraries
+for file in ${application_library_files[@]};
+do
+    library_file=$application_libraries_path/${application_name}_$file
+    if [ -f $library_file ];
+    then
+        printf "$info Uninstalling $library_file ...\n" >&2
+        rm -fv $library_file
+    fi 
+done
+
+# Settings
+for file in ${application_setting_files[@]};
+do
+    setting_file=$application_settings_path/${application_name}_$file
+    if [ -f $setting_file ];
+    then
+        printf "$info Uninstalling $setting_file ...\n" >&2
+        rm -fv $setting_file
+    fi 
+done
+

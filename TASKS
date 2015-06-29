@@ -5,5 +5,4 @@
 ./files # TODO - Implement reading application variables from .srcmod config file
 ./readme # TODO - Implement README chapter sequences
 ./readme # TODO - Implement reading application variables from .srcmod config file
-./uninstall # TODO - Implement reading application variables from .srcmod config file
 ./version # TODO - Implement reading application variables from .srcmod config file

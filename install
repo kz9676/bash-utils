@@ -35,30 +35,30 @@ SOFTWARE.
 # Executables
 for file in ${application_executable_files[@]};
 do
-   if [ -f $file ];
-   then
-       printf "$info Installing $file ...\n" >&2
-       cp -v ./$file $application_executables_path/${application_name}_$file
-   fi 
+    if [ -f $file ];
+    then
+        printf "$info Installing $file ...\n" >&2
+        cp -v ./$file $application_executables_path/${application_name}_$file
+    fi 
 done
 
 # Libraries
 for file in ${application_library_files[@]};
 do
-   if [ -f $file ];
-   then
-       printf "$info Installing $file ...\n" >&2
-       cp -v ./$file $application_libraries_path/$file
-   fi 
+    if [ -f $file ];
+    then
+        printf "$info Installing $file ...\n" >&2
+        cp -v ./$file $application_libraries_path/$file
+    fi 
 done
 
 # Settings
 for file in ${application_setting_files[@]};
 do
-   if [ -f $file ];
-   then
-       printf "$info Installing $file ...\n" >&2
-       cp -v ./$file $application_settings_path/.$application_name
-   fi 
+    if [ -f $file ];
+    then
+        printf "$info Installing $file ...\n" >&2
+        cp -v ./$file $application_settings_path/.$application_name
+    fi 
 done
 

@@ -29,8 +29,9 @@ SOFTWARE.
 
 '
 
-# TODO: Add verbose output
-# TODO: Implement word wrapping with text width 80 characters long 
-# TODO - Implement reading application variables from .srcmod config file
+# TODO - Add verbose output
+# TODO - Implement word wrapping with text width 80 characters long 
+
+. ./settings.srcmod
 
 git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short > ./CHANGELOG

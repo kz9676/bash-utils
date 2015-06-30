@@ -34,4 +34,4 @@ SOFTWARE.
 
 . ~/.srcmod
 
-git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short > ./CHANGELOG
+git log --pretty=format:"%h %n %ad %n %an %n %s%d %n" --graph --date=short > ./CHANGELOG

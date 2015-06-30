@@ -33,4 +33,9 @@ info="~~> INFO:"
 warning="~~> WARNING:" 
 error="~~> ERROR:" 
 ok="~~> OK:" 
-
+heading() {
+    string="$1"
+    divider_length=${#string}
+    let "divider_length = 78 - divider_length"
+    printf "$string %${divider_length}s\n\n" | tr " " ":"
+}

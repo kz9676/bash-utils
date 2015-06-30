@@ -1,7 +1,12 @@
+* bbe4da9 
+|  2015-06-30 
+|  Kostya Zolotarov 
+|  New changelog formatting (HEAD, origin/development, origin/HEAD, development) 
+|  
 * 65affcb 
 |  2015-06-30 
 |  Kostya Zolotarov 
-|  Implemented reading tasks command configuration settings from ~/.srcmod (HEAD, origin/development, origin/HEAD, development) 
+|  Implemented reading tasks command configuration settings from ~/.srcmod 
 |  
 * 556144a 
 |  2015-06-30 

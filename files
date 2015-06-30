@@ -30,6 +30,8 @@ SOFTWARE.
 '
 
 # TODO - Add verbose output
-# TODO - Implement reading application variables from .srcmod config file
+
+. ~/.srcmod
+. library.logging.sh
 
 tree -Dfus > ./FILES

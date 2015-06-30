@@ -30,7 +30,9 @@ SOFTWARE.
 '
 
 # TODO - Add verbose output
-# TODO - Implement reading application variables from .srcmod config file
+
+. ~/.srcmod
+. library.logging.sh
 
 repository_authors="$(git log --format='%an <%ae>' HEAD -n1)"  
 echo $repository_authors > ./AUTHORS

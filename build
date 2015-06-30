@@ -29,13 +29,12 @@ SOFTWARE.
 
 '
 
-# TODO - Implement reading application variables from .srcmod config file
+. ~/.srcmod
+. library.logging.sh
 
-package_name=srcmod
-
-${package_name}_authors
-${package_name}_changelog
-${package_name}_files 
-${package_name}_tasks 
-${package_name}_version 
-${package_name}_readme 
+${application_name}_authors
+${application_name}_changelog
+${application_name}_files 
+${application_name}_tasks 
+${application_name}_version 
+${application_name}_readme 

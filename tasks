@@ -34,8 +34,8 @@ SOFTWARE.
 # TODO - Implement scanning of ./tasks file
 # TODO - Implement error variable and error codes
 # TODO - Refactor ***_files to ***_file_name(s) and ***_file_path
-# TODO - Implement reading application variables from .srcmod config file
 
+. ~/.srcmod
 . library.logging.sh
 
 input_files=./*

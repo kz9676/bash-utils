@@ -1,4 +1,5 @@
-* 4a998b6 2015-06-30 | Implemented README chapter sequencing (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* f65c83b 2015-06-30 | Implemented reading tasks command configuration settings from ~/.srcmod (HEAD, origin/development, origin/HEAD, development) [Kostya Zolotarov]
+* 4a998b6 2015-06-30 | Implemented README chapter sequencing [Kostya Zolotarov]
 * 7a1e09f 2015-06-29 | Implemented settings loading for authors, build, files and version commands [Kostya Zolotarov]
 * 57361f6 2015-06-29 | Implemented settings loading for readme command [Kostya Zolotarov]
 * 9b827ee 2015-06-29 | Libraries install/uninstall fix [Kostya Zolotarov]

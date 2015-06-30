@@ -32,6 +32,6 @@ SOFTWARE.
 # TODO - Add verbose output
 # TODO - Implement word wrapping with text width 80 characters long 
 
-. ./settings.srcmod
+. ~/.srcmod
 
 git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short > ./CHANGELOG

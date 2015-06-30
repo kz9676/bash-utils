@@ -28,8 +28,6 @@ SOFTWARE.
 
 '
 
-# TODO - Implement README chapter sequences
-
 . ~/.srcmod
 . library.logging.sh
 

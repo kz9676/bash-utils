@@ -26,21 +26,21 @@ application_setting_files=(
     settings.srcmod
 )
 source_module_templates=(
+    VERSION
     AUTHORS
     BACKGROUND
-    BUILD
-    CHANGELOG
-    DEFECTS
-    DEPENDENCIES
     DESCRIPTION
-    DESIGN
     FEATURES
-    FILES
-    INSTALL
-    LICENSE
     REQUIREMENTS
+    DESIGN
+    DEPENDENCIES
     SOURCES
-    TASKS
+    BUILD
     TEST
-    VERSION
+    INSTALL
+    FILES
+    TASKS
+    DEFECTS
+    CHANGELOG
+    LICENSE
 )

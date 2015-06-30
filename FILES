@@ -1,29 +1,29 @@
 .
-├── [kostya.zolotarov          46 Jun 29 17:03]  ./AUTHORS
+├── [kostya.zolotarov          46 Jun 30 13:20]  ./AUTHORS
 ├── [kostya.zolotarov        1395 Jun 29 17:00]  ./authors
 ├── [kostya.zolotarov         406 Jun 23 15:18]  ./BACKGROUND
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./BUILD
 ├── [kostya.zolotarov        1434 Jun 29 17:01]  ./build
-├── [kostya.zolotarov        2974 Jun 29 17:03]  ./CHANGELOG
+├── [kostya.zolotarov        3092 Jun 30 13:20]  ./CHANGELOG
 ├── [kostya.zolotarov        1482 Jun 29 16:06]  ./changelog
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./DEFECTS
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./DEPENDENCIES
 ├── [kostya.zolotarov          84 Jun 23 15:54]  ./DESCRIPTION
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./DESIGN
 ├── [kostya.zolotarov           0 Jun 23 15:20]  ./FEATURES
-├── [kostya.zolotarov           0 Jun 29 17:03]  ./FILES
+├── [kostya.zolotarov           0 Jun 30 13:20]  ./FILES
 ├── [kostya.zolotarov        1315 Jun 29 17:02]  ./files
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./INSTALL
 ├── [kostya.zolotarov        1927 Jun 29 16:50]  ./install
 ├── [kostya.zolotarov        1308 Jun 29 16:06]  ./library.logging.sh
 ├── [kostya.zolotarov        1083 Jun 23 15:18]  ./LICENSE
-├── [kostya.zolotarov        8107 Jun 29 16:58]  ./README
-├── [kostya.zolotarov        1914 Jun 29 16:58]  ./readme
+├── [kostya.zolotarov        7865 Jun 29 17:03]  ./README
+├── [kostya.zolotarov        1869 Jun 30 13:20]  ./readme
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./REQUIREMENTS
-├── [kostya.zolotarov         999 Jun 29 16:09]  ./settings.srcmod
+├── [kostya.zolotarov         999 Jun 30 13:20]  ./settings.srcmod
 ├── [kostya.zolotarov        1760 Jun 29 16:06]  ./setup
 ├── [kostya.zolotarov         617 Jun 23 16:01]  ./SOURCES
-├── [kostya.zolotarov         459 Jun 29 16:58]  ./TASKS
+├── [kostya.zolotarov         127 Jun 29 17:03]  ./TASKS
 ├── [kostya.zolotarov        2911 Jun 29 16:07]  ./tasks
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.bash
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.c
@@ -33,7 +33,7 @@
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.ruby
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./TEST
 ├── [kostya.zolotarov        2081 Jun 29 16:51]  ./uninstall
-├── [kostya.zolotarov           8 Jun 29 16:58]  ./VERSION
+├── [kostya.zolotarov           8 Jun 29 17:03]  ./VERSION
 └── [kostya.zolotarov        2200 Jun 29 17:02]  ./version
 
 0 directories, 36 files

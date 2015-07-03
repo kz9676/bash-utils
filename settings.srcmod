@@ -26,10 +26,10 @@ application_setting_files=(
     settings.srcmod
 )
 source_module_templates=(
+    DESCRIPTION
     VERSION
     AUTHORS
     BACKGROUND
-    DESCRIPTION
     FEATURES
     REQUIREMENTS
     DESIGN

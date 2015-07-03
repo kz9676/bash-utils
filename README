@@ -1,24 +1,50 @@
-[1] VERSION ------------------------------------------------------------------
-
-0.0.1.9
-
-[2] AUTHORS ------------------------------------------------------------------
-
-Kostya Zolotarov <kostya.zolotarov@gmail.com>
-
-[3] BACKGROUND ---------------------------------------------------------------
-
-I need a tool to automate creation and maintenance of source code modules.
-Invoked from command line, such tool would produce a source code module.
-Produced source code module would contain a fixed set of empty boilerplate
-files. The boilerplate files would describe the source code module and define
-its format and structure. Example boilerplate files could be - README, INSTALL,
-CHANGELOG, VERSION, etc.
-
-[4] DESCRIPTION --------------------------------------------------------------
+[1] DESCRIPTION --------------------------------------------------------------
 
 Command-line utility for automated creation and maintenance of source code
 modules.
+
+[2] VERSION ------------------------------------------------------------------
+
+0.0.2.0
+
+[3] AUTHORS ------------------------------------------------------------------
+
+Kostya Zolotarov <kostya.zolotarov@gmail.com>
+
+[4] BACKGROUND ---------------------------------------------------------------
+
+I needed a tool to automate creation and maintenance of source code modules.
+Invoked from command line, such tool had to produce a source code module.
+Produced source code module had to contain a fixed set of templated descriptor
+files. These templated and automatically generated descriptor files would
+define format and structure of the source code module.
+
+From a high level view, my source module had to have the following file
+structure:
+
+.
+|
++--- ./DESCRIPTION
+|
++--- ./VERSION
+|
++--- ./AUTHORS
+|
++--- ./CHANGELOG
+|
++--- ./TASKS
+|
++--- ./DEFECTS
+|
++--- ./BUILD
+|
++--- ./INSTALL
+|
++--- ./LICENSES
+|
++--- ./.settings
+|
++--- etc.
 
 [5] SOURCES ------------------------------------------------------------------
 
@@ -41,31 +67,31 @@ production defects. Supporting branches may include the following:
 [6] FILES --------------------------------------------------------------------
 
 .
-├── [kostya.zolotarov          46 Jul  3 14:12]  ./AUTHORS
+├── [kostya.zolotarov          46 Jul  3 14:38]  ./AUTHORS
 ├── [kostya.zolotarov        1395 Jun 30 13:29]  ./authors
-├── [kostya.zolotarov         406 Jun 23 15:18]  ./BACKGROUND
+├── [kostya.zolotarov         634 Jul  3 14:38]  ./BACKGROUND
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./BUILD
 ├── [kostya.zolotarov        1434 Jun 30 13:28]  ./build
-├── [kostya.zolotarov        4120 Jul  3 14:12]  ./CHANGELOG
+├── [kostya.zolotarov        4205 Jul  3 14:38]  ./CHANGELOG
 ├── [kostya.zolotarov        1431 Jun 30 13:57]  ./changelog
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./DEFECTS
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./DEPENDENCIES
 ├── [kostya.zolotarov          84 Jun 23 15:54]  ./DESCRIPTION
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./DESIGN
 ├── [kostya.zolotarov           0 Jun 23 15:20]  ./FEATURES
-├── [kostya.zolotarov           0 Jul  3 14:12]  ./FILES
+├── [kostya.zolotarov           0 Jul  3 14:38]  ./FILES
 ├── [kostya.zolotarov        1315 Jun 29 17:02]  ./files
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./INSTALL
 ├── [kostya.zolotarov        1942 Jun 30 13:28]  ./install
 ├── [kostya.zolotarov        1625 Jul  3 14:07]  ./library.logging.sh
 ├── [kostya.zolotarov        1083 Jun 23 15:18]  ./LICENSE
-├── [kostya.zolotarov        9591 Jul  3 14:12]  ./README
+├── [kostya.zolotarov        9591 Jul  3 14:18]  ./README
 ├── [kostya.zolotarov        1933 Jul  3 14:11]  ./readme
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./REQUIREMENTS
-├── [kostya.zolotarov         999 Jun 30 13:20]  ./settings.srcmod
+├── [kostya.zolotarov         999 Jul  3 14:17]  ./settings.srcmod
 ├── [kostya.zolotarov        1760 Jun 30 13:30]  ./setup
 ├── [kostya.zolotarov         617 Jun 23 16:01]  ./SOURCES
-├── [kostya.zolotarov          74 Jun 30 16:53]  ./TASKS
+├── [kostya.zolotarov          74 Jul  3 14:12]  ./TASKS
 ├── [kostya.zolotarov        2496 Jun 30 16:53]  ./tasks
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.bash
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.c
@@ -75,7 +101,7 @@ production defects. Supporting branches may include the following:
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.ruby
 ├── [kostya.zolotarov           0 Jun 23 15:18]  ./TEST
 ├── [kostya.zolotarov        2081 Jun 30 13:31]  ./uninstall
-├── [kostya.zolotarov           8 Jun 30 15:24]  ./VERSION
+├── [kostya.zolotarov           8 Jul  3 14:12]  ./VERSION
 └── [kostya.zolotarov        2200 Jun 30 13:31]  ./version
 
 0 directories, 36 files
@@ -87,10 +113,15 @@ production defects. Supporting branches may include the following:
 
 [8] CHANGELOG ----------------------------------------------------------------
 
+* b25bf58 
+|  2015-07-03 
+|  Kostya Zolotarov 
+|  Implemented numbered headings (HEAD, origin/development, origin/HEAD, development) 
+|  
 * 6af890e 
 |  2015-06-30 
 |  Kostya Zolotarov 
-|  Added chapter heading formatting type (HEAD, origin/development, origin/HEAD, development) 
+|  Added chapter heading formatting type 
 |  
 * bbe4da9 
 |  2015-06-30 

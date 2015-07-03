@@ -1,7 +1,12 @@
+* b25bf58 
+|  2015-07-03 
+|  Kostya Zolotarov 
+|  Implemented numbered headings (HEAD, origin/development, origin/HEAD, development) 
+|  
 * 6af890e 
 |  2015-06-30 
 |  Kostya Zolotarov 
-|  Added chapter heading formatting type (HEAD, origin/development, origin/HEAD, development) 
+|  Added chapter heading formatting type 
 |  
 * bbe4da9 
 |  2015-06-30 

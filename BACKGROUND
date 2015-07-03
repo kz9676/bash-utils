@@ -1,6 +1,33 @@
-I need a tool to automate creation and maintenance of source code modules.
-Invoked from command line, such tool would produce a source code module.
-Produced source code module would contain a fixed set of empty boilerplate
-files. The boilerplate files would describe the source code module and define
-its format and structure. Example boilerplate files could be - README, INSTALL,
-CHANGELOG, VERSION, etc.
+I needed a tool to automate creation and maintenance of source code modules.
+Invoked from command line, such tool had to produce a source code module.
+Produced source code module had to contain a fixed set of templated descriptor
+files. These templated and automatically generated descriptor files would
+define format and structure of the source code module.
+
+From a high level view, my source module had to have the following file
+structure:
+
+.
+|
++--- ./DESCRIPTION
+|
++--- ./VERSION
+|
++--- ./AUTHORS
+|
++--- ./CHANGELOG
+|
++--- ./TASKS
+|
++--- ./DEFECTS
+|
++--- ./BUILD
+|
++--- ./INSTALL
+|
++--- ./LICENSES
+|
++--- ./.settings
+|
++--- etc.
+

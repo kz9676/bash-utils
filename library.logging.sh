@@ -29,13 +29,26 @@ SOFTWARE.
 
 '
 
-info="~~> INFO:" 
+info="~~> INFO:"
+
 warning="~~> WARNING:" 
+
 error="~~> ERROR:" 
+
 ok="~~> OK:" 
+
 heading() {
-    string="$1"
-    divider_length=${#string}
-    let "divider_length = 78 - divider_length"
-    printf "$string %${divider_length}s\n\n" | tr " " ":"
+    text="$1 "
+    length=${#text}
+    let "length = 78 - length"
+    printf %q "$text" 
+    printf "%${length}s\n\n" | tr [:blank:] - 
+}
+
+numbered_heading() {
+    text="[$1] $2 "
+    length=${#text}
+    let "length = 78 - length"
+    printf %q "$text" 
+    printf "%${length}s\n\n" | tr [:blank:] - 
 }

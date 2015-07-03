@@ -43,12 +43,9 @@ output_file=./TASKS
 exclude_files=(./tasks $output_file ./changelog ./CHANGELOG ./README)
 search_keyword=TODO
 
-# We wipe out $output_file on the startup, to avoid duplicate records
 > $output_file
 for input_file in $input_files
 do
-    # We skip over a fixed set of $exclude_files. For instance, there is no 
-    # need to scan $output_file
     printf "$info Selecting $input_file...\n" >&2
     for exclude_file in ${exclude_files[@]};
     do 
@@ -62,11 +59,8 @@ do
             exclude_file_match_found=false
         fi
     done
-    # If the selected input file does not match any of the exclude files,
-    # proceed to scanning $input_file 
     if [[ $exclude_file_match_found == false ]];
     then
-        # Scan $input_file for occurence of $search_keyword 
         printf "$info Scanning $input_file...\n" >&2
         while read line; 
         do 

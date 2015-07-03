@@ -43,7 +43,8 @@ do
     then
         source_module_file_text="$(<$source_module_file)"
         printf "$info Writing section title for $source_module_file ... \n" >&2
-        heading "$source_module_file" | xargs printf "%s\n\n" >> $output_file
+        let counter++ 
+        numbered_heading "$counter" "$source_module_file" | xargs printf "%s\n\n" >> $output_file
         printf "$info Writing contents of $source_module_file ... \n" >&2
         printf "$source_module_file_text\n\n" >> $output_file 
     fi 

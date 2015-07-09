@@ -29,7 +29,14 @@ SOFTWARE.
 
 '
 
-. ./settings.srcmod
+# NOTE - Source module parent directory name must match the source module's
+#        settings file name extension (see ./settings.${PWD##*/}). As an 
+#        example, source module named 'calmod' must have its parent directory
+#        named 'calmod' (eg. /home/userxyz/builds/calmod). Correspondingly,
+#        the very same source module's settings file must be accordingly
+#        named 'settings.calmod' (eg. ~/builds/calmod/settings.calmod)
+
+. ./settings.${PWD##*/}
 . library.logging.sh
 
 # Executables

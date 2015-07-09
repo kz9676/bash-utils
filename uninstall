@@ -29,7 +29,7 @@ SOFTWARE.
 
 '
 
-. ~/.srcmod
+. ~/.${PWD##*/}
 . library.logging.sh
 
 # Executables
@@ -57,7 +57,7 @@ done
 # Settings
 for file in ${application_setting_files[@]};
 do
-    setting_file=$application_settings_path/${application_name}_$file
+    setting_file=$application_settings_path/.${application_name}
     if [ -f $setting_file ];
     then
         printf "$info Uninstalling $setting_file ...\n" >&2

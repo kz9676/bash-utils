@@ -1,13 +1,20 @@
+# Application settings
 application_name="srcmod"
-application_path=$HOME
+
+# Directory settings
 application_executables_directory="Programs"
 application_libraries_directory="Programs"
 application_settings_directory=
 application_logs_directory="Logs"
+
+# Path settings
+application_path=$HOME
 application_executables_path=$application_path/$application_executables_directory
 application_libraries_path=$application_path/$application_libraries_directory
 application_settings_path=$application_path/$application_settings_directory
 application_logs_path=$application_path/$application_logs_directory
+
+# File settings
 application_executable_files=(
     setup
     build
@@ -16,11 +23,12 @@ application_executable_files=(
     files
     readme
     tasks
+    install
+    uninstall
     version
 )
 application_library_files=(
     library.logging.sh
-    library.templates.sh
 )
 application_setting_files=(
     settings.srcmod

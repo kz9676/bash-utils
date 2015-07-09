@@ -5,6 +5,7 @@ application_name="srcmod"
 application_executables_directory="Programs"
 application_libraries_directory="Programs"
 application_settings_directory=
+application_templates_directory="Templates"
 application_logs_directory="Logs"
 
 # Path settings
@@ -46,7 +47,6 @@ source_module_templates=(
     BUILD
     TEST
     INSTALL
-    RUN
     FILES
     TASKS
     DEFECTS

@@ -1,33 +1,29 @@
-I needed a tool to automate creation and maintenance of source code modules.
+I needed a tool to automate creation and maintenance of my source code modules.
 Invoked from command line, such tool had to produce a source code module.
-Produced source code module had to contain a fixed set of templated descriptor
-files. These templated and automatically generated descriptor files would
-define format and structure of the source code module.
+Produced source code module would have to contain a fixed set of templated
+descriptor files. These templated and automatically generated descriptor files
+would define format and structure of the source code module.
 
-From a high level view, my source module had to have the following file
-structure:
+From a high level view, I envisioned my source modules to resemble something
+similar to the following file structure:
 
 .
-|
-+--- ./DESCRIPTION
-|
-+--- ./VERSION
-|
-+--- ./AUTHORS
-|
-+--- ./CHANGELOG
-|
-+--- ./TASKS
-|
-+--- ./DEFECTS
-|
-+--- ./BUILD
-|
-+--- ./INSTALL
-|
-+--- ./LICENSES
-|
-+--- ./.settings
-|
-+--- etc.
-
+|--- ./README
+|--- ./VERSION
+|--- ./AUTHORS
+|--- ./CHANGELOG
+|--- ./TASKS
+|--- ./DEFECTS
+|--- ./BUILD
+|--- ./INSTALL
+|--- ./LICENSES
+|--- ./sourcefile.X
+|--- ./sourcefile.Y
+|--- ./sourcefile.Z
+|--- ./library.name.X
+|--- ./library.name.Y
+|--- ./library.name.Z
+|--- ./settings.feature.X
+|--- ./settings.feature.Y
+|--- ./settings.feature.Z
+\--- etc.

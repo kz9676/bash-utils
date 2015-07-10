@@ -30,6 +30,8 @@ application_executable_files=(
 )
 application_library_files=(
     library.logging.sh
+    library.version.sh
+    library.file.sh
 )
 application_setting_files=(
     settings.srcmod

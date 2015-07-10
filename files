@@ -29,8 +29,6 @@ SOFTWARE.
 
 '
 
-# TODO - Add verbose output
-
 . ~/.srcmod
 . library.logging.sh
 

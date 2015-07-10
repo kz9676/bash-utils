@@ -1,7 +1,32 @@
+* 29121e1 
+|  2015-07-10 
+|  Kostya Zolotarov 
+|  Added file library (HEAD, FEATURE-mod-installer) 
+|  
+* 68ce5f4 
+|  2015-07-10 
+|  Kostya Zolotarov 
+|  Added version library 
+|  
+* e33ebee 
+|  2015-07-09 
+|  Kostya Zolotarov 
+|  Enabled aliasing for srcmod commands 
+|  
+* a3202a9 
+|  2015-07-09 
+|  Kostya Zolotarov 
+|  Added install/uninstall commands to general toolkit; Install/uninstall can now handle other source modules 
+|  
+* 0c6d08a 
+|  2015-07-03 
+|  Kostya Zolotarov 
+|  Added run and examples templates (origin/development, origin/HEAD, development) 
+|  
 * 4e51f85 
 |  2015-07-03 
 |  Kostya Zolotarov 
-|  Updated background (HEAD, origin/development, origin/HEAD, development) 
+|  Updated background 
 |  
 * b25bf58 
 |  2015-07-03 

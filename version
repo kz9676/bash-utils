@@ -30,30 +30,16 @@ SOFTWARE.
 
 . ~/.srcmod
 . library.logging.sh
+. library.version.sh
+. library.file.sh
 
 version_file_name=VERSION
 version_file_path=. 
 version_file=$version_file_path/$version_file_name
 
-increment_version() {
-    declare -a part=( ${1//\./ } )
-    declare -i carry=1
-    declare new
-
-    for (( i=${#part[@]}-1; i>=0; i-=1 ));
-    do
-        count=${#part[i]}
-        new=$((part[i]+carry))
-        [ ${#new} -gt $count ] && carry=1 || carry=0
-        [ $i -gt 0 ] && part[i]=${new: -count} || part[i]=${new}
-    done
-
-    new="${part[*]}"
-    echo -e "${new// /.}" > $version_file
-}
-
 if [ -f $version_file ];
 then
+    if_file_is_empty_initialize_with_text $version_file '0.0.0.0'
     printf "$info Reading version ...\n" >&2
     version="$(<$version_file)"
     if [ -n "$version" ];

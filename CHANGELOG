@@ -1,7 +1,22 @@
+* 041cc88 
+|  2015-07-10 
+|  Kostya Zolotarov 
+|  Added list of features (HEAD, development) 
+|  
+* 42eee1d 
+|  2015-07-10 
+|  Kostya Zolotarov 
+|  Updated background 
+|  
+* 720f956 
+|  2015-07-10 
+|  Kostya Zolotarov 
+|  Enabled empty VERSION initialization (origin/development, origin/HEAD) 
+|  
 * 29121e1 
 |  2015-07-10 
 |  Kostya Zolotarov 
-|  Added file library (HEAD, FEATURE-mod-installer) 
+|  Added file library 
 |  
 * 68ce5f4 
 |  2015-07-10 
@@ -21,7 +36,7 @@
 * 0c6d08a 
 |  2015-07-03 
 |  Kostya Zolotarov 
-|  Added run and examples templates (origin/development, origin/HEAD, development) 
+|  Added run and examples templates 
 |  
 * 4e51f85 
 |  2015-07-03 

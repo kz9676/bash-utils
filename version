@@ -31,7 +31,7 @@ SOFTWARE.
 . ~/.srcmod
 . library.logging.sh
 . library.version.sh
-. library.file.sh
+. library.files.sh
 
 version_file_name=VERSION
 version_file_path=. 

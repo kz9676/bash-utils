@@ -5,11 +5,3 @@ Presently, I have one active branch:
     * origin/development  - is the main branch where the source code of HEAD
                             always reflects a state with the latest delivered
                             development changes for the next release
-
-I often use supporting branches to aid parallel development, tracking of
-features, preparation for production release and quick fixes for live
-production defects. Supporting branches may include the following:
-
-    * Feature branches
-    * Release branches
-    * Hotfix branches

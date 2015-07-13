@@ -41,8 +41,26 @@ if_file_is_empty_initialize_with_text() {
     then
         printf "$info Initializing file $file with text $text ...\n" >&2
         printf "$text" > "$file"
-    else 
-        printf "$error File $file not found.\n" >&2
-        exit 1 
     fi 
 }
+
+#rename_files_that_match_pattern() {
+    #search_path=$1
+    #search_pattern=$2
+    #search_query=$search_path/$search_pattern
+    #search_files=()
+    #matched_files=()
+
+    #printf "$info Building a list of search files ...\n" >&2
+    #for file in $search_query
+    #do 
+        #printf "$info Adding $file ...\n" >&2
+        #search_files+=($file)
+    #done
+
+    #printf "$info Listing search files ...\n" >&2
+    #for file in $search_files
+    #do 
+        #printf "$info File: $file \n" >&2
+    #done
+#}

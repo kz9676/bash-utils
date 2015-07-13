@@ -45,7 +45,7 @@ then
     if [ -n "$version" ];
     then
         printf "$info Incrementing version $version ...\n" >&2
-        increment_version $version 
+        increment_version $version $version_file 
     else 
         printf "$error Failed to read previous version.\n" >&2
         exit 1

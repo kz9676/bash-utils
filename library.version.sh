@@ -33,6 +33,7 @@ increment_version() {
     declare -a part=( ${1//\./ } )
     declare -i carry=1
     declare new
+    version_file=$2
 
     for (( i=${#part[@]}-1; i>=0; i-=1 ));
     do

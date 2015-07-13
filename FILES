@@ -1,10 +1,10 @@
 .
-├── [kostya.zolotarov          46 Jul 10 15:28]  ./AUTHORS
+├── [kostya.zolotarov          46 Jul 13 16:29]  ./AUTHORS
 ├── [kostya.zolotarov        1366 Jul 10 13:14]  ./authors
 ├── [kostya.zolotarov         835 Jul 10 15:22]  ./BACKGROUND
 ├── [kostya.zolotarov           0 Jul  3 15:47]  ./BUILD
 ├── [kostya.zolotarov        1434 Jul  9 11:11]  ./build
-├── [kostya.zolotarov        5017 Jul 10 15:28]  ./CHANGELOG
+├── [kostya.zolotarov        5190 Jul 13 16:29]  ./CHANGELOG
 ├── [kostya.zolotarov        1403 Jul 10 13:14]  ./changelog
 ├── [kostya.zolotarov           0 Jul  3 15:47]  ./DEFECTS
 ├── [kostya.zolotarov           0 Jul  3 15:47]  ./DEPENDENCIES
@@ -12,22 +12,22 @@
 ├── [kostya.zolotarov           0 Jul  3 15:47]  ./DESIGN
 ├── [kostya.zolotarov           0 Jul  3 15:47]  ./EXAMPLES
 ├── [kostya.zolotarov         507 Jul 10 14:28]  ./FEATURES
-├── [kostya.zolotarov           0 Jul 10 15:28]  ./FILES
+├── [kostya.zolotarov           0 Jul 13 16:29]  ./FILES
 ├── [kostya.zolotarov        1286 Jul 10 13:14]  ./files
 ├── [kostya.zolotarov           0 Jul  3 15:47]  ./INSTALL
 ├── [kostya.zolotarov        2395 Jul 10 13:14]  ./install
-├── [kostya.zolotarov        1623 Jul 10 15:26]  ./library.files.sh
+├── [kostya.zolotarov        2055 Jul 13 16:28]  ./library.files.sh
 ├── [kostya.zolotarov        1625 Jul  3 16:08]  ./library.logging.sh
-├── [kostya.zolotarov        1628 Jul 10 13:16]  ./library.version.sh
+├── [kostya.zolotarov        1648 Jul 13 15:55]  ./library.version.sh
 ├── [kostya.zolotarov        1083 Jul  3 15:47]  ./LICENSE
-├── [kostya.zolotarov       11065 Jul 10 15:23]  ./README
+├── [kostya.zolotarov       11462 Jul 10 15:28]  ./README
 ├── [kostya.zolotarov        1933 Jul  3 14:11]  ./readme
 ├── [kostya.zolotarov           0 Jul  3 15:47]  ./REQUIREMENTS
 ├── [kostya.zolotarov        1180 Jul 10 15:19]  ./settings.srcmod
 ├── [kostya.zolotarov        2153 Jul 10 13:14]  ./setup
 ├── [kostya.zolotarov         337 Jul 10 13:17]  ./SOURCES
-├── [kostya.zolotarov           0 Jul 10 13:14]  ./TASKS
-├── [kostya.zolotarov        2496 Jun 30 16:53]  ./tasks
+├── [kostya.zolotarov          95 Jul 10 15:28]  ./TASKS
+├── [kostya.zolotarov        2456 Jul 10 16:26]  ./tasks
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.bash
 ├── [kostya.zolotarov           0 Jun 13 13:40]  ./template.c
 ├── [kostya.zolotarov           0 Jul 10 13:14]  ./template.c++
@@ -37,6 +37,6 @@
 ├── [kostya.zolotarov           0 Jul  3 15:47]  ./TEST
 ├── [kostya.zolotarov        2080 Jul 10 13:14]  ./uninstall
 ├── [kostya.zolotarov           8 Jul  3 15:47]  ./VERSION
-└── [kostya.zolotarov        1908 Jul 10 15:18]  ./version
+└── [kostya.zolotarov        1922 Jul 13 15:38]  ./version
 
 0 directories, 39 files

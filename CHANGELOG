@@ -1,7 +1,12 @@
-* c164180 
+* f7f4fb3 
+|  2015-07-14 
+|  Kostya Zolotarov 
+|  New file indexing algorithm (HEAD, development) 
+|  
+* 25b6b23 
 |  2015-07-13 
 |  Kostya Zolotarov 
-|  Fixed VERSION file not found error (HEAD, development) 
+|  Fixed VERSION file not found error (origin/development, origin/HEAD) 
 |  
 * f1440b3 
 |  2015-07-10 
@@ -21,7 +26,7 @@
 * 720f956 
 |  2015-07-10 
 |  Kostya Zolotarov 
-|  Enabled empty VERSION initialization (origin/development, origin/HEAD) 
+|  Enabled empty VERSION initialization 
 |  
 * 29121e1 
 |  2015-07-10 

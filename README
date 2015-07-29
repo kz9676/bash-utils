@@ -5,7 +5,7 @@ modules.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.2.4
+0.0.2.5
 
 [3] AUTHORS ------------------------------------------------------------------
 
@@ -87,7 +87,6 @@ Presently, I have one active branch:
 |--  ./INSTALL
 |--  ./install
 |--  ./library.files.sh
-|--  ./library.logging.sh
 |--  ./library.version.sh
 |--  ./LICENSE
 |--  ./README
@@ -109,7 +108,7 @@ Presently, I have one active branch:
 |--  ./VERSION
 \--  ./version
 
-39 files
+38 files
 
 [8] TASKS --------------------------------------------------------------------
 
@@ -117,10 +116,15 @@ Presently, I have one active branch:
 
 [9] CHANGELOG ----------------------------------------------------------------
 
+* abfe891 
+|  2015-07-28 
+|  Kostya Zolotarov 
+|  Refactored logging library out into a separate source module (HEAD, origin/development, origin/HEAD, development) 
+|  
 * 1406879 
 |  2015-07-16 
 |  Kostya Zolotarov 
-|  Added index file formatting (HEAD, origin/development, origin/HEAD, development) 
+|  Added index file formatting 
 |  
 * f7f4fb3 
 |  2015-07-14 

@@ -17,7 +17,6 @@
 |--  ./INSTALL
 |--  ./install
 |--  ./library.files.sh
-|--  ./library.logging.sh
 |--  ./library.version.sh
 |--  ./LICENSE
 |--  ./README
@@ -39,4 +38,4 @@
 |--  ./VERSION
 \--  ./version
 
-39 files
+38 files

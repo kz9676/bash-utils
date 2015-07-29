@@ -32,7 +32,7 @@ SOFTWARE.
 . ~/.srcmod
 . library.log.sh
 
-printf "$info Building the source module ...\n" >&2
+printf "$information Building the source module ...\n"
 
 ${application_name}_authors
 ${application_name}_changelog

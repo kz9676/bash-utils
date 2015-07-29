@@ -41,26 +41,26 @@ index_file_entry_opening_prefix='.'
 index_file_entry_prefix='|-- '
 index_file_entry_closing_prefix='\-- '
 
-printf "$info Indexing files ...\n" >&2
+printf "$information Indexing files ...\n" >&2
 for input_file in $input_files;
 do 
     if [ -L $input_file ];
     then
         printf "$warning Skipping symlink $input_file ...\n" >&2
     else 
-        printf "$info Indexing $input_file ...\n" >&2
+        printf "$information Indexing $input_file ...\n" >&2
         output_files+=($input_file)
     fi 
 done
 
 >$index_file_name
-printf "$info Recording file index to $index_file ...\n" >&2
+printf "$information Recording file index to $index_file ...\n" >&2
 printf "$index_file_entry_opening_prefix\n" >> $index_file_name
 declare -i output_files_count="${#output_files[*]}"
 for output_file in ${output_files[@]};
 do
     let counter++
-    printf "$info Recording $output_file ...\n" >&2
+    printf "$information Recording $output_file ...\n" >&2
     if [ "$counter" == "$output_files_count" ];
     then
         index_file_entry_prefix=$index_file_entry_closing_prefix

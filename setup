@@ -34,13 +34,13 @@ SOFTWARE.
 
 source_module_name=${PWD##*/}
 
-printf "$info Initializing $source_module_name source module ...\n" >&2
+printf "$information Initializing $source_module_name source module ...\n" >&2
 
 for source_module_template in ${source_module_templates[@]};
 do
     if [ ! -f $source_module_template ];
     then
-        printf "$info Creating $source_module_template ...\n" >&2
+        printf "$information Creating $source_module_template ...\n" >&2
         touch $source_module_template 
     else
         printf "$warning Skipping creating $source_module_template. File already exists.\n" >&2
@@ -51,7 +51,7 @@ for application_executable_file in ${application_executable_files[@]};
 do
     if [ ! -f $application_executable_file ];
     then
-        printf "$info Aliasing $application_executable_file ...\n" >&2
+        printf "$information Aliasing $application_executable_file ...\n" >&2
         ln -s $application_executables_path/"$application_name"_$application_executable_file $application_executable_file 
     else
         printf "$warning Skipping aliasing $application_executable_file. File already exists.\n" >&2

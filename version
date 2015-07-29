@@ -40,11 +40,11 @@ version_file=$version_file_path/$version_file_name
 if [ -f $version_file ];
 then
     if_file_is_empty_initialize_with_text $version_file '0.0.0.0'
-    printf "$info Reading version ...\n" >&2
+    printf "$information Reading version ...\n" >&2
     version="$(<$version_file)"
     if [ -n "$version" ];
     then
-        printf "$info Incrementing version $version ...\n" >&2
+        printf "$information Incrementing version $version ...\n" >&2
         increment_version $version $version_file 
     else 
         printf "$error Failed to read previous version.\n" >&2

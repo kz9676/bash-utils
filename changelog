@@ -34,5 +34,5 @@ SOFTWARE.
 . ~/.srcmod
 . library.log.sh 
 
-printf "$info Building revision history ..." >&2
+printf "$information Building revision history ..." >&2
 git log --pretty=format:"%h %n %ad %n %an %n %s%d %n" --graph --date=short > ./CHANGELOG

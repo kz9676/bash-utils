@@ -32,6 +32,6 @@ SOFTWARE.
 . ~/.srcmod
 . library.log.sh
 
-printf "$info Building list of contributors ...\n" >&2
+printf "$information Building list of contributors ...\n" >&2
 repository_authors="$(git log --format='%an <%ae>' HEAD -n1)"  
 echo $repository_authors > ./AUTHORS

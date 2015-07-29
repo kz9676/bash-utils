@@ -43,6 +43,7 @@ source_module_templates=(
     FEATURES
     REQUIREMENTS
     DESIGN
+    API
     DEPENDENCIES
     SOURCES
     BUILD

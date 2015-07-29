@@ -31,7 +31,7 @@ SOFTWARE.
 
 # TODO - Implement 'include()' function wrapper for Bash's 'source' command
 
-. library.logging.sh
+. library.log.sh
 
 if_file_is_empty_initialize_with_text() {
     file=$1

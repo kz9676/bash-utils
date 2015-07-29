@@ -30,7 +30,9 @@ SOFTWARE.
 '
 
 . ~/.srcmod
-. library.logging.sh
+. library.log.sh
+
+printf "$info Building the source module ...\n" >&2
 
 ${application_name}_authors
 ${application_name}_changelog

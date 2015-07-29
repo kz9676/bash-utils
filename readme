@@ -29,7 +29,7 @@ SOFTWARE.
 '
 
 . ~/.srcmod
-. library.logging.sh
+. library.log.sh
 
 output_file_name=README
 output_file_path=. 

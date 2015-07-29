@@ -30,7 +30,7 @@ SOFTWARE.
 '
 
 . ~/.srcmod
-. library.logging.sh
+. library.log.sh
 
 source_module_name=${PWD##*/}
 

@@ -29,7 +29,7 @@ SOFTWARE.
 '
 
 . ~/.srcmod
-. library.logging.sh
+. library.log.sh
 . library.version.sh
 . library.files.sh
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+!/usr/bin/env bash
 
 : '
 
@@ -32,5 +32,7 @@ SOFTWARE.
 # TODO - Implement word wrapping with text width 80 characters long 
 
 . ~/.srcmod
+. library.log.sh 
 
+printf "$info Building revision history ..." >&2
 git log --pretty=format:"%h %n %ad %n %an %n %s%d %n" --graph --date=short > ./CHANGELOG

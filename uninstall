@@ -30,7 +30,7 @@ SOFTWARE.
 '
 
 . ~/.${PWD##*/}
-. library.logging.sh
+. library.log.sh
 
 # Executables
 for file in ${application_executable_files[@]};

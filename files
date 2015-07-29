@@ -30,7 +30,7 @@ SOFTWARE.
 '
 
 . ~/.srcmod
-. library.logging.sh
+. library.log.sh
 
 input_files=./*
 output_files=()

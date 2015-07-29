@@ -35,7 +35,7 @@ SOFTWARE.
 # TODO - Refactor ***_files to ***_file_name(s) and ***_file_path
 
 . ~/.srcmod
-. library.logging.sh
+. library.log.sh
 
 input_files=./*
 output_file=./TASKS

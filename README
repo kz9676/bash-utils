@@ -5,11 +5,11 @@ modules.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.2.3
+0.0.2.4
 
 [3] AUTHORS ------------------------------------------------------------------
 
-Kostya Zolotarov <Kostya.Zolotarov@globalrelay.net>
+Kostya Zolotarov <kostya.zolotarov@gmail.com>
 
 [4] BACKGROUND ---------------------------------------------------------------
 
@@ -117,15 +117,20 @@ Presently, I have one active branch:
 
 [9] CHANGELOG ----------------------------------------------------------------
 
+* 1406879 
+|  2015-07-16 
+|  Kostya Zolotarov 
+|  Added index file formatting (HEAD, origin/development, origin/HEAD, development) 
+|  
 * f7f4fb3 
 |  2015-07-14 
 |  Kostya Zolotarov 
-|  New file indexing algorithm (HEAD, development) 
+|  New file indexing algorithm 
 |  
 * 25b6b23 
 |  2015-07-13 
 |  Kostya Zolotarov 
-|  Fixed VERSION file not found error (origin/development, origin/HEAD) 
+|  Fixed VERSION file not found error 
 |  
 * f1440b3 
 |  2015-07-10 

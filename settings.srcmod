@@ -29,7 +29,6 @@ application_executable_files=(
     version
 )
 application_library_files=(
-    library.logging.sh
     library.version.sh
     library.files.sh
 )

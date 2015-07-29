@@ -41,18 +41,18 @@ source_module_templates=(
     AUTHORS
     BACKGROUND
     FEATURES
+    FILES
     REQUIREMENTS
     DESIGN
     API
+    EXAMPLES
     DEPENDENCIES
     SOURCES
     BUILD
     TEST
     INSTALL
-    FILES
     TASKS
     DEFECTS
     CHANGELOG
-    EXAMPLES
     LICENSE
 )

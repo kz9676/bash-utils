@@ -5,11 +5,11 @@ modules.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.2.5
+0.0.2.6
 
 [3] AUTHORS ------------------------------------------------------------------
 
-Kostya Zolotarov <kostya.zolotarov@gmail.com>
+Kostya Zolotarov <kzolotarov@localhost.localdomain>
 
 [4] BACKGROUND ---------------------------------------------------------------
 
@@ -56,7 +56,53 @@ similar to the following file structure:
 * install - Install the source module 
 * uninstall - Uninstall the source module 
 
-[6] SOURCES ------------------------------------------------------------------
+[6] FILES --------------------------------------------------------------------
+
+.
+|--  ./API
+|--  ./authors
+|--  ./AUTHORS
+|--  ./BACKGROUND
+|--  ./build
+|--  ./BUILD
+|--  ./changelog
+|--  ./CHANGELOG
+|--  ./DEFECTS
+|--  ./DEPENDENCIES
+|--  ./DESCRIPTION
+|--  ./DESIGN
+|--  ./EXAMPLES
+|--  ./FEATURES
+|--  ./files
+|--  ./FILES
+|--  ./install
+|--  ./INSTALL
+|--  ./library.files.sh
+|--  ./library.version.sh
+|--  ./LICENSE
+|--  ./readme
+|--  ./README
+|--  ./REQUIREMENTS
+|--  ./settings.srcmod
+|--  ./setup
+|--  ./SOURCES
+|--  ./tasks
+|--  ./TASKS
+|--  ./template.bash
+|--  ./template.c
+|--  ./template.c++
+|--  ./template.gitignore
+|--  ./template.java
+|--  ./template.python
+|--  ./template.ruby
+|--  ./TEST
+|--  ./uninstall
+|--  ./version
+\--  ./VERSION
+
+40 files
+
+[7] SOURCES ------------------------------------------------------------------
 
 Source code can be obtained on GitHub (https://github.com/kz9676/srcmod).
 
@@ -66,60 +112,36 @@ Presently, I have one active branch:
                             always reflects a state with the latest delivered
                             development changes for the next release
 
-[7] FILES --------------------------------------------------------------------
-
-.
-|--  ./AUTHORS
-|--  ./authors
-|--  ./BACKGROUND
-|--  ./BUILD
-|--  ./build
-|--  ./CHANGELOG
-|--  ./changelog
-|--  ./DEFECTS
-|--  ./DEPENDENCIES
-|--  ./DESCRIPTION
-|--  ./DESIGN
-|--  ./EXAMPLES
-|--  ./FEATURES
-|--  ./FILES
-|--  ./files
-|--  ./INSTALL
-|--  ./install
-|--  ./library.files.sh
-|--  ./library.version.sh
-|--  ./LICENSE
-|--  ./README
-|--  ./readme
-|--  ./REQUIREMENTS
-|--  ./settings.srcmod
-|--  ./setup
-|--  ./SOURCES
-|--  ./TASKS
-|--  ./tasks
-|--  ./template.bash
-|--  ./template.c
-|--  ./template.c++
-|--  ./template.java
-|--  ./template.python
-|--  ./template.ruby
-|--  ./TEST
-|--  ./uninstall
-|--  ./VERSION
-\--  ./version
-
-38 files
-
 [8] TASKS --------------------------------------------------------------------
 
 ./library.files.sh # TODO - Implement 'include()' function wrapper for Bash's 'source' command
 
 [9] CHANGELOG ----------------------------------------------------------------
 
+* dfcea75 
+|  2015-08-08 
+|  Kostya Zolotarov 
+|  Enabled templates initialization (HEAD -> development) 
+|  
+* 88dddea 
+|  2015-07-29 
+|  Kostya Zolotarov 
+|  Reorganized templates and changed FILES teplate sequence (origin/development, origin/HEAD) 
+|  
+* acfb85c 
+|  2015-07-29 
+|  Kostya Zolotarov 
+|  Added API template 
+|  
+* 37760d1 
+|  2015-07-29 
+|  Kostya Zolotarov 
+|  Refactored information log type 
+|  
 * abfe891 
 |  2015-07-28 
 |  Kostya Zolotarov 
-|  Refactored logging library out into a separate source module (HEAD, origin/development, origin/HEAD, development) 
+|  Refactored logging library out into a separate source module 
 |  
 * 1406879 
 |  2015-07-16 

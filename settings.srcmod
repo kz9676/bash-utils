@@ -13,6 +13,7 @@ application_path=$HOME
 application_executables_path=$application_path/$application_executables_directory
 application_libraries_path=$application_path/$application_libraries_directory
 application_settings_path=$application_path/$application_settings_directory
+application_templates_path=$application_path/$application_templates_directory
 application_logs_path=$application_path/$application_logs_directory
 
 # File settings
@@ -35,6 +36,9 @@ application_library_files=(
 application_setting_files=(
     settings.srcmod
 )
+application_template_files=(
+    template.gitignore
+)
 source_module_templates=(
     DESCRIPTION
     VERSION
@@ -55,4 +59,5 @@ source_module_templates=(
     DEFECTS
     CHANGELOG
     LICENSE
+    .gitignore
 )

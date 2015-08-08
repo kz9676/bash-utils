@@ -1,7 +1,27 @@
+* dfcea75 
+|  2015-08-08 
+|  Kostya Zolotarov 
+|  Enabled templates initialization (HEAD -> development) 
+|  
+* 88dddea 
+|  2015-07-29 
+|  Kostya Zolotarov 
+|  Reorganized templates and changed FILES teplate sequence (origin/development, origin/HEAD) 
+|  
+* acfb85c 
+|  2015-07-29 
+|  Kostya Zolotarov 
+|  Added API template 
+|  
+* 37760d1 
+|  2015-07-29 
+|  Kostya Zolotarov 
+|  Refactored information log type 
+|  
 * abfe891 
 |  2015-07-28 
 |  Kostya Zolotarov 
-|  Refactored logging library out into a separate source module (HEAD, origin/development, origin/HEAD, development) 
+|  Refactored logging library out into a separate source module 
 |  
 * 1406879 
 |  2015-07-16 

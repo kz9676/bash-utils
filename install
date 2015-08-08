@@ -69,3 +69,13 @@ do
     fi 
 done
 
+# Templates
+for file in ${application_template_files[@]};
+do
+    if [ -f $file ];
+    then
+        printf "$information Installing $file ...\n" >&2
+        cp -v ./$file $application_templates_path/$file
+    fi 
+done
+

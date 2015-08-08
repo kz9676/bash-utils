@@ -34,6 +34,15 @@ SOFTWARE.
 
 source_module_name=${PWD##*/}
 
+initialize_source_module_template() {
+    source_module_template_file=$1
+    if [ $source_module_template_file == '.gitignore' ];
+    then
+        printf "$information Initializing $source_module_template_file ...\n" >&2
+        cat $application_templates_path/'template.gitignore' > $source_module_template_file
+    fi 
+}
+
 printf "$information Initializing $source_module_name source module ...\n" >&2
 
 for source_module_template in ${source_module_templates[@]};
@@ -42,6 +51,7 @@ do
     then
         printf "$information Creating $source_module_template ...\n" >&2
         touch $source_module_template 
+        initialize_source_module_template $source_module_template
     else
         printf "$warning Skipping creating $source_module_template. File already exists.\n" >&2
     fi 

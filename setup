@@ -29,8 +29,8 @@ SOFTWARE.
 
 '
 
-. ~/.srcmod
-. library.log.sh
+. ~/.srcmod         # https://github.com/kz9676/srcmod
+. library.log.sh    # https://github.com/kz9676/library.log.sh
 
 source_module_name=${PWD##*/}
 
@@ -45,6 +45,21 @@ initialize_source_module_template() {
 
 printf "$information Initializing $source_module_name source module ...\n" >&2
 
+# Source module descriptors
+
+for source_module_descriptor in ${source_module_descriptors[@]};
+do
+    if [ ! -f $source_module_descriptor ];
+    then
+        printf "$information Creating $source_module_descriptor ...\n" >&2
+        touch $source_module_descriptor 
+    else
+        printf "$warning Skipping creating $source_module_descriptor File already exists.\n" >&2
+    fi 
+done
+
+# Source module templates 
+
 for source_module_template in ${source_module_templates[@]};
 do
     if [ ! -f $source_module_template ];
@@ -53,9 +68,11 @@ do
         touch $source_module_template 
         initialize_source_module_template $source_module_template
     else
-        printf "$warning Skipping creating $source_module_template. File already exists.\n" >&2
+        printf "$warning Skipping creating $source_module_descriptor File already exists.\n" >&2
     fi 
 done
+
+# Application executables
 
 for application_executable_file in ${application_executable_files[@]};
 do

@@ -5,7 +5,7 @@ modules.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.2.7
+0.0.2.8
 
 [3] AUTHORS ------------------------------------------------------------------
 
@@ -135,6 +135,7 @@ module. In the current release, these include:
         * BUILD 
         * CHANGELOG 
         * DEFECTS 
+        * DEPENDENCIES 
         * DESCRIPTION 
         * DESIGN
         * EXAMPLES
@@ -179,10 +180,15 @@ Presently, I have one active branch:
 
 [10] CHANGELOG ---------------------------------------------------------------
 
-* 950797e 
+* 2094056 
 |  2015-08-09 
 |  Kostya Zolotarov 
-|  Added design notes; Started package tool (HEAD -> development) 
+|  Refactored source module descriptors and templates (HEAD -> development) 
+|  
+* 4cc05a9 
+|  2015-08-09 
+|  Kostya Zolotarov 
+|  Added design notes; Started package tool 
 |  
 * 2f6df00 
 |  2015-08-08 

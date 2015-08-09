@@ -1,7 +1,12 @@
-* 950797e 
+* 2094056 
 |  2015-08-09 
 |  Kostya Zolotarov 
-|  Added design notes; Started package tool (HEAD -> development) 
+|  Refactored source module descriptors and templates (HEAD -> development) 
+|  
+* 4cc05a9 
+|  2015-08-09 
+|  Kostya Zolotarov 
+|  Added design notes; Started package tool 
 |  
 * 2f6df00 
 |  2015-08-08 

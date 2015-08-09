@@ -28,6 +28,7 @@ module. In the current release, these include:
         * BUILD 
         * CHANGELOG 
         * DEFECTS 
+        * DEPENDENCIES 
         * DESCRIPTION 
         * DESIGN
         * EXAMPLES

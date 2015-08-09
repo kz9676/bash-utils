@@ -1,14 +1,16 @@
-# Application settings
+# ----------------------------------------------------------------------------#
+# Application settings                                                        #
+# ----------------------------------------------------------------------------#
+
+# Application metadata
 application_name="srcmod"
 
-# Directory settings
+# Application installation path
 application_executables_directory="Programs"
 application_libraries_directory="Programs"
 application_settings_directory=
 application_templates_directory="Templates"
 application_logs_directory="Logs"
-
-# Path settings
 application_path=$HOME
 application_executables_path=$application_path/$application_executables_directory
 application_libraries_path=$application_path/$application_libraries_directory
@@ -16,7 +18,7 @@ application_settings_path=$application_path/$application_settings_directory
 application_templates_path=$application_path/$application_templates_directory
 application_logs_path=$application_path/$application_logs_directory
 
-# File settings
+# Application files 
 application_executable_files=(
     setup
     build
@@ -40,7 +42,14 @@ application_setting_files=(
 application_template_files=(
     template.gitignore
 )
-source_module_templates=(
+
+# ----------------------------------------------------------------------------#
+# Source module settings                                                      #
+# ----------------------------------------------------------------------------#
+
+# Source module descriptors
+source_module_descriptors=(
+    # Order affects ./README chapters
     DESCRIPTION
     VERSION
     AUTHORS
@@ -60,7 +69,10 @@ source_module_templates=(
     DEFECTS
     CHANGELOG
     LICENSE
-    .gitignore
+)
+
+source_module_templates=(
+   .gitignore
 )
 package_source_files=(
 )

@@ -1,0 +1,52 @@
+The 'srcmod' consists of two key parts:
+
+    * Application files 
+    * Source module files
+
+The application files make up collection of tools used to manage a given source
+module. Such tools currently include:
+
+    * ./authors 
+    * ./build 
+    * ./changelog 
+    * ./files 
+    * ./install 
+    * ./package 
+    * ./readme 
+    * ./setup 
+    * ./tasks 
+    * ./uninstall 
+
+The source module files consist of everything that belongs to a given source
+module. In the current release, these include:
+
+    * Descriptors 
+
+        * API 
+        * AUTHORS 
+        * BACKGROUND 
+        * BUILD 
+        * CHANGELOG 
+        * DEFECTS 
+        * DESCRIPTION 
+        * DESIGN
+        * EXAMPLES
+        * FEATURES 
+        * INSTALL 
+        * LICENSE
+        * README 
+        * REQUIREMENTS 
+        * SOURCES 
+        * TASKS 
+        * TEST 
+        * VERSION 
+
+    * Templates
+
+        * template.bash 
+        * template.c 
+        * template.c++ 
+        * template.gitignore 
+        * template.java 
+        * template.python 
+        * template.ruby

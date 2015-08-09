@@ -5,11 +5,11 @@ modules.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.2.6
+0.0.2.7
 
 [3] AUTHORS ------------------------------------------------------------------
 
-Kostya Zolotarov <kzolotarov@localhost.localdomain>
+Kostya Zolotarov <kostya.zolotarov@gmail.com>
 
 [4] BACKGROUND ---------------------------------------------------------------
 
@@ -45,16 +45,16 @@ similar to the following file structure:
 
 [5] FEATURES -----------------------------------------------------------------
 
-* setup - Setup new source module 
-* build - Build the source module 
-* readme - Build/update the source module README file 
-* files - Build/update the source module FILES file 
-* tasks - Build/update the source module TASKS file 
-* authors - Build/update list of the source module contributors
-* changelog - Build/update the source module CHANGELOG file 
-* version - Increment the source module version inside VERSION file 
-* install - Install the source module 
-* uninstall - Uninstall the source module 
+    * setup - Setup new source module 
+    * build - Build the source module 
+    * readme - Build/update the source module README file 
+    * files - Build/update the source module FILES file 
+    * tasks - Build/update the source module TASKS file 
+    * authors - Build/update list of the source module contributors
+    * changelog - Build/update the source module CHANGELOG file 
+    * version - Increment the source module version inside VERSION file 
+    * install - Install the source module 
+    * uninstall - Uninstall the source module 
 
 [6] FILES --------------------------------------------------------------------
 
@@ -80,6 +80,7 @@ similar to the following file structure:
 |--  ./library.files.sh
 |--  ./library.version.sh
 |--  ./LICENSE
+|--  ./package
 |--  ./readme
 |--  ./README
 |--  ./REQUIREMENTS
@@ -100,9 +101,64 @@ similar to the following file structure:
 |--  ./version
 \--  ./VERSION
 
-40 files
+41 files
 
-[7] SOURCES ------------------------------------------------------------------
+[7] DESIGN -------------------------------------------------------------------
+
+The 'srcmod' consists of two key parts:
+
+    * Application files 
+    * Source module files
+
+The application files make up collection of tools used to manage a given source
+module. Such tools currently include:
+
+    * ./authors 
+    * ./build 
+    * ./changelog 
+    * ./files 
+    * ./install 
+    * ./package 
+    * ./readme 
+    * ./setup 
+    * ./tasks 
+    * ./uninstall 
+
+The source module files consist of everything that belongs to a given source
+module. In the current release, these include:
+
+    * Descriptors 
+
+        * API 
+        * AUTHORS 
+        * BACKGROUND 
+        * BUILD 
+        * CHANGELOG 
+        * DEFECTS 
+        * DESCRIPTION 
+        * DESIGN
+        * EXAMPLES
+        * FEATURES 
+        * INSTALL 
+        * LICENSE
+        * README 
+        * REQUIREMENTS 
+        * SOURCES 
+        * TASKS 
+        * TEST 
+        * VERSION 
+
+    * Templates
+
+        * template.bash 
+        * template.c 
+        * template.c++ 
+        * template.gitignore 
+        * template.java 
+        * template.python 
+        * template.ruby
+
+[8] SOURCES ------------------------------------------------------------------
 
 Source code can be obtained on GitHub (https://github.com/kz9676/srcmod).
 
@@ -112,21 +168,31 @@ Presently, I have one active branch:
                             always reflects a state with the latest delivered
                             development changes for the next release
 
-[8] TASKS --------------------------------------------------------------------
+[9] TASKS --------------------------------------------------------------------
 
 ./library.files.sh # TODO - Implement 'include()' function wrapper for Bash's 'source' command
+./package # TODO - Package source files
+./package # TODO - Package executable files
+./package # TODO - Package library files
+./package # TODO - Package setting files
+./package # TODO - Package template files
 
-[9] CHANGELOG ----------------------------------------------------------------
+[10] CHANGELOG ---------------------------------------------------------------
 
-* dfcea75 
+* 950797e 
+|  2015-08-09 
+|  Kostya Zolotarov 
+|  Added design notes; Started package tool (HEAD -> development) 
+|  
+* 2f6df00 
 |  2015-08-08 
 |  Kostya Zolotarov 
-|  Enabled templates initialization (HEAD -> development) 
+|  Enabled templates initialization (origin/development, origin/HEAD) 
 |  
 * 88dddea 
 |  2015-07-29 
 |  Kostya Zolotarov 
-|  Reorganized templates and changed FILES teplate sequence (origin/development, origin/HEAD) 
+|  Reorganized templates and changed FILES teplate sequence 
 |  
 * acfb85c 
 |  2015-07-29 
@@ -433,7 +499,7 @@ Presently, I have one active branch:
    Kostya Zolotarov 
    Initialized repository 
 
-[10] LICENSE -----------------------------------------------------------------
+[11] LICENSE -----------------------------------------------------------------
 
 The MIT License (MIT)
 

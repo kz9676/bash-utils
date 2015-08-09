@@ -25,6 +25,7 @@ application_executable_files=(
     files
     readme
     tasks
+    package
     install
     uninstall
     version
@@ -60,4 +61,16 @@ source_module_templates=(
     CHANGELOG
     LICENSE
     .gitignore
+)
+package_source_files=(
+)
+package_executable_files=(
+    install
+    uninstall
+)
+package_library_files=(
+)
+package_setting_files=(
+)
+package_template_files=(
 )

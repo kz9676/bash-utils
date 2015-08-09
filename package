@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+
+: '
+
+This is the srcmod packager. This tool is used to make source module releases.
+The produced release packages are self-contained and require no outside
+dependencies.
+
+What gets packaged (see ./settings.srcmod):
+
+    - package_source_files
+    - package_executable_files
+    - package_library_files
+    - package_setting_files
+    - package_template_files
+
+This file is part of srcmod project - command-line tool for automated setup and
+maintenance of source code modules. 
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Kostya Zolotarov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+'
+
+. ~/.srcmod         # https://github.com/kz9676/srcmod
+. library.log.sh    # https://github.com/kz9676/library.log.sh
+
+# TODO - Package source files
+# TODO - Package executable files
+# TODO - Package library files
+# TODO - Package setting files
+# TODO - Package template files
+
+# Source files packaging steps
+#
+#   1. Travers through the list of source files and detecting
+#      non-empty files
+#
+#   2. Populate the package_source_files array with non-empty 
+#      source files
+
+

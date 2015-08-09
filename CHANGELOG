@@ -1,12 +1,17 @@
-* dfcea75 
+* 950797e 
+|  2015-08-09 
+|  Kostya Zolotarov 
+|  Added design notes; Started package tool (HEAD -> development) 
+|  
+* 2f6df00 
 |  2015-08-08 
 |  Kostya Zolotarov 
-|  Enabled templates initialization (HEAD -> development) 
+|  Enabled templates initialization (origin/development, origin/HEAD) 
 |  
 * 88dddea 
 |  2015-07-29 
 |  Kostya Zolotarov 
-|  Reorganized templates and changed FILES teplate sequence (origin/development, origin/HEAD) 
+|  Reorganized templates and changed FILES teplate sequence 
 |  
 * acfb85c 
 |  2015-07-29 

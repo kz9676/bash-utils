@@ -31,8 +31,8 @@ SOFTWARE.
 
 # TODO - Implement word wrapping with text width 80 characters long 
 
-. ~/.srcmod
-. library.log.sh 
+. ~/.srcmod         # https://github.com/kz9676/srcmod
+. library.log.sh    # https://github.com/kz9676/library.log.sh
 
 printf "$information Building revision history ..." >&2
 git log --pretty=format:"%h %n %ad %n %an %n %s%d %n" --graph --date=short > ./CHANGELOG

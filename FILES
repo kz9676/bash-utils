@@ -27,6 +27,7 @@
 |--  ./settings.srcmod
 |--  ./setup
 |--  ./SOURCES
+|--  ./srcmod
 |--  ./tasks
 |--  ./TASKS
 |--  ./template.bash
@@ -41,4 +42,4 @@
 |--  ./version
 \--  ./VERSION
 
-41 files
+42 files

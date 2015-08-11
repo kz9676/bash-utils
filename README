@@ -5,7 +5,7 @@ modules.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.2.8
+0.0.2.9
 
 [3] AUTHORS ------------------------------------------------------------------
 
@@ -87,6 +87,7 @@ similar to the following file structure:
 |--  ./settings.srcmod
 |--  ./setup
 |--  ./SOURCES
+|--  ./srcmod
 |--  ./tasks
 |--  ./TASKS
 |--  ./template.bash
@@ -101,7 +102,7 @@ similar to the following file structure:
 |--  ./version
 \--  ./VERSION
 
-41 files
+42 files
 
 [7] DESIGN -------------------------------------------------------------------
 
@@ -180,10 +181,15 @@ Presently, I have one active branch:
 
 [10] CHANGELOG ---------------------------------------------------------------
 
-* 2094056 
+* ca83d75 
+|  2015-08-11 
+|  Kostya Zolotarov 
+|  Added srcmod frontend (HEAD -> development) 
+|  
+* bb54896 
 |  2015-08-09 
 |  Kostya Zolotarov 
-|  Refactored source module descriptors and templates (HEAD -> development) 
+|  Refactored source module descriptors and templates (origin/development, origin/HEAD) 
 |  
 * 4cc05a9 
 |  2015-08-09 
@@ -193,7 +199,7 @@ Presently, I have one active branch:
 * 2f6df00 
 |  2015-08-08 
 |  Kostya Zolotarov 
-|  Enabled templates initialization (origin/development, origin/HEAD) 
+|  Enabled templates initialization 
 |  
 * 88dddea 
 |  2015-07-29 

@@ -71,9 +71,15 @@ source_module_descriptors=(
     LICENSE
 )
 
+# Source module templates
 source_module_templates=(
    .gitignore
 )
+
+# ----------------------------------------------------------------------------#
+# Package settings                                                            #
+# ----------------------------------------------------------------------------#
+
 package_source_files=(
 )
 package_executable_files=(

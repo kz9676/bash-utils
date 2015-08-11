@@ -2,17 +2,7 @@
 
 : '
 
-This is the srcmod packager. This tool is used to make source module releases.
-The produced release packages are self-contained and require no outside
-dependencies.
-
-What gets packaged (see ./settings.srcmod):
-
-    - package_source_files
-    - package_executable_files
-    - package_library_files
-    - package_setting_files
-    - package_template_files
+This is the srcmod frontend.
 
 This file is part of srcmod project - command-line tool for automated setup and
 maintenance of source code modules. 
@@ -44,18 +34,86 @@ SOFTWARE.
 . ~/.srcmod         # https://github.com/kz9676/srcmod
 . library.log.sh    # https://github.com/kz9676/library.log.sh
 
-# TODO - Package source files
-# TODO - Package executable files
-# TODO - Package library files
-# TODO - Package setting files
-# TODO - Package template files
+authors() {
+    "$application_name"_authors 
+}
 
-# Source files packaging steps
-#
-#   1. Travers through the list of source files and detect
-#      non-empty files
-#
-#   2. Populate the package_source_files array with non-empty 
-#      source files
+build() {
+    "$application_name"_build
+}
 
+changelog() {
+    "$application_name"_changelog
+}
+
+files() {
+    "$application_name"_files
+}
+
+install() {
+    "$application_name"_install
+}
+
+package() {
+    "$application_name"_package
+}
+
+readme() {
+    "$application_name"_readme
+}
+
+setup() {
+    "$application_name"_setup
+}
+
+tasks() {
+    "$application_name"_tasks
+}
+
+uninstall() {
+    "$application_name"_uninstall
+}
+
+version() {
+    "$application_name"_version
+}
+
+case "$1" in 
+    authors)
+        authors 
+        ;;
+    build)
+        build 
+        ;;
+    changelog)
+        changelog 
+        ;;
+    files)
+        files 
+        ;;
+    install)
+        install 
+        ;;
+    package)
+        package 
+        ;;
+    readme)
+        readme 
+        ;;
+    setup)
+        setup 
+        ;;
+    tasks)
+        tasks 
+        ;;
+    uninstall)
+        uninstall 
+        ;;
+    version)
+        version 
+        ;;
+    *)
+        echo $"Usage: $0 {authors|build|changelog|files|install|package|readme|setup|tasks|uninstall|version}"
+        exit 1
+esac 
 

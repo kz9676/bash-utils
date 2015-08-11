@@ -30,7 +30,7 @@ SOFTWARE.
 '
 
 . ~/.${PWD##*/}
-. library.log.sh
+. library.log.sh    # https://github.com/kz9676/library.log.sh
 
 # Executables
 for file in ${application_executable_files[@]};

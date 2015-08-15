@@ -8,22 +8,22 @@ From a high level view, I envisioned my source modules to resemble something
 similar to the following file structure:
 
 .
-|--- ./README
-|--- ./VERSION
-|--- ./AUTHORS
-|--- ./CHANGELOG
-|--- ./TASKS
-|--- ./DEFECTS
-|--- ./BUILD
-|--- ./INSTALL
-|--- ./LICENSES
-|--- ./sourcefile.X
-|--- ./sourcefile.Y
-|--- ./sourcefile.Z
-|--- ./library.name.X
-|--- ./library.name.Y
-|--- ./library.name.Z
-|--- ./settings.feature.X
-|--- ./settings.feature.Y
-|--- ./settings.feature.Z
-\--- etc.
+|-- ./README
+|-- ./VERSION
+|-- ./AUTHORS
+|-- ./CHANGELOG
+|-- ./TASKS
+|-- ./DEFECTS
+|-- ./BUILD
+|-- ./INSTALL
+|-- ./LICENSES
+|-- ./sourcefile.X
+|-- ./sourcefile.Y
+|-- ./sourcefile.Z
+|-- ./library.name.X
+|-- ./library.name.Y
+|-- ./library.name.Z
+|-- ./settings.feature.X
+|-- ./settings.feature.Y
+|-- ./settings.feature.Z
+\-- etc.

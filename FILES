@@ -30,16 +30,15 @@
 |--  ./srcmod
 |--  ./tasks
 |--  ./TASKS
-|--  ./template.bash
-|--  ./template.c
-|--  ./template.c++
+|--  ./template.bash.configuration
+|--  ./template.bash.executable
+|--  ./template.bash.function
+|--  ./template.bash.test
+|--  ./template.bash.variable
 |--  ./template.gitignore
-|--  ./template.java
-|--  ./template.python
-|--  ./template.ruby
 |--  ./TEST
 |--  ./uninstall
 |--  ./version
 \--  ./VERSION
 
-42 files
+41 files

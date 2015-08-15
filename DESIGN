@@ -3,6 +3,8 @@ The 'srcmod' consists of two key parts:
     * Application files 
     * Source module files
 
+1. Application Files
+
 The application files make up collection of tools used to manage a given source
 module. Such tools currently include:
 
@@ -17,37 +19,62 @@ module. Such tools currently include:
     * ./tasks 
     * ./uninstall 
 
+2. Source module files
+
 The source module files consist of everything that belongs to a given source
 module. In the current release, these include:
 
-    * Descriptors 
+    2.1 Descriptors 
 
-        * API 
-        * AUTHORS 
-        * BACKGROUND 
-        * BUILD 
-        * CHANGELOG 
-        * DEFECTS 
-        * DEPENDENCIES 
-        * DESCRIPTION 
-        * DESIGN
-        * EXAMPLES
-        * FEATURES 
-        * INSTALL 
-        * LICENSE
-        * README 
-        * REQUIREMENTS 
-        * SOURCES 
-        * TASKS 
-        * TEST 
-        * VERSION 
+        * ./API 
+        * ./AUTHORS 
+        * ./BACKGROUND 
+        * ./BUILD 
+        * ./CHANGELOG 
+        * ./DEFECTS 
+        * ./DEPENDENCIES 
+        * ./DESCRIPTION 
+        * ./DESIGN
+        * ./EXAMPLES
+        * ./FEATURES 
+        * ./INSTALL 
+        * ./LICENSE
+        * ./README 
+        * ./REQUIREMENTS 
+        * ./SOURCES 
+        * ./TASKS 
+        * ./TEST 
+        * ./VERSION 
 
-    * Templates
+    2.2 Templates
 
-        * template.bash 
-        * template.c 
-        * template.c++ 
-        * template.gitignore 
-        * template.java 
-        * template.python 
-        * template.ruby
+        * ./template.bash.executable 
+        * ./template.bash.variable 
+        * ./template.bash.function 
+        * ./template.bash.test 
+        * ./template.bash.configuration 
+        * ./template.gitignore 
+
+    2.3 Variables
+
+        * ./variable.[name]
+        * ./variable.[name]
+        * etc. 
+
+    2.4 Functions
+
+        * ./function.[name]
+        * ./function.[name]
+        * etc. 
+
+    2.5 Tests
+
+        * ./test.[name]
+        * ./test.[name]
+        * etc. 
+
+    2.6 Configurations
+
+        * ./configuration.[name]
+        * ./configuration.[name]
+        * etc. 

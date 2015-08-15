@@ -1,12 +1,12 @@
-* ca83d75 
+* e612bfd 
 |  2015-08-11 
 |  Kostya Zolotarov 
-|  Added srcmod frontend (HEAD -> development) 
+|  Added srcmod frontend (HEAD -> development, origin/development, origin/HEAD) 
 |  
 * bb54896 
 |  2015-08-09 
 |  Kostya Zolotarov 
-|  Refactored source module descriptors and templates (origin/development, origin/HEAD) 
+|  Refactored source module descriptors and templates 
 |  
 * 4cc05a9 
 |  2015-08-09 

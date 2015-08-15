@@ -31,6 +31,7 @@ application_executable_files=(
     install
     uninstall
     version
+    srcmod
 )
 application_library_files=(
     library.version.sh

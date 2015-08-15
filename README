@@ -5,7 +5,7 @@ modules.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.2.9
+0.0.3.0
 
 [3] AUTHORS ------------------------------------------------------------------
 
@@ -23,25 +23,25 @@ From a high level view, I envisioned my source modules to resemble something
 similar to the following file structure:
 
 .
-|--- ./README
-|--- ./VERSION
-|--- ./AUTHORS
-|--- ./CHANGELOG
-|--- ./TASKS
-|--- ./DEFECTS
-|--- ./BUILD
-|--- ./INSTALL
-|--- ./LICENSES
-|--- ./sourcefile.X
-|--- ./sourcefile.Y
-|--- ./sourcefile.Z
-|--- ./library.name.X
-|--- ./library.name.Y
-|--- ./library.name.Z
-|--- ./settings.feature.X
-|--- ./settings.feature.Y
-|--- ./settings.feature.Z
-\--- etc.
+|-- ./README
+|-- ./VERSION
+|-- ./AUTHORS
+|-- ./CHANGELOG
+|-- ./TASKS
+|-- ./DEFECTS
+|-- ./BUILD
+|-- ./INSTALL
+|-- ./LICENSES
+|-- ./sourcefile.X
+|-- ./sourcefile.Y
+|-- ./sourcefile.Z
+|-- ./library.name.X
+|-- ./library.name.Y
+|-- ./library.name.Z
+|-- ./settings.feature.X
+|-- ./settings.feature.Y
+|-- ./settings.feature.Z
+\-- etc.
 
 [5] FEATURES -----------------------------------------------------------------
 
@@ -90,19 +90,18 @@ similar to the following file structure:
 |--  ./srcmod
 |--  ./tasks
 |--  ./TASKS
-|--  ./template.bash
-|--  ./template.c
-|--  ./template.c++
+|--  ./template.bash.configuration
+|--  ./template.bash.executable
+|--  ./template.bash.function
+|--  ./template.bash.test
+|--  ./template.bash.variable
 |--  ./template.gitignore
-|--  ./template.java
-|--  ./template.python
-|--  ./template.ruby
 |--  ./TEST
 |--  ./uninstall
 |--  ./version
 \--  ./VERSION
 
-42 files
+41 files
 
 [7] DESIGN -------------------------------------------------------------------
 
@@ -110,6 +109,8 @@ The 'srcmod' consists of two key parts:
 
     * Application files 
     * Source module files
+
+1. Application Files
 
 The application files make up collection of tools used to manage a given source
 module. Such tools currently include:
@@ -125,40 +126,65 @@ module. Such tools currently include:
     * ./tasks 
     * ./uninstall 
 
+2. Source module files
+
 The source module files consist of everything that belongs to a given source
 module. In the current release, these include:
 
-    * Descriptors 
+    2.1 Descriptors 
 
-        * API 
-        * AUTHORS 
-        * BACKGROUND 
-        * BUILD 
-        * CHANGELOG 
-        * DEFECTS 
-        * DEPENDENCIES 
-        * DESCRIPTION 
-        * DESIGN
-        * EXAMPLES
-        * FEATURES 
-        * INSTALL 
-        * LICENSE
-        * README 
-        * REQUIREMENTS 
-        * SOURCES 
-        * TASKS 
-        * TEST 
-        * VERSION 
+        * ./API 
+        * ./AUTHORS 
+        * ./BACKGROUND 
+        * ./BUILD 
+        * ./CHANGELOG 
+        * ./DEFECTS 
+        * ./DEPENDENCIES 
+        * ./DESCRIPTION 
+        * ./DESIGN
+        * ./EXAMPLES
+        * ./FEATURES 
+        * ./INSTALL 
+        * ./LICENSE
+        * ./README 
+        * ./REQUIREMENTS 
+        * ./SOURCES 
+        * ./TASKS 
+        * ./TEST 
+        * ./VERSION 
 
-    * Templates
+    2.2 Templates
 
-        * template.bash 
-        * template.c 
-        * template.c++ 
-        * template.gitignore 
-        * template.java 
-        * template.python 
-        * template.ruby
+        * ./template.bash.executable 
+        * ./template.bash.variable 
+        * ./template.bash.function 
+        * ./template.bash.test 
+        * ./template.bash.configuration 
+        * ./template.gitignore 
+
+    2.3 Variables
+
+        * ./variable.[name]
+        * ./variable.[name]
+        * etc. 
+
+    2.4 Functions
+
+        * ./function.[name]
+        * ./function.[name]
+        * etc. 
+
+    2.5 Tests
+
+        * ./test.[name]
+        * ./test.[name]
+        * etc. 
+
+    2.6 Configurations
+
+        * ./configuration.[name]
+        * ./configuration.[name]
+        * etc. 
 
 [8] SOURCES ------------------------------------------------------------------
 
@@ -181,15 +207,15 @@ Presently, I have one active branch:
 
 [10] CHANGELOG ---------------------------------------------------------------
 
-* ca83d75 
+* e612bfd 
 |  2015-08-11 
 |  Kostya Zolotarov 
-|  Added srcmod frontend (HEAD -> development) 
+|  Added srcmod frontend (HEAD -> development, origin/development, origin/HEAD) 
 |  
 * bb54896 
 |  2015-08-09 
 |  Kostya Zolotarov 
-|  Refactored source module descriptors and templates (origin/development, origin/HEAD) 
+|  Refactored source module descriptors and templates 
 |  
 * 4cc05a9 
 |  2015-08-09 

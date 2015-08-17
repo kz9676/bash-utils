@@ -5,7 +5,7 @@ modules.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.3.0
+0.0.3.1
 
 [3] AUTHORS ------------------------------------------------------------------
 
@@ -67,6 +67,7 @@ similar to the following file structure:
 |--  ./BUILD
 |--  ./changelog
 |--  ./CHANGELOG
+|--  ./configuration.srcmod
 |--  ./DEFECTS
 |--  ./DEPENDENCIES
 |--  ./DESCRIPTION
@@ -84,7 +85,6 @@ similar to the following file structure:
 |--  ./readme
 |--  ./README
 |--  ./REQUIREMENTS
-|--  ./settings.srcmod
 |--  ./setup
 |--  ./SOURCES
 |--  ./srcmod
@@ -112,7 +112,7 @@ The 'srcmod' consists of two key parts:
 
 1. Application Files
 
-The application files make up collection of tools used to manage a given source
+The application files make up collection of tools to manage a given source
 module. Such tools currently include:
 
     * ./authors 
@@ -202,15 +202,25 @@ Presently, I have one active branch:
 ./package # TODO - Package source files
 ./package # TODO - Package executable files
 ./package # TODO - Package library files
-./package # TODO - Package setting files
+./package # TODO - Package configuration files
 ./package # TODO - Package template files
 
 [10] CHANGELOG ---------------------------------------------------------------
 
+* 4bbfdb4 
+|  2015-08-17 
+|  Kostya Zolotarov 
+|  Migrated from settings to configuration notation (HEAD -> development) 
+|  
+* c9d6683 
+|  2015-08-14 
+|  Kostya Zolotarov 
+|  Added filecetera notation bash templates (origin/development, origin/HEAD) 
+|  
 * e612bfd 
 |  2015-08-11 
 |  Kostya Zolotarov 
-|  Added srcmod frontend (HEAD -> development, origin/development, origin/HEAD) 
+|  Added srcmod frontend 
 |  
 * bb54896 
 |  2015-08-09 

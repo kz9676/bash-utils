@@ -7,6 +7,7 @@
 |--  ./BUILD
 |--  ./changelog
 |--  ./CHANGELOG
+|--  ./configuration.srcmod
 |--  ./DEFECTS
 |--  ./DEPENDENCIES
 |--  ./DESCRIPTION
@@ -24,7 +25,6 @@
 |--  ./readme
 |--  ./README
 |--  ./REQUIREMENTS
-|--  ./settings.srcmod
 |--  ./setup
 |--  ./SOURCES
 |--  ./srcmod

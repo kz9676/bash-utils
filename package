@@ -6,12 +6,12 @@ This is the srcmod packager. This tool is used to make source module releases.
 The produced release packages are self-contained and require no outside
 dependencies.
 
-What gets packaged (see ./settings.srcmod):
+What gets packaged (see ./configurations.srcmod):
 
     - package_source_files
     - package_executable_files
     - package_library_files
-    - package_setting_files
+    - package_configuration_files
     - package_template_files
 
 This file is part of srcmod project - command-line tool for automated setup and
@@ -47,7 +47,7 @@ SOFTWARE.
 # TODO - Package source files
 # TODO - Package executable files
 # TODO - Package library files
-# TODO - Package setting files
+# TODO - Package configuration files
 # TODO - Package template files
 
 # Source files packaging steps

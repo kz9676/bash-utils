@@ -1,7 +1,17 @@
+* 4bbfdb4 
+|  2015-08-17 
+|  Kostya Zolotarov 
+|  Migrated from settings to configuration notation (HEAD -> development) 
+|  
+* c9d6683 
+|  2015-08-14 
+|  Kostya Zolotarov 
+|  Added filecetera notation bash templates (origin/development, origin/HEAD) 
+|  
 * e612bfd 
 |  2015-08-11 
 |  Kostya Zolotarov 
-|  Added srcmod frontend (HEAD -> development, origin/development, origin/HEAD) 
+|  Added srcmod frontend 
 |  
 * bb54896 
 |  2015-08-09 

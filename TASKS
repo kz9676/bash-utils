@@ -2,5 +2,5 @@
 ./package # TODO - Package source files
 ./package # TODO - Package executable files
 ./package # TODO - Package library files
-./package # TODO - Package setting files
+./package # TODO - Package configuration files
 ./package # TODO - Package template files

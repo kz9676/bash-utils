@@ -29,15 +29,10 @@ SOFTWARE.
 
 '
 
-# NOTE - Source module parent directory name must match the source module's
-#        settings file name extension (see ./settings.${PWD##*/}). As an 
-#        example, source module named 'calmod' must have its parent directory
-#        named 'calmod' (eg. /home/userxyz/builds/calmod). Correspondingly,
-#        the very same source module's settings file must be accordingly
-#        named 'settings.calmod' (eg. ~/builds/calmod/settings.calmod)
+# TODO - Implement sourcing for libraries
 
-. ./settings.${PWD##*/}
-. library.log.sh    # https://github.com/kz9676/library.log.sh
+. ./configuration.*     # Local configuration files
+. library.log.sh        # https://github.com/kz9676/library.log.sh
 
 # Executables
 for file in ${application_executable_files[@]};
@@ -55,17 +50,17 @@ do
     if [ -f $file ];
     then
         printf "$information Installing $file ...\n" >&2
-        cp -v ./$file $application_libraries_path/$file
+        cp -v ./$file $application_libraries_path/$file 
     fi 
 done
 
-# Settings
-for file in ${application_setting_files[@]};
+# Configurations
+for file in ${application_configuration_files[@]};
 do
     if [ -f $file ];
     then
         printf "$information Installing $file ...\n" >&2
-        cp -v ./$file $application_settings_path/.$application_name
+        cp -v ./$file $application_configurations_path/.$application_name
     fi 
 done
 

@@ -5,7 +5,7 @@ The 'srcmod' consists of two key parts:
 
 1. Application Files
 
-The application files make up collection of tools used to manage a given source
+The application files make up collection of tools to manage a given source
 module. Such tools currently include:
 
     * ./authors 

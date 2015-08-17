@@ -29,7 +29,7 @@ SOFTWARE.
 
 '
 
-. ~/.${PWD##*/}
+. ~/.${PWD##*/}     # User configuration file
 . library.log.sh    # https://github.com/kz9676/library.log.sh
 
 # Executables
@@ -55,13 +55,13 @@ do
 done
 
 # Settings
-for file in ${application_setting_files[@]};
+for file in ${application_configuration_files[@]};
 do
-    setting_file=$application_settings_path/.${application_name}
-    if [ -f $setting_file ];
+    configuration_file=$application_configurations_path/.${application_name}
+    if [ -f $configuration_file ];
     then
-        printf "$information Uninstalling $setting_file ...\n" >&2
-        rm -fv $setting_file
+        printf "$information Uninstalling $configuration_file ...\n" >&2
+        rm -fv $configuration_file
     fi 
 done
 

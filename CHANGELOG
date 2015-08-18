@@ -1,7 +1,12 @@
+* 6f0c133 
+|  2015-08-18 
+|  Kostya Zolotarov 
+|  Switched to library.version.sh (HEAD -> development, origin/development, origin/HEAD) 
+|  
 * 91a45f9 
 |  2015-08-18 
 |  Kostya Zolotarov 
-|  Switched to library.file.sh (HEAD -> development, origin/development, origin/HEAD) 
+|  Switched to library.file.sh 
 |  
 * 0890961 
 |  2015-08-17 

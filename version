@@ -44,20 +44,20 @@ then
     if [ $? == 0 ];
     then
         version_number='0.0.0.0'
-        printf "$info Initializing $version_file with $version_number ...\n" >&2
+        log information "Initializing $version_file with $version_number ..."
         printf "$version_number" > "$version_file"
     fi 
-    printf "$information Reading version ...\n" >&2
+    log information "Reading version ..."
     version="$(<$version_file)"
     if [ -n "$version" ];
     then
-        printf "$information Incrementing version $version ...\n" >&2
+        log information "Incrementing version $version ..."
         increment_version $version $version_file 
     else 
-        printf "$error Failed to read previous version.\n" >&2
+        log error "Failed to read previous version."
         exit 1
     fi 
 else 
-    printf "$error Failed to increment version. $version_file not found.\n" >&2
+    log error "Failed to increment version. $version_file not found."
     exit 1
 fi 

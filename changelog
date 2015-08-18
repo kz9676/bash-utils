@@ -34,5 +34,5 @@ SOFTWARE.
 . ~/.srcmod         # https://github.com/kz9676/srcmod
 . library.log.sh    # https://github.com/kz9676/library.log.sh
 
-printf "$information Building revision history ..." >&2
+log information "Building revision history ..."
 git log --pretty=format:"%h %n %ad %n %an %n %s%d %n" --graph --date=short > ./CHANGELOG

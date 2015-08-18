@@ -39,7 +39,7 @@ for file in ${application_executable_files[@]};
 do
     if [ -f $file ];
     then
-        printf "$information Installing $file ...\n" >&2
+        log information "Installing $file ..."
         cp -v ./$file $application_executables_path/${application_name}_$file
     fi 
 done
@@ -49,7 +49,7 @@ for file in ${application_library_files[@]};
 do
     if [ -f $file ];
     then
-        printf "$information Installing $file ...\n" >&2
+        log information "Installing $file ..."
         cp -v ./$file $application_libraries_path/$file 
     fi 
 done
@@ -59,7 +59,7 @@ for file in ${application_configuration_files[@]};
 do
     if [ -f $file ];
     then
-        printf "$information Installing $file ...\n" >&2
+        log information "Installing $file ..."
         cp -v ./$file $application_configurations_path/.$application_name
     fi 
 done
@@ -69,7 +69,7 @@ for file in ${application_template_files[@]};
 do
     if [ -f $file ];
     then
-        printf "$information Installing $file ...\n" >&2
+        log information "Installing $file ..."
         cp -v ./$file $application_templates_path/$file
     fi 
 done

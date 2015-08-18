@@ -36,16 +36,16 @@ output_file_path=.
 output_file=$output_file_path/$output_file_name
 
 > $output_file
-printf "$information Updating $output_file ...\n" >&2
+log information "Updating $output_file ..."
 for source_module_file in ${source_module_descriptors[@]};
 do
     if [ -s $source_module_file ];
     then
         source_module_file_text="$(<$source_module_file)"
-        printf "$information Writing section title for $source_module_file ... \n" >&2
+        log information "Writing section title for $source_module_file ..."
         let counter++ 
         numbered_heading "$counter" "$source_module_file" | xargs printf "%s\n\n" >> $output_file
-        printf "$information Writing contents of $source_module_file ... \n" >&2
+        log information "Writing contents of $source_module_file ..."
         printf "$source_module_file_text\n\n" >> $output_file 
     fi 
 done

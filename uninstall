@@ -38,7 +38,7 @@ do
     executable_file=$application_executables_path/${application_name}_$file
     if [ -f $executable_file ];
     then
-        printf "$information Uninstalling $executable_file ...\n" >&2
+        log information "Uninstalling $executable_file ..."
         rm -fv $executable_file 
     fi 
 done
@@ -49,7 +49,7 @@ do
     library_file=$application_libraries_path/$file
     if [ -f $library_file ];
     then
-        printf "$information Uninstalling $library_file ...\n" >&2
+        log information "Uninstalling $library_file ..."
         rm -fv $library_file
     fi 
 done
@@ -60,7 +60,7 @@ do
     configuration_file=$application_configurations_path/.${application_name}
     if [ -f $configuration_file ];
     then
-        printf "$information Uninstalling $configuration_file ...\n" >&2
+        log information "Uninstalling $configuration_file ..."
         rm -fv $configuration_file
     fi 
 done

@@ -113,7 +113,7 @@ case "$1" in
         version 
         ;;
     *)
-        echo $"Usage: $0 {authors|build|changelog|files|install|package|readme|setup|tasks|uninstall|version}"
+        echo $"Usage: srcmod {authors|build|changelog|files|install|package|readme|setup|tasks|uninstall|version}"
         exit 1
 esac 
 

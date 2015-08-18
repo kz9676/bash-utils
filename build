@@ -32,7 +32,7 @@ SOFTWARE.
 . ~/.srcmod         # https://github.com/kz9676/srcmod
 . library.log.sh    # https://github.com/kz9676/library.log.sh
 
-printf "$information Building the source module ...\n"
+log information "Building the source module ..."
 
 ${application_name}_authors
 ${application_name}_changelog

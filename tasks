@@ -45,13 +45,13 @@ search_keyword=TODO
 > $output_file
 for input_file in $input_files
 do
-    printf "$information Selecting $input_file ...\n" >&2
+    log information "Selecting $input_file ..."
     for exclude_file in ${exclude_files[@]};
     do 
-        printf "$information Comparing $input_file and $exclude_file ...\n" >&2
+        log information "Comparing $input_file and $exclude_file ..."
         if [ $input_file == $exclude_file ];
         then
-            printf "$information Excluding $input_file ...\n" >&2
+            log information "Excluding $input_file ..."
             exclude_file_match_found=true
             break
         else 
@@ -60,7 +60,7 @@ do
     done
     if [[ $exclude_file_match_found == false ]];
     then
-        printf "$information Scanning $input_file ...\n" >&2
+        log information "Scanning $input_file ..."
         while read line; 
         do 
             echo $line | grep $search_keyword > /dev/null

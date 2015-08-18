@@ -32,6 +32,6 @@ SOFTWARE.
 . ~/.srcmod         # https://github.com/kz9676/srcmod
 . library.log.sh    # https://github.com/kz9676/library.log.sh
 
-printf "$information Building list of contributors ...\n" >&2
+log information "Building list of contributors ..."
 repository_authors="$(git log --format='%an <%ae>' HEAD -n1)"  
 echo $repository_authors > ./AUTHORS

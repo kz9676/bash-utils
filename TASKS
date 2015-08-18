@@ -1,4 +1,4 @@
-./library.files.sh # TODO - Implement 'include()' function wrapper for Bash's 'source' command
+./install # TODO - Implement sourcing for libraries
 ./package # TODO - Package source files
 ./package # TODO - Package executable files
 ./package # TODO - Package library files

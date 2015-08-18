@@ -1,12 +1,12 @@
-* 4bbfdb4 
+* 0890961 
 |  2015-08-17 
 |  Kostya Zolotarov 
-|  Migrated from settings to configuration notation (HEAD -> development) 
+|  Migrated from settings to configuration notation (HEAD -> development, origin/development, origin/HEAD) 
 |  
 * c9d6683 
 |  2015-08-14 
 |  Kostya Zolotarov 
-|  Added filecetera notation bash templates (origin/development, origin/HEAD) 
+|  Added filecetera notation bash templates 
 |  
 * e612bfd 
 |  2015-08-11 

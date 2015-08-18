@@ -5,7 +5,7 @@ modules.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.3.1
+0.0.3.2
 
 [3] AUTHORS ------------------------------------------------------------------
 
@@ -78,7 +78,6 @@ similar to the following file structure:
 |--  ./FILES
 |--  ./install
 |--  ./INSTALL
-|--  ./library.files.sh
 |--  ./library.version.sh
 |--  ./LICENSE
 |--  ./package
@@ -101,7 +100,7 @@ similar to the following file structure:
 |--  ./version
 \--  ./VERSION
 
-41 files
+40 files
 
 [7] DESIGN -------------------------------------------------------------------
 
@@ -198,7 +197,7 @@ Presently, I have one active branch:
 
 [9] TASKS --------------------------------------------------------------------
 
-./library.files.sh # TODO - Implement 'include()' function wrapper for Bash's 'source' command
+./install # TODO - Implement sourcing for libraries
 ./package # TODO - Package source files
 ./package # TODO - Package executable files
 ./package # TODO - Package library files
@@ -207,15 +206,15 @@ Presently, I have one active branch:
 
 [10] CHANGELOG ---------------------------------------------------------------
 
-* 4bbfdb4 
+* 0890961 
 |  2015-08-17 
 |  Kostya Zolotarov 
-|  Migrated from settings to configuration notation (HEAD -> development) 
+|  Migrated from settings to configuration notation (HEAD -> development, origin/development, origin/HEAD) 
 |  
 * c9d6683 
 |  2015-08-14 
 |  Kostya Zolotarov 
-|  Added filecetera notation bash templates (origin/development, origin/HEAD) 
+|  Added filecetera notation bash templates 
 |  
 * e612bfd 
 |  2015-08-11 

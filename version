@@ -28,10 +28,10 @@ SOFTWARE.
 
 '
 
-. ~/.srcmod         # https://github.com/kz9676/srcmod
-. library.log.sh    # https://github.com/kz9676/library.log.sh
+. ~/.srcmod             # https://github.com/kz9676/srcmod
+. library.log.sh        # https://github.com/kz9676/library.log.sh
+. library.file.sh       # https://github.com/kz9676/library.file.sh
 . library.version.sh
-. library.files.sh
 
 version_file_name=VERSION
 version_file_path=. 
@@ -39,7 +39,14 @@ version_file=$version_file_path/$version_file_name
 
 if [ -f $version_file ];
 then
-    if_file_is_empty_initialize_with_text $version_file '0.0.0.0'
+    # If ./VERSION file is empty, initialize it with '0.0.0.0'
+    file assert empty "$version_file"
+    if [ $? == 0 ];
+    then
+        version_number='0.0.0.0'
+        printf "$info Initializing $version_file with $version_number ...\n" >&2
+        printf "$version_number" > "$version_file"
+    fi 
     printf "$information Reading version ...\n" >&2
     version="$(<$version_file)"
     if [ -n "$version" ];

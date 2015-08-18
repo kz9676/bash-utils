@@ -1,7 +1,12 @@
+* 91a45f9 
+|  2015-08-18 
+|  Kostya Zolotarov 
+|  Switched to library.file.sh (HEAD -> development, origin/development, origin/HEAD) 
+|  
 * 0890961 
 |  2015-08-17 
 |  Kostya Zolotarov 
-|  Migrated from settings to configuration notation (HEAD -> development, origin/development, origin/HEAD) 
+|  Migrated from settings to configuration notation 
 |  
 * c9d6683 
 |  2015-08-14 

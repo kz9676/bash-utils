@@ -18,7 +18,6 @@
 |--  ./FILES
 |--  ./install
 |--  ./INSTALL
-|--  ./library.version.sh
 |--  ./LICENSE
 |--  ./package
 |--  ./readme
@@ -40,4 +39,4 @@
 |--  ./version
 \--  ./VERSION
 
-40 files
+39 files

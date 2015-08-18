@@ -5,12 +5,14 @@
 # Application metadata
 application_name="srcmod"
 
-# Application installation path
+# Application installation directories
 application_executables_directory="Programs"
 application_libraries_directory="Programs"
-application_configurations_directory=
+application_configurations_directory="Settings"
 application_templates_directory="Templates"
 application_logs_directory="Logs"
+
+# Application installation path settings
 application_path=$HOME
 application_executables_path=$application_path/$application_executables_directory
 application_libraries_path=$application_path/$application_libraries_directory
@@ -34,14 +36,45 @@ application_executable_files=(
     srcmod
 )
 application_library_files=(
-    library.version.sh
-    library.files.sh
 )
 application_configuration_files=(
     configuration.srcmod
 )
 application_template_files=(
     template.gitignore
+)
+
+# ----------------------------------------------------------------------------#
+# User configuration                                                          #
+# ----------------------------------------------------------------------------#
+
+# User metadata
+user_name=$USER
+
+# User installation directories
+user_executables_directory="Programs"
+user_libraries_directory="Programs"
+user_configurations_directory=
+user_templates_directory="Templates"
+user_logs_directory="Logs"
+
+# User installation path settings
+user_path=$HOME
+user_executables_path=$user_path/$user_executables_directory
+user_libraries_path=$user_path/$user_libraries_directory
+user_configurations_path=$user_path/$user_configurations_directory
+user_templates_path=$user_path/$user_templates_directory
+user_logs_path=$user_path/$user_logs_directory
+
+# User files 
+user_executable_files=(
+)
+user_library_files=(
+)
+user_configuration_files=(
+    configuration.srcmod
+)
+user_template_files=(
 )
 
 # ----------------------------------------------------------------------------#
@@ -93,3 +126,4 @@ package_configuration_files=(
 )
 package_template_files=(
 )
+

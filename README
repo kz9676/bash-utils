@@ -5,7 +5,7 @@ modules.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.3.4
+0.0.3.5
 
 [3] AUTHORS ------------------------------------------------------------------
 
@@ -205,10 +205,20 @@ Presently, I have one active branch:
 
 [10] CHANGELOG ---------------------------------------------------------------
 
+* 33675f1 
+|  2015-08-18 
+|  Kostya Zolotarov 
+|  Added user configuration settings (HEAD -> development, origin/development, origin/HEAD) 
+|  
+* 4425998 
+|  2015-08-18 
+|  Kostya Zolotarov 
+|  Switched to library.log.sh 
+|  
 * 6f0c133 
 |  2015-08-18 
 |  Kostya Zolotarov 
-|  Switched to library.version.sh (HEAD -> development, origin/development, origin/HEAD) 
+|  Switched to library.version.sh 
 |  
 * 91a45f9 
 |  2015-08-18 

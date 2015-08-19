@@ -29,8 +29,8 @@ SOFTWARE.
 
 '
 
-. ~/.srcmod         # https://github.com/kz9676/srcmod
-. library.log.sh    # https://github.com/kz9676/library.log.sh
+. configuration.srcmod      # https://github.com/kz9676/srcmod
+. library.log.sh            # https://github.com/kz9676/library.log.sh
 
 source_module_name=${PWD##*/}
 

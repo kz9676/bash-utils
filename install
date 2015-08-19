@@ -31,10 +31,24 @@ SOFTWARE.
 
 # TODO - Implement sourcing for libraries
 
-. ./configuration.*     # Local configuration files
+. ./configuration.*     # Build target's local configuration files
 . library.log.sh        # https://github.com/kz9676/library.log.sh
 
-# Executables
+## Executables
+
+if [ ! -d $application_executables_path ];
+then
+    log warning "Application executables directory is not found - $application_executables_path"
+    log information "Creating application executables directory - $application_executables_path"
+    mkdir -p $application_executables_path
+    if [ $? = 0 ];
+    then 
+        log success "Created application executables directory - $application_executables_path"
+    else 
+        log error "Failed to create application executables directory - $application_executables_path"
+    fi 
+fi 
+
 for file in ${application_executable_files[@]};
 do
     if [ -f $file ];
@@ -43,6 +57,7 @@ do
         cp -v ./$file $application_executables_path/${application_name}_$file
     fi 
 done
+
 for file in ${user_executable_files[@]};
 do
     if [ -f $file ];
@@ -52,8 +67,21 @@ do
     fi 
 done
 
+## Libraries
 
-# Libraries
+if [ ! -d $application_libraries_path ];
+then
+    log warning "Application libraries directory is not found - $application_libraries_path"
+    log information "Creating application libraries directory - $application_libraries_path"
+    mkdir -p $application_libraries_path
+    if [ $? = 0 ];
+    then 
+        log success "Created application libraries directory - $application_libraries_path"
+    else 
+        log error "Failed to create application libraries directory - $application_libraries_path"
+    fi 
+fi 
+
 for file in ${application_library_files[@]};
 do
     if [ -f $file ];
@@ -62,6 +90,7 @@ do
         cp -v ./$file $application_libraries_path/$file 
     fi 
 done
+
 for file in ${user_library_files[@]};
 do
     if [ -f $file ];
@@ -71,25 +100,55 @@ do
     fi 
 done
 
-# Configurations
+## Configurations
+
+if [ ! -d $application_configurations_path ];
+then
+    log warning "Application configurations directory is not found - $application_configurations_path"
+    log information "Creating application configurations directory - $application_configurations_path"
+    mkdir -p $application_configurations_path
+    if [ $? = 0 ];
+    then 
+        log success "Created application configurations directory - $application_configurations_path"
+    else 
+        log error "Failed to create application configurations directory - $application_configurations_path"
+    fi 
+fi 
+
 for file in ${application_configuration_files[@]};
 do
     if [ -f $file ];
     then
         log information "Installing $file ..."
-        cp -v ./$file $application_configurations_path/$file
+        cp -v ./$file $application_configurations_path/$file 
+        echo ". $HOME/.$application_name" >> $application_configurations_path/$file
     fi 
 done
+
 for file in ${user_configuration_files[@]};
 do
     if [ -f $file ];
     then
         log information "Installing $file ..."
-        cp -v ./$file $user_configurations_path/.$application_name
+        cp -v ./$file "$user_configurations_path"."$application_name"
     fi 
 done
 
-# Templates
+## Templates
+
+if [ ! -d $application_templates_path ];
+then
+    log warning "Application templates directory is not found - $application_templates_path"
+    log information "Creating application templates directory - $application_templates_path"
+    mkdir -p $application_templates_path
+    if [ $? = 0 ];
+    then 
+        log success "Created application templates directory - $application_templates_path"
+    else 
+        log error "Failed to create application templates directory - $application_templates_path"
+    fi 
+fi 
+
 for file in ${application_template_files[@]};
 do
     if [ -f $file ];
@@ -98,6 +157,7 @@ do
         cp -v ./$file $application_templates_path/$file
     fi 
 done
+
 for file in ${user_template_files[@]};
 do
     if [ -f $file ];

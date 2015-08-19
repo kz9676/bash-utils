@@ -28,8 +28,8 @@ SOFTWARE.
 
 '
 
-. ~/.srcmod         # https://github.com/kz9676/srcmod
-. library.log.sh    # https://github.com/kz9676/library.log.sh
+. configuration.srcmod      # https://github.com/kz9676/srcmod
+. library.log.sh            # https://github.com/kz9676/library.log.sh
 
 output_file_name=README
 output_file_path=. 

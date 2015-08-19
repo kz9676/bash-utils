@@ -5,7 +5,7 @@ modules.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.3.5
+0.0.3.6
 
 [3] AUTHORS ------------------------------------------------------------------
 
@@ -205,10 +205,15 @@ Presently, I have one active branch:
 
 [10] CHANGELOG ---------------------------------------------------------------
 
-* 33675f1 
+* d290f6e 
+|  2015-08-19 
+|  Kostya Zolotarov 
+|  Changed install path to ~/.local (HEAD -> development, origin/development, origin/HEAD) 
+|  
+* a1591ff 
 |  2015-08-18 
 |  Kostya Zolotarov 
-|  Added user configuration settings (HEAD -> development, origin/development, origin/HEAD) 
+|  Added user configuration settings 
 |  
 * 4425998 
 |  2015-08-18 

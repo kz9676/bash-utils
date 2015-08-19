@@ -34,8 +34,8 @@ SOFTWARE.
 # TODO - Implement error variable and error codes
 # TODO - Refactor ***_files to ***_file_name(s) and ***_file_path
 
-. ~/.srcmod         # https://github.com/kz9676/srcmod
-. library.log.sh    # https://github.com/kz9676/library.log.sh
+. configuration.srcmod      # https://github.com/kz9676/srcmod
+. library.log.sh            # https://github.com/kz9676/library.log.sh
 
 input_files=./*
 output_file=./TASKS

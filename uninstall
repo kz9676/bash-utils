@@ -29,8 +29,8 @@ SOFTWARE.
 
 '
 
-. ./configuration.${PWD##*/}    # Uninstall target's configuration file
-. library.log.sh                # https://github.com/kz9676/library.log.sh
+. ./configuration.*     # Uninstall target's configuration file
+. library.log.sh        # https://github.com/kz9676/library.log.sh
 
 ## Executables
 

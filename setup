@@ -30,7 +30,7 @@ SOFTWARE.
 '
 
 . configuration.srcmod      # https://github.com/kz9676/srcmod
-. library.log.sh            # https://github.com/kz9676/library.log.sh
+. library.log               # https://github.com/kz9676/library.log.sh
 
 source_module_name=${PWD##*/}
 
@@ -84,3 +84,4 @@ do
         log warning "Skipping aliasing $application_executable_file. File already exists."
     fi 
 done
+

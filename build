@@ -30,7 +30,7 @@ SOFTWARE.
 '
 
 . configuration.srcmod      # https://github.com/kz9676/srcmod
-. library.log.sh            # https://github.com/kz9676/library.log.sh
+. library.log               # https://github.com/kz9676/library.log.sh
 
 log information "Building the source module ..."
 
@@ -39,4 +39,5 @@ ${application_name}_changelog
 ${application_name}_files 
 ${application_name}_tasks 
 ${application_name}_version 
-${application_name}_readme 
+${application_name}_readme
+

@@ -30,7 +30,7 @@ SOFTWARE.
 '
 
 . configuration.srcmod      # https://github.com/kz9676/srcmod
-. library.log.sh            # https://github.com/kz9676/library.log.sh
+. library.log               # https://github.com/kz9676/library.log.sh
 
 input_files=./*
 output_files=()
@@ -68,3 +68,4 @@ do
     printf "$index_file_entry_prefix $output_file\n" >> $index_file_name
 done
 printf "\n$output_files_count files\n" >> $index_file_name 
+

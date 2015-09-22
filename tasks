@@ -35,7 +35,7 @@ SOFTWARE.
 # TODO - Refactor ***_files to ***_file_name(s) and ***_file_path
 
 . configuration.srcmod      # https://github.com/kz9676/srcmod
-. library.log.sh            # https://github.com/kz9676/library.log.sh
+. library.log               # https://github.com/kz9676/library.log.sh
 
 input_files=./*
 output_file=./TASKS
@@ -72,3 +72,4 @@ do
     fi  
 done
 exit 0
+

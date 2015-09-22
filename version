@@ -29,9 +29,9 @@ SOFTWARE.
 '
 
 . configuration.srcmod      # https://github.com/kz9676/srcmod
-. library.log.sh            # https://github.com/kz9676/library.log.sh
+. library.log               # https://github.com/kz9676/library.log.sh
 . library.file              # https://github.com/kz9676/library.file.sh
-. library.version.sh        # https://github.com/kz9676/library.version.sh
+. library.version           # https://github.com/kz9676/library.version.sh
 
 version_file_name=VERSION
 version_file_path=. 
@@ -60,4 +60,5 @@ then
 else 
     log error "Failed to increment version. $version_file not found."
     exit 1
-fi 
+fi
+

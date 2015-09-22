@@ -29,7 +29,7 @@ SOFTWARE.
 '
 
 . configuration.srcmod      # https://github.com/kz9676/srcmod
-. library.log.sh            # https://github.com/kz9676/library.log.sh
+. library.log               # https://github.com/kz9676/library.log.sh
 
 output_file_name=README
 output_file_path=. 
@@ -49,3 +49,4 @@ do
         printf "$source_module_file_text\n\n" >> $output_file 
     fi 
 done
+

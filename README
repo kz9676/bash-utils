@@ -5,7 +5,7 @@ modules.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.3.7
+0.0.3.8
 
 [3] AUTHORS ------------------------------------------------------------------
 
@@ -76,6 +76,7 @@ similar to the following file structure:
 |--  ./FEATURES
 |--  ./files
 |--  ./FILES
+|--  ./functions
 |--  ./install
 |--  ./INSTALL
 |--  ./LICENSE
@@ -99,7 +100,7 @@ similar to the following file structure:
 |--  ./version
 \--  ./VERSION
 
-39 files
+40 files
 
 [7] DESIGN -------------------------------------------------------------------
 
@@ -127,9 +128,21 @@ module. Such tools currently include:
 2. Source module files
 
 The source module files consist of everything that belongs to a given source
-module. In the current release, these include:
+module. In the current release, definition of a source module includes:
 
-    2.1 Descriptors 
+    * Documents 
+    * Templates 
+    * Executables 
+    * Libraries 
+    * Functions 
+    * Variables 
+    * Options 
+    * Configurations 
+    * Tests
+
+In closer detail, elements of a source module include the the following:
+
+    * Documents 
 
         * ./API 
         * ./AUTHORS 
@@ -151,7 +164,7 @@ module. In the current release, these include:
         * ./TEST 
         * ./VERSION 
 
-    2.2 Templates
+    * Templates
 
         * ./template.bash.executable 
         * ./template.bash.variable 
@@ -160,25 +173,30 @@ module. In the current release, these include:
         * ./template.bash.configuration 
         * ./template.gitignore 
 
-    2.3 Variables
+    * Variables
 
         * ./variable.[name]
         * ./variable.[name]
         * etc. 
 
-    2.4 Functions
+    * Functions
 
         * ./function.[name]
         * ./function.[name]
         * etc. 
 
-    2.5 Tests
+    * Options
+
+        * ./option.[name]
+        * ./option.[name]
+
+    * Tests
 
         * ./test.[name]
         * ./test.[name]
         * etc. 
 
-    2.6 Configurations
+    * Configurations
 
         * ./configuration.[name]
         * ./configuration.[name]
@@ -205,10 +223,15 @@ Presently, I have one active branch:
 
 [10] CHANGELOG ---------------------------------------------------------------
 
+* 925ac84 
+|  2015-08-20 
+|  Kostya Zolotarov 
+|  Implemented creation of directories in the user prefix (HEAD -> development, origin/development, origin/HEAD) 
+|  
 * 9d96d04 
 |  2015-08-19 
 |  Kostya Zolotarov 
-|  Changed install path to ~/.local (HEAD -> development, origin/development, origin/HEAD) 
+|  Changed install path to ~/.local 
 |  
 * a1591ff 
 |  2015-08-18 

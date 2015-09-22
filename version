@@ -30,7 +30,7 @@ SOFTWARE.
 
 . configuration.srcmod      # https://github.com/kz9676/srcmod
 . library.log.sh            # https://github.com/kz9676/library.log.sh
-. library.file.sh           # https://github.com/kz9676/library.file.sh
+. library.file              # https://github.com/kz9676/library.file.sh
 . library.version.sh        # https://github.com/kz9676/library.version.sh
 
 version_file_name=VERSION

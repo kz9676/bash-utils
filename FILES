@@ -16,6 +16,7 @@
 |--  ./FEATURES
 |--  ./files
 |--  ./FILES
+|--  ./functions
 |--  ./install
 |--  ./INSTALL
 |--  ./LICENSE
@@ -39,4 +40,4 @@
 |--  ./version
 \--  ./VERSION
 
-39 files
+40 files

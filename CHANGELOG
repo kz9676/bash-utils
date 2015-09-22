@@ -1,7 +1,12 @@
+* 925ac84 
+|  2015-08-20 
+|  Kostya Zolotarov 
+|  Implemented creation of directories in the user prefix (HEAD -> development, origin/development, origin/HEAD) 
+|  
 * 9d96d04 
 |  2015-08-19 
 |  Kostya Zolotarov 
-|  Changed install path to ~/.local (HEAD -> development, origin/development, origin/HEAD) 
+|  Changed install path to ~/.local 
 |  
 * a1591ff 
 |  2015-08-18 

@@ -30,7 +30,7 @@ SOFTWARE.
 '
 
 . configuration.srcmod      # https://github.com/kz9676/srcmod
-. library.log               # https://github.com/kz9676/library.log.sh
+. log                       # https://github.com/kz9676/bash-log
 
 log information "Building list of contributors ..."
 repository_authors="$(git log --format='%an <%ae>' HEAD -n1)"  

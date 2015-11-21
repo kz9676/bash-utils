@@ -7,7 +7,7 @@
 |--  ./BUILD
 |--  ./changelog
 |--  ./CHANGELOG
-|--  ./configuration.srcmod
+|--  ./configuration.project
 |--  ./DEFECTS
 |--  ./DEPENDENCIES
 |--  ./DESCRIPTION
@@ -16,17 +16,16 @@
 |--  ./FEATURES
 |--  ./files
 |--  ./FILES
-|--  ./functions
 |--  ./install
 |--  ./INSTALL
 |--  ./LICENSE
 |--  ./package
+|--  ./project
 |--  ./readme
 |--  ./README
 |--  ./REQUIREMENTS
 |--  ./setup
 |--  ./SOURCES
-|--  ./srcmod
 |--  ./tasks
 |--  ./TASKS
 |--  ./template.bash.configuration
@@ -40,4 +39,4 @@
 |--  ./version
 \--  ./VERSION
 
-40 files
+39 files

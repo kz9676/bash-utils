@@ -2,7 +2,7 @@
 
 : '
 
-This is the srcmod frontend.
+This is bash-project frontend.
 
 This file is part of srcmod project - command-line tool for automated setup and
 maintenance of source code modules. 
@@ -31,51 +31,51 @@ SOFTWARE.
 
 '
 
-. configuration.srcmod      # https://github.com/kz9676/srcmod
-. library.log               # https://github.com/kz9676/library.log.sh
+. configuration.project     # https://github.com/kz9676/bash-project
+. log                       # https://github.com/kz9676/bash-log
 
 authors() {
-    "$application_name"_authors 
+    "$application_name"-authors 
 }
 
 build() {
-    "$application_name"_build
+    "$application_name"-build
 }
 
 changelog() {
-    "$application_name"_changelog
+    "$application_name"-changelog
 }
 
 files() {
-    "$application_name"_files
+    "$application_name"-files
 }
 
 install() {
-    "$application_name"_install
+    "$application_name"-install
 }
 
 package() {
-    "$application_name"_package
+    "$application_name"-package
 }
 
 readme() {
-    "$application_name"_readme
+    "$application_name"-readme
 }
 
 setup() {
-    "$application_name"_setup
+    "$application_name"-setup
 }
 
 tasks() {
-    "$application_name"_tasks
+    "$application_name"-tasks
 }
 
 uninstall() {
-    "$application_name"_uninstall
+    "$application_name"-uninstall
 }
 
 version() {
-    "$application_name"_version
+    "$application_name"-version
 }
 
 case "$1" in 

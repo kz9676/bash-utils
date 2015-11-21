@@ -3,7 +3,7 @@
 # ----------------------------------------------------------------------------#
 
 # Application metadata
-application_name="srcmod"
+application_name="project"
 
 # Application installation directories
 application_executables_directory="bin"
@@ -33,12 +33,12 @@ application_executable_files=(
     install
     uninstall
     version
-    srcmod
 )
 application_library_files=(
+    project
 )
 application_configuration_files=(
-    configuration.srcmod
+    configuration.project
 )
 application_template_files=(
     template.gitignore
@@ -72,7 +72,7 @@ user_executable_files=(
 user_library_files=(
 )
 user_configuration_files=(
-    configuration.srcmod
+    configuration.project
 )
 user_template_files=(
 )

@@ -1,12 +1,12 @@
-The 'srcmod' consists of two key parts:
+The 'project' consists of two key parts:
 
     * Application files 
-    * Source module files
+    * Source files
 
 1. Application Files
 
 The application files make up collection of tools to manage a given source
-module. Such tools currently include:
+project. Such tools currently include:
 
     * ./authors 
     * ./build 
@@ -17,12 +17,13 @@ module. Such tools currently include:
     * ./readme 
     * ./setup 
     * ./tasks 
+    * ./project 
     * ./uninstall 
 
-2. Source module files
+2. Source files
 
-The source module files consist of everything that belongs to a given source
-module. In the current release, definition of a source module includes:
+The source project files consist of everything that belongs to a given source
+project. In the current release, definition of a source project includes:
 
     * Documents 
     * Templates 
@@ -34,7 +35,7 @@ module. In the current release, definition of a source module includes:
     * Configurations 
     * Tests
 
-In closer detail, elements of a source module include the the following:
+In closer detail, elements of a source project include the following:
 
     * Documents 
 

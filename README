@@ -1,15 +1,15 @@
 [1] DESCRIPTION --------------------------------------------------------------
 
-Command-line utility for automated creation and maintenance of source code
-modules.
+Command-line utility for automated creation and maintenance of Bash source code
+projects.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.3.8
+0.0.3.9
 
 [3] AUTHORS ------------------------------------------------------------------
 
-Kostya Zolotarov <kostya.zolotarov@gmail.com>
+Kostya Zolotarov <kostya.zolotarov@globalrelay.net>
 
 [4] BACKGROUND ---------------------------------------------------------------
 
@@ -67,7 +67,7 @@ similar to the following file structure:
 |--  ./BUILD
 |--  ./changelog
 |--  ./CHANGELOG
-|--  ./configuration.srcmod
+|--  ./configuration.project
 |--  ./DEFECTS
 |--  ./DEPENDENCIES
 |--  ./DESCRIPTION
@@ -76,17 +76,16 @@ similar to the following file structure:
 |--  ./FEATURES
 |--  ./files
 |--  ./FILES
-|--  ./functions
 |--  ./install
 |--  ./INSTALL
 |--  ./LICENSE
 |--  ./package
+|--  ./project
 |--  ./readme
 |--  ./README
 |--  ./REQUIREMENTS
 |--  ./setup
 |--  ./SOURCES
-|--  ./srcmod
 |--  ./tasks
 |--  ./TASKS
 |--  ./template.bash.configuration
@@ -100,19 +99,19 @@ similar to the following file structure:
 |--  ./version
 \--  ./VERSION
 
-40 files
+39 files
 
 [7] DESIGN -------------------------------------------------------------------
 
-The 'srcmod' consists of two key parts:
+The 'project' consists of two key parts:
 
     * Application files 
-    * Source module files
+    * Source files
 
 1. Application Files
 
 The application files make up collection of tools to manage a given source
-module. Such tools currently include:
+project. Such tools currently include:
 
     * ./authors 
     * ./build 
@@ -123,12 +122,13 @@ module. Such tools currently include:
     * ./readme 
     * ./setup 
     * ./tasks 
+    * ./project 
     * ./uninstall 
 
-2. Source module files
+2. Source files
 
-The source module files consist of everything that belongs to a given source
-module. In the current release, definition of a source module includes:
+The source project files consist of everything that belongs to a given source
+project. In the current release, definition of a source project includes:
 
     * Documents 
     * Templates 
@@ -140,7 +140,7 @@ module. In the current release, definition of a source module includes:
     * Configurations 
     * Tests
 
-In closer detail, elements of a source module include the the following:
+In closer detail, elements of a source project include the following:
 
     * Documents 
 
@@ -212,7 +212,13 @@ Presently, I have one active branch:
                             always reflects a state with the latest delivered
                             development changes for the next release
 
-[9] TASKS --------------------------------------------------------------------
+[9] INSTALL ------------------------------------------------------------------
+
+The following command gets bash-project installed in a local host environment:
+
+    $ ./install
+
+[10] TASKS -------------------------------------------------------------------
 
 ./install # TODO - Implement sourcing for libraries
 ./package # TODO - Package source files
@@ -221,12 +227,27 @@ Presently, I have one active branch:
 ./package # TODO - Package configuration files
 ./package # TODO - Package template files
 
-[10] CHANGELOG ---------------------------------------------------------------
+[11] CHANGELOG ---------------------------------------------------------------
 
+* d2bcf27 
+|  2015-11-20 
+|  Kostya Zolotarov 
+|  Added project command (HEAD -> development) 
+|  
+* 01948c5 
+|  2015-09-22 
+|  Kostya Zolotarov 
+|  Updated configuration to reflect library.log changes (origin/development, origin/HEAD) 
+|  
+* 02b82bc 
+|  2015-09-22 
+|  Kostya Zolotarov 
+|  Updated configuration to reflect library.file changes 
+|  
 * 925ac84 
 |  2015-08-20 
 |  Kostya Zolotarov 
-|  Implemented creation of directories in the user prefix (HEAD -> development, origin/development, origin/HEAD) 
+|  Implemented creation of directories in the user prefix 
 |  
 * 9d96d04 
 |  2015-08-19 
@@ -593,7 +614,7 @@ Presently, I have one active branch:
    Kostya Zolotarov 
    Initialized repository 
 
-[11] LICENSE -----------------------------------------------------------------
+[12] LICENSE -----------------------------------------------------------------
 
 The MIT License (MIT)
 

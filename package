@@ -42,7 +42,7 @@ SOFTWARE.
 '
 
 . ~/.srcmod         # https://github.com/kz9676/srcmod
-. library.log       # https://github.com/kz9676/library.log.sh
+. log               # https://github.com/kz9676/bash-log
 
 # TODO - Package source files
 # TODO - Package executable files

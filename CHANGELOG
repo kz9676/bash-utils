@@ -1,7 +1,22 @@
+* d2bcf27 
+|  2015-11-20 
+|  Kostya Zolotarov 
+|  Added project command (HEAD -> development) 
+|  
+* 01948c5 
+|  2015-09-22 
+|  Kostya Zolotarov 
+|  Updated configuration to reflect library.log changes (origin/development, origin/HEAD) 
+|  
+* 02b82bc 
+|  2015-09-22 
+|  Kostya Zolotarov 
+|  Updated configuration to reflect library.file changes 
+|  
 * 925ac84 
 |  2015-08-20 
 |  Kostya Zolotarov 
-|  Implemented creation of directories in the user prefix (HEAD -> development, origin/development, origin/HEAD) 
+|  Implemented creation of directories in the user prefix 
 |  
 * 9d96d04 
 |  2015-08-19 

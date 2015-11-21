@@ -29,8 +29,8 @@ SOFTWARE.
 
 '
 
-. configuration.srcmod      # https://github.com/kz9676/srcmod
-. library.log               # https://github.com/kz9676/library.log.sh
+. configuration.project     # https://github.com/kz9676/bash-project
+. log                       # https://github.com/kz9676/bash-log
 
 source_module_name=${PWD##*/}
 
@@ -79,7 +79,7 @@ do
     if [ ! -f $application_executable_file ];
     then
         log information "Aliasing $application_executable_file ..."
-        ln -s $application_executables_path/"$application_name"_$application_executable_file $application_executable_file 
+        ln -s $application_executables_path/"$application_name"-$application_executable_file $application_executable_file 
     else
         log warning "Skipping aliasing $application_executable_file. File already exists."
     fi 

@@ -30,13 +30,13 @@ SOFTWARE.
 '
 
 . ./configuration.*     # Uninstall target's configuration file
-. library.log           # https://github.com/kz9676/library.log.sh
+. log                   # https://github.com/kz9676/bash-log
 
 ## Executables
 
 for file in ${application_executable_files[@]};
 do 
-    executable_file=$application_executables_path/${application_name}_$file
+    executable_file=$application_executables_path/${application_name}-$file
     if [ -f $executable_file ];
     then
         log information "Uninstalling $executable_file ..."
@@ -46,7 +46,7 @@ done
 
 for file in ${user_executable_files[@]};
 do 
-    executable_file=$user_executables_path/${user_name}_$file
+    executable_file=$user_executables_path/${user_name}-$file
     if [ -f $executable_file ];
     then
         log information "Uninstalling $executable_file ..."

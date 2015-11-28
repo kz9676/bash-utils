@@ -1,8 +1,9 @@
-#!/usr/bin/env bash 
+#!/usr/bin/env bash
 
 : '
-This file is part of srcmod project - command-line tool for automated setup and
-maintenance of source code modules. 
+
+This file is part of https://github.com/kz9676/bash-project - command-line tool
+for automated setup and maintenance of Bash projects and source code. 
 
 The MIT License (MIT)
 
@@ -30,35 +31,12 @@ SOFTWARE.
 
 . configuration.project     # https://github.com/kz9676/bash-project
 . log                       # https://github.com/kz9676/bash-log
-. library.file              # https://github.com/kz9676/library.file.sh
-. library.version           # https://github.com/kz9676/library.version.sh
 
-version_file_name=VERSION
-version_file_path=. 
-version_file=$version_file_path/$version_file_name
+project_authors() {
 
-if [ -f $version_file ];
-then
-    # If ./VERSION file is empty, initialize it with '0.0.0.0'
-    file assert empty "$version_file"
-    if [ $? == 0 ];
-    then
-        version_number='0.0.0.0'
-        log information "Initializing $version_file with $version_number ..."
-        printf "$version_number" > "$version_file"
-    fi 
-    log information "Reading version ..."
-    version="$(<$version_file)"
-    if [ -n "$version" ];
-    then
-        log information "Incrementing version $version ..."
-        increment_version $version $version_file 
-    else 
-        log error "Failed to read previous version."
-        exit 1
-    fi 
-else 
-    log error "Failed to increment version. $version_file not found."
-    exit 1
-fi
+    log information "Building list of contributors ..."
+    repository_authors="$(git log --format='%an <%ae>' HEAD -n1)"  
+    echo $repository_authors > ./AUTHORS
+
+}
 

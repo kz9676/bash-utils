@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash 
 
 : '
 
@@ -29,97 +29,40 @@ SOFTWARE.
 
 '
 
-. project_authors
-. project_build
-. project_changelog
-. project_files
-. project_install
-. project_package
-. project_readme
-. project_setup
-. project_tasks
-. project_uninstall
+. configuration.project     # https://github.com/kz9676/bash-project
+. log                       # https://github.com/kz9676/bash-log
+. file                      # https://github.com/kz9676/bash-file
+. library.version           # https://github.com/kz9676/library.version.sh
 
-authors() {
-    project_authors 
-}
+version_file_name=VERSION
+version_file_path=. 
+version_file=$version_file_path/$version_file_name
 
-build() {
-    project_build
-}
+project_version() {
 
-changelog() {
-    project_changelog
-}
-
-files() {
-    project_files
-}
-
-install() {
-    project_install
-}
-
-package() {
-    project_package
-}
-
-readme() {
-    project_readme
-}
-
-setup() {
-    project_setup
-}
-
-tasks() {
-    project_tasks
-}
-
-uninstall() {
-    project_uninstall
-}
-
-version() {
-    project_version
-}
-
-case "$1" in 
-    authors)
-        authors 
-        ;;
-    build)
-        build 
-        ;;
-    changelog)
-        changelog 
-        ;;
-    files)
-        files 
-        ;;
-    install)
-        install 
-        ;;
-    package)
-        package 
-        ;;
-    readme)
-        readme 
-        ;;
-    setup)
-        setup 
-        ;;
-    tasks)
-        tasks 
-        ;;
-    uninstall)
-        uninstall 
-        ;;
-    version)
-        version 
-        ;;
-    *)
-        echo $"Usage: bash project {authors|build|changelog|files|install|package|readme|setup|tasks|uninstall|version}"
+    if [ -f $version_file ];
+    then
+        # If ./VERSION file is empty, initialize it with '0.0.0.0'
+        file assert empty "$version_file"
+        if [ $? == 0 ];
+        then
+            version_number='0.0.0.0'
+            log information "Initializing $version_file with $version_number ..."
+            printf "$version_number" > "$version_file"
+        fi 
+        log information "Reading version ..."
+        version="$(<$version_file)"
+        if [ -n "$version" ];
+        then
+            log information "Incrementing version $version ..."
+            increment_version $version $version_file 
+        else 
+            log error "Failed to read previous version."
+            exit 1
+        fi 
+    else 
+        log error "Failed to increment version. $version_file not found."
         exit 1
-esac 
+    fi
 
+}

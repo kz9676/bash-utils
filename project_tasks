@@ -2,8 +2,8 @@
 
 : '
 
-This file is part of srcmod project - command-line tool for automated setup and
-maintenance of source code modules. 
+This file is part of https://github.com/kz9676/bash-project - command-line tool
+for automated setup and maintenance of Bash projects and source code. 
 
 The MIT License (MIT)
 
@@ -31,8 +31,6 @@ SOFTWARE.
 
 # TODO - Implement logging of file line numbers
 # TODO - Implement scanning of ./tasks file
-# TODO - Implement error variable and error codes
-# TODO - Refactor ***_files to ***_file_name(s) and ***_file_path
 
 . configuration.project     # https://github.com/kz9676/bash-project
 . log                       # https://github.com/kz9676/bash-log
@@ -42,34 +40,37 @@ output_file=./TASKS
 exclude_files=(./tasks $output_file ./changelog ./CHANGELOG ./README)
 search_keyword=TODO
 
-> $output_file
-for input_file in $input_files
-do
-    log information "Selecting $input_file ..."
-    for exclude_file in ${exclude_files[@]};
-    do 
-        log information "Comparing $input_file and $exclude_file ..."
-        if [ $input_file == $exclude_file ];
-        then
-            log information "Excluding $input_file ..."
-            exclude_file_match_found=true
-            break
-        else 
-            exclude_file_match_found=false
-        fi
-    done
-    if [[ $exclude_file_match_found == false ]];
-    then
-        log information "Scanning $input_file ..."
-        while read line; 
-        do 
-            echo $line | grep $search_keyword > /dev/null
-            if [ $? == 0 ];
-            then
-                echo "$input_file $line" >> $output_file
-            fi
-        done < $input_file 
-    fi  
-done
-exit 0
+project_tasks() {
 
+    > $output_file
+    for input_file in $input_files
+    do
+        log information "Selecting $input_file ..."
+        for exclude_file in ${exclude_files[@]};
+        do 
+            log information "Comparing $input_file and $exclude_file ..."
+            if [ $input_file == $exclude_file ];
+            then
+                log information "Excluding $input_file ..."
+                exclude_file_match_found=true
+                break
+            else 
+                exclude_file_match_found=false
+            fi
+        done
+        if [[ $exclude_file_match_found == false ]];
+        then
+            log information "Scanning $input_file ..."
+            while read line; 
+            do 
+                echo $line | grep $search_keyword > /dev/null
+                if [ $? == 0 ];
+                then
+                    echo "$input_file $line" >> $output_file
+                fi
+            done < $input_file 
+        fi  
+    done
+    exit 0
+
+}

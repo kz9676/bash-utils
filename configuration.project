@@ -22,20 +22,20 @@ application_logs_path=$application_path/$application_logs_directory
 
 # Application files 
 application_executable_files=(
-    setup
-    build
-    authors
-    changelog
-    files
-    readme
-    tasks
-    package
-    install
-    uninstall
-    version
+    $application_name
 )
 application_library_files=(
-    project
+    project_setup
+    project_build
+    project_authors
+    project_changelog
+    project_files
+    project_readme
+    project_tasks
+    project_package
+    project_install
+    project_uninstall
+    project_version
 )
 application_configuration_files=(
     configuration.project
@@ -89,7 +89,6 @@ source_module_descriptors=(
     AUTHORS
     BACKGROUND
     FEATURES
-    FILES
     REQUIREMENTS
     DESIGN
     API
@@ -99,9 +98,10 @@ source_module_descriptors=(
     BUILD
     TEST
     INSTALL
-    TASKS
+    #TASKS
     DEFECTS
-    CHANGELOG
+    FILES
+    #CHANGELOG
     LICENSE
 )
 
@@ -126,4 +126,3 @@ package_configuration_files=(
 )
 package_template_files=(
 )
-

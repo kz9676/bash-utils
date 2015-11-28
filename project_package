@@ -2,11 +2,9 @@
 
 : '
 
-This is the srcmod packager. This tool is used to make source module releases.
-The produced release packages are self-contained and require no outside
-dependencies.
+This is a Bash project packager. This tool creates source archives for a selected Bash project. 
 
-What gets packaged (see ./configurations.srcmod):
+What gets packaged (see ./configurations.project):
 
     - package_source_files
     - package_executable_files
@@ -14,8 +12,8 @@ What gets packaged (see ./configurations.srcmod):
     - package_configuration_files
     - package_template_files
 
-This file is part of srcmod project - command-line tool for automated setup and
-maintenance of source code modules. 
+This file is part of https://github.com/kz9676/bash-project - command-line tool
+for automated setup and maintenance of Bash projects and source code. 
 
 The MIT License (MIT)
 
@@ -41,8 +39,8 @@ SOFTWARE.
 
 '
 
-. ~/.srcmod         # https://github.com/kz9676/srcmod
-. log               # https://github.com/kz9676/bash-log
+. configuration.project     # https://github.com/kz9676/bash-project
+. log                       # https://github.com/kz9676/bash-log
 
 # TODO - Package source files
 # TODO - Package executable files

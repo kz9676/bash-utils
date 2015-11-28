@@ -2,8 +2,8 @@
 
 : '
 
-This file is part of srcmod project - command-line tool for automated setup and
-maintenance of source code modules. 
+This file is part of https://github.com/kz9676/bash-project - command-line tool
+for automated setup and maintenance of Bash projects and source code. 
 
 The MIT License (MIT)
 
@@ -30,14 +30,11 @@ SOFTWARE.
 '
 
 . configuration.project     # https://github.com/kz9676/bash-project
-. log                       # https://github.com/kz9676/bash-log
+. log						# https://github.com/kz9676/bash-log
 
-log information "Building the source module ..."
+project_changelog() {
 
-${application_name}-authors
-${application_name}-changelog
-${application_name}-files 
-${application_name}-tasks 
-${application_name}-version 
-${application_name}-readme
+    log information "Building revision history ..."
+    git log --pretty=format:"%h %n %ad %n %an %n %s%d %n" --graph --date=short > ./CHANGELOG
 
+}

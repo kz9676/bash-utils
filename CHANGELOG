@@ -1,12 +1,12 @@
-* d2bcf27 
+* 0ebec2d 
 |  2015-11-20 
 |  Kostya Zolotarov 
-|  Added project command (HEAD -> development) 
+|  Added project command. (HEAD -> development, origin/development, origin/HEAD) 
 |  
 * 01948c5 
 |  2015-09-22 
 |  Kostya Zolotarov 
-|  Updated configuration to reflect library.log changes (origin/development, origin/HEAD) 
+|  Updated configuration to reflect library.log changes 
 |  
 * 02b82bc 
 |  2015-09-22 

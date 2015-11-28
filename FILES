@@ -1,11 +1,8 @@
 .
 |--  ./API
-|--  ./authors
 |--  ./AUTHORS
 |--  ./BACKGROUND
-|--  ./build
 |--  ./BUILD
-|--  ./changelog
 |--  ./CHANGELOG
 |--  ./configuration.project
 |--  ./DEFECTS
@@ -14,19 +11,24 @@
 |--  ./DESIGN
 |--  ./EXAMPLES
 |--  ./FEATURES
-|--  ./files
 |--  ./FILES
-|--  ./install
 |--  ./INSTALL
 |--  ./LICENSE
-|--  ./package
 |--  ./project
-|--  ./readme
+|--  ./project_authors
+|--  ./project_build
+|--  ./project_changelog
+|--  ./project_files
+|--  ./project_install
+|--  ./project_package
+|--  ./project_readme
+|--  ./project_setup
+|--  ./project_tasks
+|--  ./project_uninstall
+|--  ./project_version
 |--  ./README
 |--  ./REQUIREMENTS
-|--  ./setup
 |--  ./SOURCES
-|--  ./tasks
 |--  ./TASKS
 |--  ./template.bash.configuration
 |--  ./template.bash.executable
@@ -35,8 +37,6 @@
 |--  ./template.bash.variable
 |--  ./template.gitignore
 |--  ./TEST
-|--  ./uninstall
-|--  ./version
 \--  ./VERSION
 
 39 files

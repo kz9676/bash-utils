@@ -29,6 +29,7 @@
 |--  ./README
 |--  ./REQUIREMENTS
 |--  ./SOURCES
+|--  ./tags
 |--  ./TASKS
 |--  ./template.bash.configuration
 |--  ./template.bash.executable
@@ -39,4 +40,4 @@
 |--  ./TEST
 \--  ./VERSION
 
-39 files
+40 files

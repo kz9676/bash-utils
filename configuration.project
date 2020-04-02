@@ -23,22 +23,22 @@ application_logs_path=$application_path/$application_logs_directory
 # Application files 
 application_executable_files=(
     $application_name
+    ${application_name}_setup
+    ${application_name}_build
+    ${application_name}_authors
+    ${application_name}_changelog
+    ${application_name}_files
+    ${application_name}_readme
+    ${application_name}_tasks
+    ${application_name}_package
+    ${application_name}_install
+    ${application_name}_uninstall
+    ${application_name}_version
+    configuration.project
 )
 application_library_files=(
-    project_setup
-    project_build
-    project_authors
-    project_changelog
-    project_files
-    project_readme
-    project_tasks
-    project_package
-    project_install
-    project_uninstall
-    project_version
 )
 application_configuration_files=(
-    configuration.project
 )
 application_template_files=(
     template.gitignore
@@ -54,7 +54,7 @@ user_name=$USER
 # User installation directories
 user_executables_directory="Programs"
 user_libraries_directory="Programs"
-user_configurations_directory=
+user_configurations_directory="Settings"
 user_templates_directory="Templates"
 user_logs_directory="Logs"
 

@@ -57,6 +57,7 @@ project_install() {
         then
             log information "Installing $file ..."
             cp -v ./$file $application_executables_path/$file
+            chmod +x -v ./$file $application_executables_path/$file
             #cp -v ./$file $application_executables_path/${application_name}-$file
         fi 
     done

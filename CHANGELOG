@@ -1,383 +1,388 @@
+* bb25ede 
+|  2015-11-27 
+|  Kostya Zolotarov 
+|  Converted application executables to functions (HEAD -> development, origin/development, origin/HEAD) 
+| 
 * 0ebec2d 
 |  2015-11-20 
 |  Kostya Zolotarov 
-|  Added project command. (HEAD -> development, origin/development, origin/HEAD) 
-|  
+|  Added project command. 
+| 
 * 01948c5 
 |  2015-09-22 
 |  Kostya Zolotarov 
 |  Updated configuration to reflect library.log changes 
-|  
+| 
 * 02b82bc 
 |  2015-09-22 
 |  Kostya Zolotarov 
 |  Updated configuration to reflect library.file changes 
-|  
+| 
 * 925ac84 
 |  2015-08-20 
 |  Kostya Zolotarov 
 |  Implemented creation of directories in the user prefix 
-|  
+| 
 * 9d96d04 
 |  2015-08-19 
 |  Kostya Zolotarov 
 |  Changed install path to ~/.local 
-|  
+| 
 * a1591ff 
 |  2015-08-18 
 |  Kostya Zolotarov 
 |  Added user configuration settings 
-|  
+| 
 * 4425998 
 |  2015-08-18 
 |  Kostya Zolotarov 
 |  Switched to library.log.sh 
-|  
+| 
 * 6f0c133 
 |  2015-08-18 
 |  Kostya Zolotarov 
 |  Switched to library.version.sh 
-|  
+| 
 * 91a45f9 
 |  2015-08-18 
 |  Kostya Zolotarov 
 |  Switched to library.file.sh 
-|  
+| 
 * 0890961 
 |  2015-08-17 
 |  Kostya Zolotarov 
 |  Migrated from settings to configuration notation 
-|  
+| 
 * c9d6683 
 |  2015-08-14 
 |  Kostya Zolotarov 
 |  Added filecetera notation bash templates 
-|  
+| 
 * e612bfd 
 |  2015-08-11 
 |  Kostya Zolotarov 
 |  Added srcmod frontend 
-|  
+| 
 * bb54896 
 |  2015-08-09 
 |  Kostya Zolotarov 
 |  Refactored source module descriptors and templates 
-|  
+| 
 * 4cc05a9 
 |  2015-08-09 
 |  Kostya Zolotarov 
 |  Added design notes; Started package tool 
-|  
+| 
 * 2f6df00 
 |  2015-08-08 
 |  Kostya Zolotarov 
 |  Enabled templates initialization 
-|  
+| 
 * 88dddea 
 |  2015-07-29 
 |  Kostya Zolotarov 
 |  Reorganized templates and changed FILES teplate sequence 
-|  
+| 
 * acfb85c 
 |  2015-07-29 
 |  Kostya Zolotarov 
 |  Added API template 
-|  
+| 
 * 37760d1 
 |  2015-07-29 
 |  Kostya Zolotarov 
 |  Refactored information log type 
-|  
+| 
 * abfe891 
 |  2015-07-28 
 |  Kostya Zolotarov 
 |  Refactored logging library out into a separate source module 
-|  
+| 
 * 1406879 
 |  2015-07-16 
 |  Kostya Zolotarov 
 |  Added index file formatting 
-|  
+| 
 * f7f4fb3 
 |  2015-07-14 
 |  Kostya Zolotarov 
 |  New file indexing algorithm 
-|  
+| 
 * 25b6b23 
 |  2015-07-13 
 |  Kostya Zolotarov 
 |  Fixed VERSION file not found error 
-|  
+| 
 * f1440b3 
 |  2015-07-10 
 |  Kostya Zolotarov 
 |  Library for 'files' command 
-|  
+| 
 * 041cc88 
 |  2015-07-10 
 |  Kostya Zolotarov 
 |  Added list of features 
-|  
+| 
 * 42eee1d 
 |  2015-07-10 
 |  Kostya Zolotarov 
 |  Updated background 
-|  
+| 
 * 720f956 
 |  2015-07-10 
 |  Kostya Zolotarov 
 |  Enabled empty VERSION initialization 
-|  
+| 
 * 29121e1 
 |  2015-07-10 
 |  Kostya Zolotarov 
 |  Added file library 
-|  
+| 
 * 68ce5f4 
 |  2015-07-10 
 |  Kostya Zolotarov 
 |  Added version library 
-|  
+| 
 * e33ebee 
 |  2015-07-09 
 |  Kostya Zolotarov 
 |  Enabled aliasing for srcmod commands 
-|  
+| 
 * a3202a9 
 |  2015-07-09 
 |  Kostya Zolotarov 
 |  Added install/uninstall commands to general toolkit; Install/uninstall can now handle other source modules 
-|  
+| 
 * 0c6d08a 
 |  2015-07-03 
 |  Kostya Zolotarov 
 |  Added run and examples templates 
-|  
+| 
 * 4e51f85 
 |  2015-07-03 
 |  Kostya Zolotarov 
 |  Updated background 
-|  
+| 
 * b25bf58 
 |  2015-07-03 
 |  Kostya Zolotarov 
 |  Implemented numbered headings 
-|  
+| 
 * 6af890e 
 |  2015-06-30 
 |  Kostya Zolotarov 
 |  Added chapter heading formatting type 
-|  
+| 
 * bbe4da9 
 |  2015-06-30 
 |  Kostya Zolotarov 
 |  New changelog formatting 
-|  
+| 
 * 65affcb 
 |  2015-06-30 
 |  Kostya Zolotarov 
 |  Implemented reading tasks command configuration settings from ~/.srcmod 
-|  
+| 
 * 556144a 
 |  2015-06-30 
 |  Kostya Zolotarov 
 |  Implemented reading changelog command configuration settings from ~/.srcmod 
-|  
+| 
 * 4a998b6 
 |  2015-06-30 
 |  Kostya Zolotarov 
 |  Implemented README chapter sequencing 
-|  
+| 
 * 7a1e09f 
 |  2015-06-29 
 |  Kostya Zolotarov 
 |  Implemented settings loading for authors, build, files and version commands 
-|  
+| 
 * 57361f6 
 |  2015-06-29 
 |  Kostya Zolotarov 
 |  Implemented settings loading for readme command 
-|  
+| 
 * 9b827ee 
 |  2015-06-29 
 |  Kostya Zolotarov 
 |  Libraries install/uninstall fix 
-|  
+| 
 * 3546a92 
 |  2015-06-29 
 |  Kostya Zolotarov 
 |  Implemented settings loading for uninstall command 
-|  
+| 
 * a2f50c5 
 |  2015-06-29 
 |  Kostya Zolotarov 
 |  Moved templates to srcmod settings file 
-|  
+| 
 * beb9eee 
 |  2015-06-29 
 |  Kostya Zolotarov 
 |  Install optimizations 
-|  
+| 
 * 0ddc5b7 
 |  2015-06-27 
 |  Kostya Zolotarov 
 |  Added task to implement reading application variables from .srcmod configuration file 
-|  
+| 
 * b557bd1 
 |  2015-06-26 
 |  Kostya Zolotarov 
 |  Added application configuration file 
-|  
+| 
 * 3d24eb7 
 |  2015-06-23 
 |  Kostya Zolotarov 
 |  Added description; Added README chapter sequences task 
-|  
+| 
 * ff4d0a4 
 |  2015-06-23 
 |  Kostya Zolotarov 
 |  Added FEATURES template 
-|  
+| 
 * f1c4ab4 
 |  2015-06-19 
 |  Kostya Zolotarov 
 |  Included version command in the install 
-|  
+| 
 * b3bb4f4 
 |  2015-06-19 
 |  Kostya Zolotarov 
 |  Implemented incremental versioning 
-|  
+| 
 * 8b32115 
 |  2015-06-19 
 |  Kostya Zolotarov 
 |  Added version command file 
-|  
+| 
 * 07de32f 
 |  2015-06-19 
 |  Kostya Zolotarov 
 |  Enabled library files uninstall 
-|  
+| 
 * 8d3f5d1 
 |  2015-06-19 
 |  Kostya Zolotarov 
 |  Added readme command 
-|  
+| 
 * f9d7393 
 |  2015-06-19 
 |  Kostya Zolotarov 
 |  Applied logging library to setup and tasks commands 
-|  
+| 
 * 5e5308a 
 |  2015-06-19 
 |  Kostya Zolotarov 
 |  Added logging library 
-|  
+| 
 * 789da07 
 |  2015-06-19 
 |  Kostya Zolotarov 
 |  Added templates library 
-|  
+| 
 * 6829f68 
 |  2015-06-18 
 |  Kostya Zolotarov 
 |  Added setup command 
-|  
+| 
 * 06617ba 
 |  2015-06-15 
 |  Kostya Zolotarov 
 |  Working version of tasks command 
-|  
+| 
 * cae9914 
 |  2015-06-14 
 |  Kostya Zolotarov 
 |  Half-finished version of tasks command (i'm tired and its late) 
-|  
+| 
 * a2c2637 
 |  2015-05-23 
 |  Kostya Zolotarov 
 |  Fixed package name 
-|  
+| 
 * 5f969a6 
 |  2015-05-23 
 |  Kostya Zolotarov 
 |  Added build to instal/uninstall scripts 
-|  
+| 
 * 1451071 
 |  2015-05-23 
 |  Kostya Zolotarov 
 |  Activated build script 
-|  
+| 
 * adfcaad 
 |  2015-05-23 
 |  Kostya Zolotarov 
 |  Added TODO parsing 
-|  
+| 
 * 505ea37 
 |  2015-05-23 
 |  Kostya Zolotarov 
 |  Added build and tasks scripts; Added license to all the scripts 
-|  
+| 
 * 298826f 
 |  2015-05-23 
 |  Kostya Zolotarov 
 |  Created uninstall script 
-|  
+| 
 * 1fbe78c 
 |  2015-05-20 
 |  Kostya Zolotarov 
 |  Added cpp template 
-|  
+| 
 * e723f9a 
 |  2015-05-20 
 |  Kostya Zolotarov 
 |  Added branching model description 
-|  
+| 
 * 0bfdfdd 
 |  2015-05-20 
 |  Kostya Zolotarov 
 |  Added license 
-|  
+| 
 * 1d99bf7 
 |  2015-05-20 
 |  Kostya Zolotarov 
 |  Aliased 'git commit' 
-|  
+| 
 * 074e008 
 |  2015-05-19 
 |  Kostya Zolotarov 
 |  Added install script 
-|  
+| 
 * fe5322d 
 |  2015-05-19 
 |  Kostya Zolotarov 
 |  Added CHANGELOG maintenance script 
-|  
+| 
 * d0cc87c 
 |  2015-05-19 
 |  Kostya Zolotarov 
 |  Added FILES maintenance script 
-|  
+| 
 * f9e4abb 
 |  2015-05-19 
 |  Kostya Zolotarov 
 |  Formatted background text and updated authors maintenance script 
-|  
+| 
 * 364bfab 
 |  2015-05-19 
 |  Kostya Zolotarov 
 |  Added authors maintenance script 
-|  
+| 
 * 434426e 
 |  2015-05-19 
 |  Kostya Zolotarov 
 |  Added bash, c, java, python and ruby templates 
-|  
+| 
 * 80eeddc 
 |  2015-05-19 
 |  Kostya Zolotarov 
 |  Added high level background 
-|  
+| 
 * e4b1dfd 
    2015-05-19 
    Kostya Zolotarov 

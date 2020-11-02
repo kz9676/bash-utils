@@ -1,3 +1,4 @@
 The following command gets bash-project installed in a local host environment:
 
     $ bash ./project install
+    $ bash ./project uninstall

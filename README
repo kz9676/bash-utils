@@ -1,17 +1,17 @@
-[1] DESCRIPTION --------------------------------------------------------------
+[97] DESCRIPTION -------------------------------------------------------------
 
 Command-line utility for automated creation and maintenance of Bash source code
 projects.
 
-[2] VERSION ------------------------------------------------------------------
+[98] VERSION -----------------------------------------------------------------
 
-0.0.4.6
+0.0.4.7
 
-[3] AUTHORS ------------------------------------------------------------------
+[99] AUTHORS -----------------------------------------------------------------
 
 Kostya Zolotarov <kostya.zolotarov@gmail.com>
 
-[4] BACKGROUND ---------------------------------------------------------------
+[100] BACKGROUND -------------------------------------------------------------
 
 I needed a tool to automate creation and maintenance of Bash source code 
 modules. Invoked from command line, such tool had to produce a fixed number
@@ -41,7 +41,7 @@ following file structure:
 |-- ./settings.feature.Z
 \-- etc.
 
-[5] FEATURES -----------------------------------------------------------------
+[101] FEATURES ---------------------------------------------------------------
 
     * setup - Setup new source module 
     * build - Build the source module 
@@ -54,7 +54,7 @@ following file structure:
     * install - Install the source module 
     * uninstall - Uninstall the source module 
 
-[6] DESIGN -------------------------------------------------------------------
+[102] DESIGN -----------------------------------------------------------------
 
 The 'project' consists of two key parts:
 
@@ -156,7 +156,7 @@ In closer detail, elements of a source project include the following:
         * ./configuration.[name]
         * etc. 
 
-[7] SOURCES ------------------------------------------------------------------
+[103] SOURCES ----------------------------------------------------------------
 
 Source code can be obtained on GitHub (https://github.com/kz9676/srcmod).
 
@@ -166,13 +166,14 @@ Presently, I have one active branch:
                             always reflects a state with the latest delivered
                             development changes for the next release
 
-[8] INSTALL ------------------------------------------------------------------
+[104] INSTALL ----------------------------------------------------------------
 
 The following command gets bash-project installed in a local host environment:
 
     $ bash ./project install
+    $ bash ./project uninstall
 
-[9] FILES --------------------------------------------------------------------
+[105] FILES ------------------------------------------------------------------
 
 .
 |--  ./API
@@ -274,7 +275,7 @@ The following command gets bash-project installed in a local host environment:
 
 96 files
 
-[10] LICENSE -----------------------------------------------------------------
+[106] LICENSE ----------------------------------------------------------------
 
 The MIT License (MIT)
 

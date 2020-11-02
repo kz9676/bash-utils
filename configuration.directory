@@ -40,11 +40,11 @@ application_executable_files=(
     ${application_name}_assert_read
     ${application_name}_assert_renamed
     ${application_name}_assert_written
-    configuration.${application_name}
 )
 application_library_files=(
 )
 application_configuration_files=(
+    configuration.${application_name}
 )
 application_template_files=(
 )

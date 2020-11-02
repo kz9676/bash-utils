@@ -20,6 +20,9 @@ application_configurations_path=$application_path/$application_configurations_di
 application_templates_path=$application_path/$application_templates_directory
 application_logs_path=$application_path/$application_logs_directory
 
+# Applicaton exports
+export PATH=$PATH:$application_executables_path:$application_libraries_path:$application_configurations_path:$application_templates_path:$application_logs_path
+
 # Application files 
 application_executable_files=(
     $application_name
@@ -44,6 +47,9 @@ application_template_files=(
     template.gitignore
 )
 
+# Applicaton exports
+export PATH=$PATH:$application_executables_path:$application_libraries_path:$application_configurations_path:$application_templates_path:$application_logs_path
+
 # ----------------------------------------------------------------------------#
 # User configuration                                                          #
 # ----------------------------------------------------------------------------#
@@ -52,11 +58,11 @@ application_template_files=(
 user_name=$USER
 
 # User installation directories
-user_executables_directory="Programs"
-user_libraries_directory="Programs"
-user_configurations_directory="Settings"
-user_templates_directory="Templates"
-user_logs_directory="Logs"
+user_executables_directory="bin"
+user_libraries_directory="lib"
+user_configurations_directory="etc"
+user_templates_directory="templates"
+user_logs_directory="log"
 
 # User installation path settings
 user_path=$HOME
@@ -65,6 +71,9 @@ user_libraries_path=$user_path/$user_libraries_directory
 user_configurations_path=$user_path/$user_configurations_directory
 user_templates_path=$user_path/$user_templates_directory
 user_logs_path=$user_path/$user_logs_directory
+
+# User exports
+export PATH=$PATH:$user_executables_path:$user_libraries_path:$user_configurations_path:$user_templates_path:$user_logs_path
 
 # User files 
 user_executable_files=(

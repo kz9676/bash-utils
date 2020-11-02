@@ -29,10 +29,10 @@ SOFTWARE.
 
 '
 
-. ./configuration.project
-. ./log
-. ./file
-. ./version
+. configuration.project
+. log
+. file
+. version
 
 version_file_name=VERSION
 version_file_path=. 

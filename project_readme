@@ -29,8 +29,8 @@ SOFTWARE.
 
 '
 
-. ./configuration.project
-. ./log
+. configuration.project
+. log
 
 project_readme() {
 

@@ -32,8 +32,8 @@ SOFTWARE.
 # TODO - Implement logging of file line numbers
 # TODO - Implement scanning of ./tasks file
 
-. ./configuration.project
-. ./log
+. configuration.project
+. log
 
 input_files=./*
 output_file=./TASKS

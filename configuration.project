@@ -7,7 +7,7 @@ application_name="project"
 
 # Application installation directories
 application_executables_directory="bin"
-application_libraries_directory="lib"
+application_libraries_directory="bin"
 application_configurations_directory="etc"
 application_templates_directory="templates"
 application_logs_directory="log"
@@ -26,6 +26,8 @@ export PATH=$PATH:$application_executables_path:$application_libraries_path:$app
 # Application files 
 application_executable_files=(
     $application_name
+)
+application_library_files=(
     ${application_name}_setup
     ${application_name}_build
     ${application_name}_authors
@@ -37,18 +39,13 @@ application_executable_files=(
     ${application_name}_install
     ${application_name}_uninstall
     ${application_name}_version
-    configuration.project
-)
-application_library_files=(
 )
 application_configuration_files=(
+    configuration.project
 )
 application_template_files=(
     template.gitignore
 )
-
-# Applicaton exports
-export PATH=$PATH:$application_executables_path:$application_libraries_path:$application_configurations_path:$application_templates_path:$application_logs_path
 
 # ----------------------------------------------------------------------------#
 # User configuration                                                          #
@@ -58,11 +55,11 @@ export PATH=$PATH:$application_executables_path:$application_libraries_path:$app
 user_name=$USER
 
 # User installation directories
-user_executables_directory="bin"
-user_libraries_directory="lib"
-user_configurations_directory="etc"
-user_templates_directory="templates"
-user_logs_directory="log"
+user_executables_directory="Programs"
+user_libraries_directory="Programs"
+user_configurations_directory="Settings"
+user_templates_directory="Templates"
+user_logs_directory="Logs"
 
 # User installation path settings
 user_path=$HOME
@@ -81,7 +78,6 @@ user_executable_files=(
 user_library_files=(
 )
 user_configuration_files=(
-    configuration.project
 )
 user_template_files=(
 )
@@ -107,10 +103,10 @@ source_module_descriptors=(
     BUILD
     TEST
     INSTALL
-    #TASKS
+    TASKS
     DEFECTS
     FILES
-    #CHANGELOG
+    CHANGELOG
     LICENSE
 )
 

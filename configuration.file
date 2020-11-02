@@ -7,7 +7,7 @@ application_name="file"
 
 # Application installation directories
 application_executables_directory="bin"
-application_libraries_directory="lib"
+application_libraries_directory="bin"
 application_configurations_directory="bin"
 application_templates_directory="templates"
 application_logs_directory="log"
@@ -23,6 +23,8 @@ application_logs_path=$application_path/$application_logs_directory
 # Application files 
 application_executable_files=(
     $application_name 
+)
+application_library_files=(
     ${application_name}_assert
     ${application_name}_copy
     ${application_name}_create
@@ -42,8 +44,6 @@ application_executable_files=(
     ${application_name}_assert_read
     ${application_name}_assert_renamed
     ${application_name}_assert_written
-)
-application_library_files=(
 )
 application_configuration_files=(
     configuration.${application_name}

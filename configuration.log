@@ -7,7 +7,7 @@ application_name="log"
 
 # Application installation directories
 application_executables_directory="bin"
-application_libraries_directory="lib"
+application_libraries_directory="bin"
 application_configurations_directory="bin"
 application_templates_directory="templates"
 application_logs_directory="log"
@@ -25,9 +25,9 @@ export PATH=$PATH:$application_executables_path:$application_libraries_path:$app
 
 # Application files 
 application_executable_files=(
+    $application_name
 )
 application_library_files=(
-    $application_name
     ${application_name}_information
     ${application_name}_warning
     ${application_name}_error

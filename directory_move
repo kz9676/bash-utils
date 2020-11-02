@@ -2,8 +2,8 @@
 
 : '
 
-This file is part of https://github.com/kz9676/bash-project - command-line tool
-for automated setup and maintenance of Bash projects and source code. 
+This file is part of library.file.sh project:
+https://github.com/kz9676/library.file.sh
 
 The MIT License (MIT)
 
@@ -29,12 +29,23 @@ SOFTWARE.
 
 '
 
-. ./configuration.project
-. ./log
+. log                                   # https://github.com/kz9676/bash-log
 
-project_changelog() {
+directory_move() {
 
-    log information "Building revision history ..."
-    git log --pretty=format:"%h %n %ad %n %an %n %s%d %n" --graph --date=short > ./CHANGELOG
+    directory_path_old=$1
+    directory_path_new=$2
+
+    mv $directory_path_old $directory_path_new > /dev/null 2>&1
+
+    if [ $? == 0 ];
+    then 
+        log success "Moved directory - <%s> to <%s>" "$directory_path_old" "$directory_path_new"
+        return 0
+    else
+        log error "Failed to move directory - <%s> to <%s>" "$directory_path_old" "$directory_path_new"
+        return 1 
+    fi 
 
 }
+

@@ -2,8 +2,8 @@
 
 : '
 
-This file is part of https://github.com/kz9676/bash-project - command-line tool
-for automated setup and maintenance of Bash projects and source code. 
+This file is part of library.file.sh project:
+https://github.com/kz9676/library.file.sh
 
 The MIT License (MIT)
 
@@ -29,12 +29,60 @@ SOFTWARE.
 
 '
 
-. ./configuration.project
-. ./log
+. directory_create
+. directory_delete
+. directory_copy
+. directory_move
+. directory_rename
+. directory_find
+. directory_assert
 
-project_changelog() {
+directory() {
 
-    log information "Building revision history ..."
-    git log --pretty=format:"%h %n %ad %n %an %n %s%d %n" --graph --date=short > ./CHANGELOG
+    case "$1" in 
+
+        # Create directory
+        create)
+        directory_create $2 
+        ;;
+
+        # Delete directory
+        delete)
+        directory_delete $2
+        ;;
+
+        # Copy directory
+        copy)
+        directory_copy $2 $3
+        ;;
+
+        # Move directory
+        move)
+        directory_move $2 $3 
+        ;;
+
+        # Rename directory
+        rename)
+        directory_rename $2 $3
+        ;;
+
+        # Find directory
+        find)
+        directory_find 
+        ;;
+
+        # Assert directory
+        assert)
+        directory_assert $2 $3
+        ;;
+
+        # Display library usage
+        *)
+        echo $"Usage: directory {create|delete|copy|move|rename|find|assert}"
+        return 1
+        ;;
+
+    esac 
 
 }
+

@@ -2,8 +2,7 @@
 
 : '
 
-This file is part of https://github.com/kz9676/bash-project - command-line tool
-for automated setup and maintenance of Bash projects and source code. 
+This file is part of library.log.sh project - bash logging library. 
 
 The MIT License (MIT)
 
@@ -29,12 +28,63 @@ SOFTWARE.
 
 '
 
-. ./configuration.project
-. ./log
+. log_information
+. log_warning
+. log_error
+. log_success
 
-project_changelog() {
+information="~~> INFORMATION:"
+warning="~~> WARNING:" 
+error="~~> ERROR:" 
+success="~~> SUCCESS:" 
 
-    log information "Building revision history ..."
-    git log --pretty=format:"%h %n %ad %n %an %n %s%d %n" --graph --date=short > ./CHANGELOG
+heading() {
+    text="$1 "
+    length=${#text}
+    let "length = 78 - length"
+    printf %q "$text" 
+    printf "%${length}s\n\n" | tr [:blank:] - 
+}
+
+numbered_heading() {
+    text="[$1] $2 "
+    length=${#text}
+    let "length = 78 - length"
+    printf %q "$text" 
+    printf "%${length}s\n\n" | tr [:blank:] - 
+}
+
+log() {
+
+    case "$1" in 
+
+        # Log information 
+        information)
+        log_information "$information" "$2" "$3"
+        ;;
+
+        # Log warning 
+        warning)
+        log_warning "$warning" "$2" "$3"
+        ;;
+
+        # Log error 
+        error)
+        log_error "$error" "$2" "$3"
+        ;;
+
+        # Log success 
+        success)
+        log_success "$success" "$2" "$3"
+        ;;
+
+        # Display library usage
+        *)
+        echo $"Usage: log {information|warning|error|success}"
+        return 1
+        ;;
+
+    esac 
 
 }
+

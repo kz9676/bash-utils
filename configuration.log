@@ -3,14 +3,14 @@
 # ----------------------------------------------------------------------------#
 
 # Application metadata
-application_name="project"
+application_name=log
 
 # Application installation directories
-application_executables_directory="bin"
-application_libraries_directory="bin"
-application_configurations_directory="etc"
-application_templates_directory="templates"
-application_logs_directory="log"
+application_executables_directory=bin
+application_libraries_directory=lib
+application_configurations_directory=etc
+application_templates_directory=templates
+application_logs_directory=log
 
 # Application installation path settings
 application_path=~/.local
@@ -25,26 +25,18 @@ export PATH=$PATH:$application_executables_path:$application_libraries_path:$app
 
 # Application files 
 application_executable_files=(
-    $application_name
 )
 application_library_files=(
-    ${application_name}_setup
-    ${application_name}_build
-    ${application_name}_authors
-    ${application_name}_changelog
-    ${application_name}_files
-    ${application_name}_readme
-    ${application_name}_tasks
-    ${application_name}_package
-    ${application_name}_install
-    ${application_name}_uninstall
-    ${application_name}_version
-    configuration.project
+    $application_name
+    log_information
+    log_warning
+    log_error
+    log_success
 )
 application_configuration_files=(
+    configuration.$application_name
 )
 application_template_files=(
-    template.gitignore
 )
 
 # ----------------------------------------------------------------------------#
@@ -57,7 +49,7 @@ user_name=$USER
 # User installation directories
 user_executables_directory="Programs"
 user_libraries_directory="Programs"
-user_configurations_directory="Settings"
+user_configurations_directory=
 user_templates_directory="Templates"
 user_logs_directory="Logs"
 
@@ -82,52 +74,3 @@ user_configuration_files=(
 user_template_files=(
 )
 
-# ----------------------------------------------------------------------------#
-# Source module configuration                                                 #
-# ----------------------------------------------------------------------------#
-
-# Source module descriptors
-source_module_descriptors=(
-    # Order affects ./README chapters
-    DESCRIPTION
-    VERSION
-    AUTHORS
-    BACKGROUND
-    FEATURES
-    REQUIREMENTS
-    DESIGN
-    API
-    EXAMPLES
-    DEPENDENCIES
-    SOURCES
-    BUILD
-    TEST
-    INSTALL
-    TASKS
-    DEFECTS
-    FILES
-    CHANGELOG
-    LICENSE
-)
-
-# Source module templates
-source_module_templates=(
-   .gitignore
-)
-
-# ----------------------------------------------------------------------------#
-# Package configuration                                                       #
-# ----------------------------------------------------------------------------#
-
-package_source_files=(
-)
-package_executable_files=(
-    install
-    uninstall
-)
-package_library_files=(
-)
-package_configuration_files=(
-)
-package_template_files=(
-)

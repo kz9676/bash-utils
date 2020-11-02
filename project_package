@@ -39,8 +39,8 @@ SOFTWARE.
 
 '
 
-. configuration.project     # https://github.com/kz9676/bash-project
-. log                       # https://github.com/kz9676/bash-log
+. ./configuration.project
+. ./log
 
 # TODO - Package source files
 # TODO - Package executable files

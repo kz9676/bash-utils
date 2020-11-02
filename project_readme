@@ -29,8 +29,8 @@ SOFTWARE.
 
 '
 
-. configuration.project     # https://github.com/kz9676/bash-project
-. log                       # https://github.com/kz9676/bash-log
+. ./configuration.project
+. ./log
 
 output_file_name=README
 output_file_path=. 

@@ -1,7 +1,27 @@
+* 9903e31 
+|  2020-11-01 
+|  Kostya Zolotarov 
+|  Fixed install/uninstall. (HEAD -> development, origin/development, origin/HEAD) 
+| 
+* 9273cee 
+|  2020-11-01 
+|  Kostya Zolotarov 
+|  Added applicationa and user exports. 
+| 
+* a0e449a 
+|  2020-11-01 
+|  Kostya Zolotarov 
+|  Removed executable bit. 
+| 
+* 7c577c8 
+|  2020-04-01 
+|  Kostya Zolotarov 
+|  Moved internal commands to executables group in the config. 
+| 
 * bb25ede 
 |  2015-11-27 
 |  Kostya Zolotarov 
-|  Converted application executables to functions (HEAD -> development, origin/development, origin/HEAD) 
+|  Converted application executables to functions 
 | 
 * 0ebec2d 
 |  2015-11-20 

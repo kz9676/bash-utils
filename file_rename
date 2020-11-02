@@ -2,8 +2,8 @@
 
 : '
 
-This file is part of https://github.com/kz9676/bash-project - command-line tool
-for automated setup and maintenance of Bash projects and source code. 
+This file is part of library.file.sh project:
+https://github.com/kz9676/library.file.sh
 
 The MIT License (MIT)
 
@@ -29,12 +29,21 @@ SOFTWARE.
 
 '
 
-. ./configuration.project
-. ./log
+file_rename() {
 
-project_changelog() {
+    file_name_old=$1
+    file_name_new=$2
 
-    log information "Building revision history ..."
-    git log --pretty=format:"%h %n %ad %n %an %n %s%d %n" --graph --date=short > ./CHANGELOG
+    mv $file_name_old $file_name_new > /dev/null 2>&1
+
+    if [ $? == 0 ];
+    then 
+        printf "Renamed file - <%s> to <%s>" "$file_name_old" "$file_name_new" >&2
+        return 0
+    else
+        printf "Failed to rename file - <%s> to <%s>" "$file_name_old" "$file_name_new" >&2
+        return 1 
+    fi 
 
 }
+

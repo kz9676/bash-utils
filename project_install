@@ -30,7 +30,7 @@ SOFTWARE.
 '
 
 . ./configuration.*     # Install target's local configuration files
-. log                   # https://github.com/kz9676/bash-log
+. ./log
 
 project_install() {
 

@@ -2,8 +2,8 @@
 
 : '
 
-This file is part of https://github.com/kz9676/bash-project - command-line tool
-for automated setup and maintenance of Bash projects and source code. 
+This file is part of library.log.sh project:
+https://github.com/kz9676/library.log.sh
 
 The MIT License (MIT)
 
@@ -29,12 +29,13 @@ SOFTWARE.
 
 '
 
-. ./configuration.project
-. ./log
+log_error() {
 
-project_changelog() {
-
-    log information "Building revision history ..."
-    git log --pretty=format:"%h %n %ad %n %an %n %s%d %n" --graph --date=short > ./CHANGELOG
+    format=$1
+    text=$2
+    parameter=$3
+    
+    printf "$format $text\n" "$parameter" >&2
 
 }
+

@@ -30,7 +30,7 @@ SOFTWARE.
 '
 
 . ./configuration.*     # Uninstall target's configuration file
-. log                   # https://github.com/kz9676/bash-log
+. ./log
 
 project_uninstall() {
 

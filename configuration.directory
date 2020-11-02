@@ -1,0 +1,82 @@
+# ----------------------------------------------------------------------------#
+# System configuration                                                        #
+# ----------------------------------------------------------------------------#
+
+# Application metadata
+application_name="directory"
+
+# Application installation directories
+application_executables_directory="bin"
+application_libraries_directory="lib"
+application_configurations_directory="etc"
+application_templates_directory="templates"
+application_logs_directory="log"
+
+# Application installation path settings
+application_path=~/.local
+application_executables_path=$application_path/$application_executables_directory
+application_libraries_path=$application_path/$application_libraries_directory
+application_configurations_path=$application_path/$application_configurations_directory
+application_templates_path=$application_path/$application_templates_directory
+application_logs_path=$application_path/$application_logs_directory
+
+# Application files 
+application_executable_files=(
+)
+application_library_files=(
+    $application_name 
+    directory_assert
+    directory_copy
+    directory_create
+    directory_delete
+    directory_find
+    directory_move
+    directory_rename
+    directory_assert
+    directory_assert_copied
+    directory_assert_created
+    directory_assert_deleted
+    directory_assert_empty
+    directory_assert_found
+    directory_assert_moved
+    directory_assert_read
+    directory_assert_renamed
+    directory_assert_written
+)
+application_configuration_files=(
+    configuration.$application_name
+)
+application_template_files=(
+)
+
+# ----------------------------------------------------------------------------#
+# User configuration                                                          #
+# ----------------------------------------------------------------------------#
+
+# User metadata
+user_name=$USER
+
+# User installation directories
+user_executables_directory="Programs"
+user_libraries_directory="Programs"
+user_configurations_directory=
+user_templates_directory="Templates"
+user_logs_directory="Logs"
+
+# User installation path settings
+user_path=$HOME
+user_executables_path=$user_path/$user_executables_directory
+user_libraries_path=$user_path/$user_libraries_directory
+user_configurations_path=$user_path/$user_configurations_directory
+user_templates_path=$user_path/$user_templates_directory
+user_logs_path=$user_path/$user_logs_directory
+
+# User files 
+user_executable_files=(
+)
+user_library_files=(
+)
+user_configuration_files=(
+)
+user_template_files=(
+)

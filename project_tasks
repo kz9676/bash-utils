@@ -32,8 +32,8 @@ SOFTWARE.
 # TODO - Implement logging of file line numbers
 # TODO - Implement scanning of ./tasks file
 
-. configuration.project     # https://github.com/kz9676/bash-project
-. log                       # https://github.com/kz9676/bash-log
+. ./configuration.project
+. ./log
 
 input_files=./*
 output_file=./TASKS

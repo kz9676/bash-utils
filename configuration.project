@@ -103,10 +103,10 @@ source_module_descriptors=(
     BUILD
     TEST
     INSTALL
-    TASKS
+    #TASKS
     DEFECTS
     FILES
-    CHANGELOG
+    #CHANGELOG
     LICENSE
 )
 

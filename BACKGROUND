@@ -1,11 +1,9 @@
-I needed a tool to automate creation and maintenance of source code modules.
-Invoked from command line, such tool had to produce a source code module.
-Produced source code module would have to contain a fixed set of templated
-descriptor files. These templated and automatically generated descriptor files
-would define format and structure of the source code module.
+I needed a tool to automate creation and maintenance of Bash source code 
+modules. Invoked from command line, such tool had to produce a fixed number
+of templated files that would form a skeleton of my Bash project. 
 
-From a high level view, I envisioned my source modules to resemble something
-similar to the following file structure:
+From the high level, I envisioned my source modules had to resemble the
+following file structure:
 
 .
 |-- ./README

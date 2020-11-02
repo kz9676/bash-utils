@@ -22,29 +22,29 @@ application_logs_path=$application_path/$application_logs_directory
 
 # Application files 
 application_executable_files=(
+    $application_name
+    ${application_name}_assert
+    ${application_name}_copy
+    ${application_name}_create
+    ${application_name}_delete
+    ${application_name}_find
+    ${application_name}_move
+    ${application_name}_rename
+    ${application_name}_assert
+    ${application_name}_assert_copied
+    ${application_name}_assert_created
+    ${application_name}_assert_deleted
+    ${application_name}_assert_empty
+    ${application_name}_assert_found
+    ${application_name}_assert_moved
+    ${application_name}_assert_read
+    ${application_name}_assert_renamed
+    ${application_name}_assert_written
+    configuration.${application_name}
 )
 application_library_files=(
-    $application_name 
-    directory_assert
-    directory_copy
-    directory_create
-    directory_delete
-    directory_find
-    directory_move
-    directory_rename
-    directory_assert
-    directory_assert_copied
-    directory_assert_created
-    directory_assert_deleted
-    directory_assert_empty
-    directory_assert_found
-    directory_assert_moved
-    directory_assert_read
-    directory_assert_renamed
-    directory_assert_written
 )
 application_configuration_files=(
-    configuration.$application_name
 )
 application_template_files=(
 )

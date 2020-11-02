@@ -7,7 +7,7 @@ for automated setup and maintenance of Bash projects and source code.
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Kostya Zolotarov
+Copyright (c) 2015-2020 Kostya Zolotarov
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -29,243 +29,256 @@ SOFTWARE.
 
 '
 
-. ./configuration.*     # Install target's local configuration files
+. ./configuration.project
 . ./log
 
 project_install() {
 
-    ## Executables
+    application_configuration_files=./configuration.*
 
-    # System prefix
-
-    if [ ! -d $application_executables_path ];
-    then
-        log warning "Application executables directory is not found - $application_executables_path"
-        log information "Creating application executables directory - $application_executables_path"
-        mkdir -p $application_executables_path
-        if [ $? = 0 ];
-        then 
-            log success "Created application executables directory - $application_executables_path"
-        else 
-            log error "Failed to create application executables directory - $application_executables_path"
-        fi 
-    fi 
-
-    for file in ${application_executable_files[@]};
+    for configuration in ${application_configuration_files[@]};
     do
-        if [ -f $file ];
+
+        if [ -f $configuration ];
         then
-            log information "Installing $file ..."
-            cp -v ./$file $application_executables_path/$file
-            chmod +x -v $application_executables_path/$file
+            log information "Installing $configuration ..."
+            . $configuration
+
+            ## Executables
+
+            # System prefix
+
+            if [ ! -d $application_executables_path ];
+            then
+                log warning "Application executables directory is not found - $application_executables_path"
+                log information "Creating application executables directory - $application_executables_path"
+                mkdir -p $application_executables_path
+                if [ $? = 0 ];
+                then 
+                    log success "Created application executables directory - $application_executables_path"
+                else 
+                    log error "Failed to create application executables directory - $application_executables_path"
+                fi 
+            fi 
+
+            for file in ${application_executable_files[@]};
+            do
+                if [ -f $file ];
+                then
+                    log information "Installing $file ..."
+                    cp -v ./$file $application_executables_path/$file
+                    chmod +x -v $application_executables_path/$file
+                fi 
+            done
+
+            # User prefix
+
+            if [ ! -d $user_executables_path ];
+            then
+                log warning "User executables directory is not found - $user_executables_path"
+                log information "Creating user executables directory - $user_executables_path"
+                mkdir -p $user_executables_path
+                if [ $? = 0 ];
+                then 
+                    log success "Created user executables directory - $user_executables_path"
+                else 
+                    log error "Failed to create user executables directory - $user_executables_path"
+                fi 
+            fi 
+
+            for file in ${user_executable_files[@]};
+            do
+                if [ -f $file ];
+                then
+                    log information "Installing $file ..."
+                    cp -v ./$file $user_executables_path/${user_name}-$file
+                fi 
+            done
+
+            ## Libraries
+
+            # System prefix
+
+            if [ ! -d $application_libraries_path ];
+            then
+                log warning "Application libraries directory is not found - $application_libraries_path"
+                log information "Creating application libraries directory - $application_libraries_path"
+                mkdir -p $application_libraries_path
+                if [ $? = 0 ];
+                then 
+                    log success "Created application libraries directory - $application_libraries_path"
+                else 
+                    log error "Failed to create application libraries directory - $application_libraries_path"
+                fi 
+            fi 
+
+            for file in ${application_library_files[@]};
+            do
+                if [ -f $file ];
+                then
+                    log information "Installing $file ..."
+                    cp -v ./$file $application_libraries_path/$file 
+                fi 
+            done
+
+            # User prefix
+
+            if [ ! -d $user_libraries_path ];
+            then
+                log warning "User libraries directory is not found - $user_libraries_path"
+                log information "Creating user libraries directory - $user_libraries_path"
+                mkdir -p $user_libraries_path
+                if [ $? = 0 ];
+                then 
+                    log success "Created user libraries directory - $user_libraries_path"
+                else 
+                    log error "Failed to create user libraries directory - $user_libraries_path"
+                fi 
+            fi 
+
+            for file in ${user_library_files[@]};
+            do
+                if [ -f $file ];
+                then
+                    log information "Installing $file ..."
+                    cp -v ./$file $user_libraries_path/$file 
+                fi 
+            done
+
+            ## Configurations
+
+            # System prefix
+
+            if [ ! -d $application_configurations_path ];
+            then
+                log warning "Application configurations directory is not found - $application_configurations_path"
+                log information "Creating application configurations directory - $application_configurations_path"
+                mkdir -p $application_configurations_path
+                if [ $? = 0 ];
+                then 
+                    log success "Created application configurations directory - $application_configurations_path"
+                else 
+                    log error "Failed to create application configurations directory - $application_configurations_path"
+                fi 
+            fi 
+
+            for file in ${application_configuration_files[@]};
+            do
+                if [ -f $file ];
+                then
+                    log information "Installing $file ..."
+                    cp -v ./$file $application_configurations_path/$file 
+                    echo ". $HOME/.$application_name" >> $application_configurations_path/$file
+                fi 
+            done
+
+            # User prefix
+
+            if [ ! -d $user_configurations_path ];
+            then
+                log warning "User configurations directory is not found - $user_configurations_path"
+                log information "Creating user configurations directory - $user_configurations_path"
+                mkdir -p $user_configurations_path
+                if [ $? = 0 ];
+                then 
+                    log success "Created user configurations directory - $user_configurations_path"
+                else 
+                    log error "Failed to create user configurations directory - $user_configurations_path"
+                fi 
+            fi 
+
+            for file in ${user_configuration_files[@]};
+            do
+                if [ -f $file ];
+                then
+                    log information "Installing $file ..."
+                    cp -v ./$file "$user_configurations_path"."$application_name"
+                fi 
+            done
+
+            ## Templates
+
+            # System prefix
+
+            if [ ! -d $application_templates_path ];
+            then
+                log warning "Application templates directory is not found - $application_templates_path"
+                log information "Creating application templates directory - $application_templates_path"
+                mkdir -p $application_templates_path
+                if [ $? = 0 ];
+                then 
+                    log success "Created application templates directory - $application_templates_path"
+                else 
+                    log error "Failed to create application templates directory - $application_templates_path"
+                fi 
+            fi 
+
+            for file in ${application_template_files[@]};
+            do
+                if [ -f $file ];
+                then
+                    log information "Installing $file ..."
+                    cp -v ./$file $application_templates_path/$file
+                fi 
+            done
+
+            # User prefix
+
+            if [ ! -d $user_templates_path ];
+            then
+                log warning "User templates directory is not found - $user_templates_path"
+                log information "Creating user templates directory - $user_templates_path"
+                mkdir -p $user_templates_path
+                if [ $? = 0 ];
+                then 
+                    log success "Created user templates directory - $user_templates_path"
+                else 
+                    log error "Failed to create user templates directory - $user_templates_path"
+                fi 
+            fi 
+
+            for file in ${user_template_files[@]};
+            do
+                if [ -f $file ];
+                then
+                    log information "Installing $file ..."
+                    cp -v ./$file $user_templates_path/$file
+                fi 
+            done
+
+            ## Logs
+
+            # System prefix
+
+            if [ ! -d $application_logs_path ];
+            then
+                log warning "Application logs directory is not found - $application_logs_path"
+                log information "Creating application logs directory - $application_logs_path"
+                mkdir -p $application_logs_path
+                if [ $? = 0 ];
+                then 
+                    log success "Created application logs directory - $application_logs_path"
+                else 
+                    log error "Failed to create application logs directory - $application_logs_path"
+                fi 
+            fi 
+
+            # User prefix
+
+            if [ ! -d $user_logs_path ];
+            then
+                log warning "User logs directory is not found - $user_logs_path"
+                log information "Creating user logs directory - $user_logs_path"
+                mkdir -p $user_logs_path
+                if [ $? = 0 ];
+                then 
+                    log success "Created user logs directory - $user_logs_path"
+                else 
+                    log error "Failed to create user logs directory - $user_logs_path"
+                fi 
+            fi 
+
         fi 
     done
-
-    # User prefix
-
-    if [ ! -d $user_executables_path ];
-    then
-        log warning "User executables directory is not found - $user_executables_path"
-        log information "Creating user executables directory - $user_executables_path"
-        mkdir -p $user_executables_path
-        if [ $? = 0 ];
-        then 
-            log success "Created user executables directory - $user_executables_path"
-        else 
-            log error "Failed to create user executables directory - $user_executables_path"
-        fi 
-    fi 
-
-    for file in ${user_executable_files[@]};
-    do
-        if [ -f $file ];
-        then
-            log information "Installing $file ..."
-            cp -v ./$file $user_executables_path/${user_name}-$file
-        fi 
-    done
-
-    ## Libraries
-
-    # System prefix
-
-    if [ ! -d $application_libraries_path ];
-    then
-        log warning "Application libraries directory is not found - $application_libraries_path"
-        log information "Creating application libraries directory - $application_libraries_path"
-        mkdir -p $application_libraries_path
-        if [ $? = 0 ];
-        then 
-            log success "Created application libraries directory - $application_libraries_path"
-        else 
-            log error "Failed to create application libraries directory - $application_libraries_path"
-        fi 
-    fi 
-
-    for file in ${application_library_files[@]};
-    do
-        if [ -f $file ];
-        then
-            log information "Installing $file ..."
-            cp -v ./$file $application_libraries_path/$file 
-        fi 
-    done
-
-    # User prefix
-
-    if [ ! -d $user_libraries_path ];
-    then
-        log warning "User libraries directory is not found - $user_libraries_path"
-        log information "Creating user libraries directory - $user_libraries_path"
-        mkdir -p $user_libraries_path
-        if [ $? = 0 ];
-        then 
-            log success "Created user libraries directory - $user_libraries_path"
-        else 
-            log error "Failed to create user libraries directory - $user_libraries_path"
-        fi 
-    fi 
-
-    for file in ${user_library_files[@]};
-    do
-        if [ -f $file ];
-        then
-            log information "Installing $file ..."
-            cp -v ./$file $user_libraries_path/$file 
-        fi 
-    done
-
-    ## Configurations
-
-    # System prefix
-
-    if [ ! -d $application_configurations_path ];
-    then
-        log warning "Application configurations directory is not found - $application_configurations_path"
-        log information "Creating application configurations directory - $application_configurations_path"
-        mkdir -p $application_configurations_path
-        if [ $? = 0 ];
-        then 
-            log success "Created application configurations directory - $application_configurations_path"
-        else 
-            log error "Failed to create application configurations directory - $application_configurations_path"
-        fi 
-    fi 
-
-    for file in ${application_configuration_files[@]};
-    do
-        if [ -f $file ];
-        then
-            log information "Installing $file ..."
-            cp -v ./$file $application_configurations_path/$file 
-            echo ". $HOME/.$application_name" >> $application_configurations_path/$file
-        fi 
-    done
-
-    # User prefix
-
-    if [ ! -d $user_configurations_path ];
-    then
-        log warning "User configurations directory is not found - $user_configurations_path"
-        log information "Creating user configurations directory - $user_configurations_path"
-        mkdir -p $user_configurations_path
-        if [ $? = 0 ];
-        then 
-            log success "Created user configurations directory - $user_configurations_path"
-        else 
-            log error "Failed to create user configurations directory - $user_configurations_path"
-        fi 
-    fi 
-
-    for file in ${user_configuration_files[@]};
-    do
-        if [ -f $file ];
-        then
-            log information "Installing $file ..."
-            cp -v ./$file "$user_configurations_path"."$application_name"
-        fi 
-    done
-
-    ## Templates
-
-    # System prefix
-
-    if [ ! -d $application_templates_path ];
-    then
-        log warning "Application templates directory is not found - $application_templates_path"
-        log information "Creating application templates directory - $application_templates_path"
-        mkdir -p $application_templates_path
-        if [ $? = 0 ];
-        then 
-            log success "Created application templates directory - $application_templates_path"
-        else 
-            log error "Failed to create application templates directory - $application_templates_path"
-        fi 
-    fi 
-
-    for file in ${application_template_files[@]};
-    do
-        if [ -f $file ];
-        then
-            log information "Installing $file ..."
-            cp -v ./$file $application_templates_path/$file
-        fi 
-    done
-
-    # User prefix
-
-    if [ ! -d $user_templates_path ];
-    then
-        log warning "User templates directory is not found - $user_templates_path"
-        log information "Creating user templates directory - $user_templates_path"
-        mkdir -p $user_templates_path
-        if [ $? = 0 ];
-        then 
-            log success "Created user templates directory - $user_templates_path"
-        else 
-            log error "Failed to create user templates directory - $user_templates_path"
-        fi 
-    fi 
-
-    for file in ${user_template_files[@]};
-    do
-        if [ -f $file ];
-        then
-            log information "Installing $file ..."
-            cp -v ./$file $user_templates_path/$file
-        fi 
-    done
-
-    ## Logs
-
-    # System prefix
-
-    if [ ! -d $application_logs_path ];
-    then
-        log warning "Application logs directory is not found - $application_logs_path"
-        log information "Creating application logs directory - $application_logs_path"
-        mkdir -p $application_logs_path
-        if [ $? = 0 ];
-        then 
-            log success "Created application logs directory - $application_logs_path"
-        else 
-            log error "Failed to create application logs directory - $application_logs_path"
-        fi 
-    fi 
-
-    # User prefix
-
-    if [ ! -d $user_logs_path ];
-    then
-        log warning "User logs directory is not found - $user_logs_path"
-        log information "Creating user logs directory - $user_logs_path"
-        mkdir -p $user_logs_path
-        if [ $? = 0 ];
-        then 
-            log success "Created user logs directory - $user_logs_path"
-        else 
-            log error "Failed to create user logs directory - $user_logs_path"
-        fi 
-    fi 
 
 }

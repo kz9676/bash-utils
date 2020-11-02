@@ -32,7 +32,7 @@ SOFTWARE.
 . ./configuration.project
 . ./log
 
-output_file_name=README
+output_file_name="README"
 output_file_path=. 
 output_file=$output_file_path/$output_file_name
 

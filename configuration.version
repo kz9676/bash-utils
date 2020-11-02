@@ -27,11 +27,11 @@ export PATH=$PATH:$application_executables_path:$application_libraries_path:$app
 application_executable_files=(
     $application_name
     ${application_name}_increment
+    configuration.${application_name}
 )
 application_library_files=(
 )
 application_configuration_files=(
-    configuration.$application_name
 )
 application_template_files=(
 )
@@ -46,7 +46,7 @@ user_name=$USER
 # User installation directories
 user_executables_directory="Programs"
 user_libraries_directory="Programs"
-user_configurations_directory=
+user_configurations_directory="Settings"
 user_templates_directory="Templates"
 user_logs_directory="Logs"
 
@@ -67,7 +67,6 @@ user_executable_files=(
 user_library_files=(
 )
 user_configuration_files=(
-    configuration.$application_name
 )
 user_template_files=(
 )

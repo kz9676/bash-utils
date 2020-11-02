@@ -5,11 +5,11 @@ projects.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.4.3
+0.0.4.5
 
 [3] AUTHORS ------------------------------------------------------------------
 
-Kostya Zolotarov <kostya.zolotarov@globalrelay.net>
+Kostya Zolotarov <kostya.zolotarov@gmail.com>
 
 [4] BACKGROUND ---------------------------------------------------------------
 
@@ -183,11 +183,11 @@ projects.
 
 [2] VERSION ------------------------------------------------------------------
 
-0.0.4.3
+0.0.4.5
 
 [3] AUTHORS ------------------------------------------------------------------
 
-Kostya Zolotarov <kostya.zolotarov@globalrelay.net>
+Kostya Zolotarov <kostya.zolotarov@gmail.com>
 
 [4] BACKGROUND ---------------------------------------------------------------
 
@@ -360,16 +360,61 @@ The following command gets bash-project installed in a local host environment:
 |--  ./BACKGROUND
 |--  ./BUILD
 |--  ./CHANGELOG
+|--  ./configuration.directory
+|--  ./configuration.file
+|--  ./configuration.log
 |--  ./configuration.project
+|--  ./configuration.version
 |--  ./DEFECTS
 |--  ./DEPENDENCIES
 |--  ./DESCRIPTION
 |--  ./DESIGN
+|--  ./directory
+|--  ./directory_assert
+|--  ./directory_assert_copied
+|--  ./directory_assert_created
+|--  ./directory_assert_deleted
+|--  ./directory_assert_empty
+|--  ./directory_assert_found
+|--  ./directory_assert_moved
+|--  ./directory_assert_read
+|--  ./directory_assert_renamed
+|--  ./directory_assert_written
+|--  ./directory_copy
+|--  ./directory_create
+|--  ./directory_delete
+|--  ./directory_find
+|--  ./directory_move
+|--  ./directory_rename
 |--  ./EXAMPLES
 |--  ./FEATURES
+|--  ./file
+|--  ./file_assert
+|--  ./file_assert_copied
+|--  ./file_assert_created
+|--  ./file_assert_deleted
+|--  ./file_assert_empty
+|--  ./file_assert_found
+|--  ./file_assert_moved
+|--  ./file_assert_read
+|--  ./file_assert_renamed
+|--  ./file_assert_written
+|--  ./file_copy
+|--  ./file_create
+|--  ./file_delete
+|--  ./file_find
+|--  ./file_move
+|--  ./file_read
+|--  ./file_rename
 |--  ./FILES
+|--  ./file_write
 |--  ./INSTALL
 |--  ./LICENSE
+|--  ./log
+|--  ./log_error
+|--  ./log_information
+|--  ./log_success
+|--  ./log_warning
 |--  ./project
 |--  ./project_authors
 |--  ./project_build
@@ -394,16 +439,52 @@ The following command gets bash-project installed in a local host environment:
 |--  ./template.bash.variable
 |--  ./template.gitignore
 |--  ./TEST
-\--  ./VERSION
+|--  ./test.file_assert
+|--  ./test.file_copy
+|--  ./test.file_create
+|--  ./test.file_delete
+|--  ./test.file_find
+|--  ./test.file_move
+|--  ./test.file_read
+|--  ./test.file_rename
+|--  ./test.file_write
+|--  ./VERSION
+|--  ./version
+\--  ./version_increment
 
-40 files
+96 files
 
 [11] CHANGELOG ---------------------------------------------------------------
 
+* 0ae65b0 
+|  2020-11-01 
+|  Kostya Zolotarov 
+|  Merged bash-version, bash-file, bash-directory and bash-log. (HEAD -> development, origin/development, origin/HEAD) 
+| 
+* 9903e31 
+|  2020-11-01 
+|  Kostya Zolotarov 
+|  Fixed install/uninstall. 
+| 
+* 9273cee 
+|  2020-11-01 
+|  Kostya Zolotarov 
+|  Added applicationa and user exports. 
+| 
+* a0e449a 
+|  2020-11-01 
+|  Kostya Zolotarov 
+|  Removed executable bit. 
+| 
+* 7c577c8 
+|  2020-04-01 
+|  Kostya Zolotarov 
+|  Moved internal commands to executables group in the config. 
+| 
 * bb25ede 
 |  2015-11-27 
 |  Kostya Zolotarov 
-|  Converted application executables to functions (HEAD -> development, origin/development, origin/HEAD) 
+|  Converted application executables to functions 
 | 
 * 0ebec2d 
 |  2015-11-20 

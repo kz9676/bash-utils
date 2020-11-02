@@ -39,7 +39,7 @@ application_library_files=(
     ${application_name}_install
     ${application_name}_uninstall
     ${application_name}_version
-    configuration.project
+    configuration.${application_name}
 )
 application_configuration_files=(
 )
@@ -122,8 +122,6 @@ source_module_templates=(
 package_source_files=(
 )
 package_executable_files=(
-    install
-    uninstall
 )
 package_library_files=(
 )

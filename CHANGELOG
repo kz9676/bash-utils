@@ -1,7 +1,12 @@
+* 0ae65b0 
+|  2020-11-01 
+|  Kostya Zolotarov 
+|  Merged bash-version, bash-file, bash-directory and bash-log. (HEAD -> development, origin/development, origin/HEAD) 
+| 
 * 9903e31 
 |  2020-11-01 
 |  Kostya Zolotarov 
-|  Fixed install/uninstall. (HEAD -> development, origin/development, origin/HEAD) 
+|  Fixed install/uninstall. 
 | 
 * 9273cee 
 |  2020-11-01 

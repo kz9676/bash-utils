@@ -1,7 +1,17 @@
+* d782f30 
+|  2020-11-02 
+|  Kostya Zolotarov 
+|  System path fix (HEAD -> development, origin/development, origin/HEAD) 
+| 
+* ead9541 
+|  2020-11-02 
+|  Kostya Zolotarov 
+|  Install the libs in bin, for now. 
+| 
 * 1b2efe0 
 |  2020-11-02 
 |  Kostya Zolotarov 
-|  Install the configs in bin, for now. (HEAD -> development, origin/development, origin/HEAD) 
+|  Install the configs in bin, for now. 
 | 
 * a62cf89 
 |  2020-11-02 

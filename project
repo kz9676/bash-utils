@@ -29,7 +29,6 @@ SOFTWARE.
 
 '
 
-. configuration.project
 . project_authors
 . project_build
 . project_changelog

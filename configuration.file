@@ -8,7 +8,7 @@ application_name="file"
 # Application installation directories
 application_executables_directory="bin"
 application_libraries_directory="bin"
-application_configurations_directory="bin"
+application_configurations_directory="etc"
 application_templates_directory="templates"
 application_logs_directory="log"
 

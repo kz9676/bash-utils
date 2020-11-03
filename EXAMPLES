@@ -1,0 +1,49 @@
+Generate new README project template.
+
+    $ project setup
+    .
+    |--  ./API
+    |--  ./AUTHORS
+    |--  ./BACKGROUND
+    |--  ./BUILD
+    |--  ./CHANGELOG
+    |--  ./DEFECTS
+    |--  ./DEPENDENCIES
+    |--  ./DESCRIPTION
+    |--  ./DESIGN
+    |--  ./EXAMPLES
+    |--  ./FEATURES
+    |--  ./FILES
+    |--  ./INSTALL
+    |--  ./LICENSE
+    |--  ./REQUIREMENTS
+    |--  ./SOURCES
+    |--  ./TEST
+    \--  ./VERSION
+    
+    18 files
+
+Generate a list of project authors and store this list in  the AUTHORS file. 
+
+    $ project authors
+
+Generate the project list of commits and store them in the CHANGELOG file.
+
+    $ project changelog
+
+Generate a list of project files and store them in the FILES file.
+
+    $ project files
+
+Increment the project version and store it in the VERSION file.
+
+    $ project version
+
+Collect information form AUTHORS, CHANGELOG, FILES, VERSION, etc and store everything in the updated README file.
+
+    $ project readme
+
+Build AUTHORS, CHANGELOG, FILES, VERSION, and README with a single key stroke.
+
+    $ project build
+

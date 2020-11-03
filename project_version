@@ -62,7 +62,7 @@ project_version() {
         fi 
     else 
         log error "Failed to increment version. $version_file not found."
-        exit 1
+        return 1
     fi
 
 }

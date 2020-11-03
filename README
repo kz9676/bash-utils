@@ -1,47 +1,16 @@
 [97] DESCRIPTION -------------------------------------------------------------
 
-Command-line utility for automated creation and maintenance of Bash source code
-projects.
+README file builder.
 
 [98] VERSION -----------------------------------------------------------------
 
-0.0.4.9
+0.0.5.1
 
 [99] AUTHORS -----------------------------------------------------------------
 
 Kostya Zolotarov <kostya.zolotarov@gmail.com>
 
-[100] BACKGROUND -------------------------------------------------------------
-
-I needed a tool to automate creation and maintenance of Bash source code 
-modules. Invoked from command line, such tool had to produce a fixed number
-of templated files that would form a skeleton of my Bash project. 
-
-From the high level, I envisioned my source modules had to resemble the
-following file structure:
-
-.
-|-- ./README
-|-- ./VERSION
-|-- ./AUTHORS
-|-- ./CHANGELOG
-|-- ./TASKS
-|-- ./DEFECTS
-|-- ./BUILD
-|-- ./INSTALL
-|-- ./LICENSES
-|-- ./sourcefile.X
-|-- ./sourcefile.Y
-|-- ./sourcefile.Z
-|-- ./library.name.X
-|-- ./library.name.Y
-|-- ./library.name.Z
-|-- ./settings.feature.X
-|-- ./settings.feature.Y
-|-- ./settings.feature.Z
-\-- etc.
-
-[101] FEATURES ---------------------------------------------------------------
+[100] FEATURES ---------------------------------------------------------------
 
     * setup - Setup new source module 
     * build - Build the source module 
@@ -54,109 +23,58 @@ following file structure:
     * install - Install the source module 
     * uninstall - Uninstall the source module 
 
-[102] DESIGN -----------------------------------------------------------------
+[101] EXAMPLES ---------------------------------------------------------------
 
-The 'project' consists of two key parts:
+Generate new README project template.
 
-    * Application files 
-    * Source files
+    $ project setup
+    .
+    |--  ./API
+    |--  ./AUTHORS
+    |--  ./BACKGROUND
+    |--  ./BUILD
+    |--  ./CHANGELOG
+    |--  ./DEFECTS
+    |--  ./DEPENDENCIES
+    |--  ./DESCRIPTION
+    |--  ./DESIGN
+    |--  ./EXAMPLES
+    |--  ./FEATURES
+    |--  ./FILES
+    |--  ./INSTALL
+    |--  ./LICENSE
+    |--  ./REQUIREMENTS
+    |--  ./SOURCES
+    |--  ./TEST
+    \--  ./VERSION
+    
+    18 files
 
-1. Application Files
+Generate a list of project authors and store this list in  the AUTHORS file. 
 
-Commands 
-    * project 
+    $ project authors
 
-Functions
+Generate the project list of commits and store them in the CHANGELOG file.
 
-    * project_authors 
-    * project_build 
-    * project_changelog 
-    * project_files 
-    * project_install 
-    * project_package 
-    * project_readme 
-    * project_setup 
-    * project_tasks 
-    * project_uninstall 
+    $ project changelog
 
-2. Source files
+Generate a list of project files and store them in the FILES file.
 
-The source project files consist of everything that belongs to a given source
-project. In the current release, definition of a source project includes:
+    $ project files
 
-    * Documents 
-    * Templates 
-    * Executables 
-    * Libraries 
-    * Functions 
-    * Variables 
-    * Options 
-    * Configurations 
-    * Tests
+Increment the project version and store it in the VERSION file.
 
-In closer detail, elements of a source project include the following:
+    $ project version
 
-    * Documents 
+Collect information form AUTHORS, CHANGELOG, FILES, VERSION, etc and store everything in the updated README file.
 
-        * ./API 
-        * ./AUTHORS 
-        * ./BACKGROUND 
-        * ./BUILD 
-        * ./CHANGELOG 
-        * ./DEFECTS 
-        * ./DEPENDENCIES 
-        * ./DESCRIPTION 
-        * ./DESIGN
-        * ./EXAMPLES
-        * ./FEATURES 
-        * ./INSTALL 
-        * ./LICENSE
-        * ./README 
-        * ./REQUIREMENTS 
-        * ./SOURCES 
-        * ./TASKS 
-        * ./TEST 
-        * ./VERSION 
+    $ project readme
 
-    * Templates
+Build AUTHORS, CHANGELOG, FILES, VERSION, and README with a single key stroke.
 
-        * ./template.bash.executable 
-        * ./template.bash.variable 
-        * ./template.bash.function 
-        * ./template.bash.test 
-        * ./template.bash.configuration 
-        * ./template.gitignore 
+    $ project build
 
-    * Variables
-
-        * ./variable.[name]
-        * ./variable.[name]
-        * etc. 
-
-    * Functions
-
-        * ./function.[name]
-        * ./function.[name]
-        * etc. 
-
-    * Options
-
-        * ./option.[name]
-        * ./option.[name]
-
-    * Tests
-
-        * ./test.[name]
-        * ./test.[name]
-        * etc. 
-
-    * Configurations
-
-        * ./configuration.[name]
-        * ./configuration.[name]
-        * etc. 
-
-[103] SOURCES ----------------------------------------------------------------
+[102] SOURCES ----------------------------------------------------------------
 
 Source code can be obtained on GitHub (https://github.com/kz9676/srcmod).
 
@@ -166,14 +84,17 @@ Presently, I have one active branch:
                             always reflects a state with the latest delivered
                             development changes for the next release
 
-[104] INSTALL ----------------------------------------------------------------
+[103] INSTALL ----------------------------------------------------------------
 
-The following command gets bash-project installed in a local host environment:
+The following command gets the readme builder installed into a local host environment:
 
     $ bash ./project install
+
+The following command removes the readme builder from your local host environment:
+
     $ bash ./project uninstall
 
-[105] FILES ------------------------------------------------------------------
+[104] FILES ------------------------------------------------------------------
 
 .
 |--  ./API
@@ -275,7 +196,7 @@ The following command gets bash-project installed in a local host environment:
 
 96 files
 
-[106] LICENSE ----------------------------------------------------------------
+[105] LICENSE ----------------------------------------------------------------
 
 The MIT License (MIT)
 

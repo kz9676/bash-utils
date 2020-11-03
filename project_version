@@ -30,9 +30,9 @@ SOFTWARE.
 '
 
 . configuration.project
-. log
-. file
-. version
+. $application_executables_path/log
+. $application_executables_path/file
+. $application_executables_path/version
 
 version_file_name=VERSION
 version_file_path=. 

@@ -30,7 +30,7 @@ SOFTWARE.
 '
 
 . configuration.project
-. log
+. $application_executables_path/log
 
 project_build() {
 

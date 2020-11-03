@@ -39,8 +39,8 @@ SOFTWARE.
 
 '
 
-. ./configuration.project
-. ./log
+. configuration.project
+. $application_executables_path/log
 
 # TODO - Package source files
 # TODO - Package executable files

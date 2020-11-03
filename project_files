@@ -30,7 +30,7 @@ SOFTWARE.
 '
 
 . configuration.project
-. log
+. $application_executables_path/log
 
 input_files=./*
 output_files=()

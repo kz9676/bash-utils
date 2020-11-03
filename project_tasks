@@ -32,8 +32,8 @@ SOFTWARE.
 # TODO - Implement logging of file line numbers
 # TODO - Implement scanning of ./tasks file
 
-. configuration.project
-. log
+. $application_configurations_path/configuration.project
+. $application_executables_path/log
 
 input_files=./*
 output_file=./TASKS

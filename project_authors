@@ -29,7 +29,7 @@ SOFTWARE.
 
 '
 
-. configuration.project
+. $application_configurations_path/configuration.project
 . $application_executables_path/log
 
 project_authors() {

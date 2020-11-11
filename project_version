@@ -2,12 +2,9 @@
 
 : '
 
-This file is part of https://github.com/kz9676/bash-project - command-line tool
-for automated setup and maintenance of Bash projects and source code. 
-
 The MIT License (MIT)
 
-Copyright (c) 2015 Kostya Zolotarov
+Copyright (c) 2015-2020 Kostya Zolotarov
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

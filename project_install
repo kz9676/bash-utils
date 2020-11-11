@@ -2,9 +2,6 @@
 
 : '
 
-This file is part of https://github.com/kz9676/bash-project - command-line tool
-for automated setup and maintenance of Bash projects and source code. 
-
 The MIT License (MIT)
 
 Copyright (c) 2015-2020 Kostya Zolotarov
@@ -29,7 +26,7 @@ SOFTWARE.
 
 '
 
-. $application_configurations_path/configuration.project
+. ./configuration.project
 . $application_executables_path/log
 
 project_install() {

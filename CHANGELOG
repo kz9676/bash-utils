@@ -1,7 +1,27 @@
-* 05b2b66 
+* c7ef6f8 
+|  2020-11-10 
+|  Kostya Zolotarov 
+|  Project wizard (HEAD -> development, origin/development, origin/HEAD) 
+| 
+* 2f807af 
+|  2020-11-03 
+|  Kostya Zolotarov 
+|  Installed the configs to the settings path. 
+| 
+* 1a3a1f7 
+|  2020-11-03 
+|  Kostya Zolotarov 
+|  Dynamic import path for the configs 
+| 
+* b653fa3 
+|  2020-11-03 
+|  Kostya Zolotarov 
+|  Dynamic import path for the executables 
+| 
+* 9206f6e 
 |  2020-11-02 
 |  Kostya Zolotarov 
-|  Updated examples. (HEAD -> development, origin/development, origin/HEAD) 
+|  Updated examples. 
 | 
 * 7d1d8e6 
 |  2020-11-02 

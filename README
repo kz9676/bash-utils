@@ -1,16 +1,16 @@
-[97] DESCRIPTION -------------------------------------------------------------
+[1] DESCRIPTION --------------------------------------------------------------
 
-README file builder.
+Bash helper scripts.
 
-[98] VERSION -----------------------------------------------------------------
+[2] VERSION ------------------------------------------------------------------
 
-0.0.5.1
+0.0.5.2
 
-[99] AUTHORS -----------------------------------------------------------------
+[3] AUTHORS ------------------------------------------------------------------
 
 Kostya Zolotarov <kostya.zolotarov@gmail.com>
 
-[100] FEATURES ---------------------------------------------------------------
+[4] FEATURES -----------------------------------------------------------------
 
     * setup - Setup new source module 
     * build - Build the source module 
@@ -23,7 +23,7 @@ Kostya Zolotarov <kostya.zolotarov@gmail.com>
     * install - Install the source module 
     * uninstall - Uninstall the source module 
 
-[101] EXAMPLES ---------------------------------------------------------------
+[5] EXAMPLES -----------------------------------------------------------------
 
 Generate new README project template.
 
@@ -74,17 +74,13 @@ Build AUTHORS, CHANGELOG, FILES, VERSION, and README with a single key stroke.
 
     $ project build
 
-[102] SOURCES ----------------------------------------------------------------
-
-Source code can be obtained on GitHub (https://github.com/kz9676/srcmod).
-
-Presently, I have one active branch:
+[6] SOURCES ------------------------------------------------------------------
 
     * origin/development  - is the main branch where the source code of HEAD
                             always reflects a state with the latest delivered
                             development changes for the next release
 
-[103] INSTALL ----------------------------------------------------------------
+[7] INSTALL ------------------------------------------------------------------
 
 The following command gets the readme builder installed into a local host environment:
 
@@ -94,7 +90,7 @@ The following command removes the readme builder from your local host environmen
 
     $ bash ./project uninstall
 
-[104] FILES ------------------------------------------------------------------
+[8] FILES --------------------------------------------------------------------
 
 .
 |--  ./API
@@ -169,10 +165,10 @@ The following command removes the readme builder from your local host environmen
 |--  ./project_tasks
 |--  ./project_uninstall
 |--  ./project_version
+|--  ./project-wizard
 |--  ./README
 |--  ./REQUIREMENTS
 |--  ./SOURCES
-|--  ./tags
 |--  ./TASKS
 |--  ./template.bash.configuration
 |--  ./template.bash.executable
@@ -196,7 +192,7 @@ The following command removes the readme builder from your local host environmen
 
 96 files
 
-[105] LICENSE ----------------------------------------------------------------
+[9] LICENSE ------------------------------------------------------------------
 
 The MIT License (MIT)
 

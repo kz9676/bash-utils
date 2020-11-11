@@ -71,10 +71,10 @@
 |--  ./project_tasks
 |--  ./project_uninstall
 |--  ./project_version
+|--  ./project-wizard
 |--  ./README
 |--  ./REQUIREMENTS
 |--  ./SOURCES
-|--  ./tags
 |--  ./TASKS
 |--  ./template.bash.configuration
 |--  ./template.bash.executable

@@ -2,9 +2,6 @@
 
 : '
 
-This file is part of https://github.com/kz9676/bash-project - command-line tool
-for automated setup and maintenance of Bash projects and source code. 
-
 The MIT License (MIT)
 
 Copyright (c) 2015-2020 Kostya Zolotarov
@@ -39,6 +36,7 @@ SOFTWARE.
 . project_setup
 . project_tasks
 . project_uninstall
+. project_wizard
 . project_version
 
 authors() {
@@ -81,6 +79,10 @@ uninstall() {
     project_uninstall
 }
 
+wizard() {
+    project_wizard
+}
+
 version() {
     project_version
 }
@@ -116,11 +118,13 @@ case "$1" in
     uninstall)
         uninstall 
         ;;
+    wizard)
+        wizard
+        ;;
     version)
         version 
         ;;
     *)
-        echo $"Usage: bash project {authors|build|changelog|files|install|package|readme|setup|tasks|uninstall|version}"
-        exit 1
+        echo $"Usage: "${0##*/}" {authors|build|changelog|files|install|package|readme|setup|tasks|uninstall|version}"
 esac 
 

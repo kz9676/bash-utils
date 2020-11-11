@@ -1,7 +1,3 @@
-Source code can be obtained on GitHub (https://github.com/kz9676/srcmod).
-
-Presently, I have one active branch:
-
     * origin/development  - is the main branch where the source code of HEAD
                             always reflects a state with the latest delivered
                             development changes for the next release

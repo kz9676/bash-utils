@@ -33,12 +33,12 @@ SOFTWARE.
 . $application_executables_path/file
 . $application_executables_path/version
 
-version_file_name=VERSION
+EOF
+printf 'version_file_name=VERSION
 version_file_path=. 
 version_file=$version_file_path/$version_file_name
 
-EOF
-printf 'project_version() {
+project_version() {
 
     if [ -f $version_file ];
     then
@@ -46,7 +46,7 @@ printf 'project_version() {
         file assert empty "$version_file"
         if [ $? == 0 ];
         then
-            version_number='0.0.0.0'
+            version_number="0.0.0.0"
             log information "Initializing $version_file with $version_number ..."
             printf "$version_number" > "$version_file"
         fi 

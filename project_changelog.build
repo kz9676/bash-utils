@@ -1,4 +1,4 @@
-#!/usr/bin/env bash 
+#!/usr/bin/env bash
 
 : '
 
@@ -26,29 +26,12 @@ SOFTWARE.
 
 '
 
-. $application_configurations_path/configuration.project
-. $application_executables_path/log
+. /home/kz9676/.local/bin/configuration.project
+. /home/kz9676/.local/bin/log
 
-project_readme() {
+project_changelog() {
 
-    output_file_name="README"
-    output_file_path=. 
-    output_file=$output_file_path/$output_file_name
-
-    > $output_file
-    log information "Updating $output_file ..."
-    for source_module_file in ${source_module_descriptors[@]};
-    do
-        if [ -s $source_module_file ];
-        then
-            source_module_file_text="$(<$source_module_file)"
-            log information "Writing section title for $source_module_file to $output_file ..."
-            let counter++ 
-            numbered_heading "$counter" "$source_module_file" | xargs printf "%s\n\n" >> $output_file
-            log information "Writing contents of $source_module_file to $output_file ..."
-            printf "$source_module_file_text\n\n" >> $output_file 
-        fi 
-    done
+    log information "Building revision history ..."
+    git log --pretty=format:"%h %n %ad %n %an %n %s%d %n" --graph --date=short > ./CHANGELOG
 
 }
-

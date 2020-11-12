@@ -1,3 +1,5 @@
+. ./configuration.project
+cat > ./project_setup.build <<-EOF
 #!/usr/bin/env bash
 
 : '
@@ -29,7 +31,8 @@ SOFTWARE.
 . $application_configurations_path/configuration.project
 . $application_executables_path/log
 
-project_name=${PWD##*/}
+EOF
+printf 'project_name=${PWD##*/}
 
 #initialize_source_module_template() {
     #source_module_template_file=$1
@@ -84,4 +87,4 @@ project_setup() {
         #fi 
     #done
 
-}
+}' >> ./project_setup.build

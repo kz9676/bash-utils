@@ -1,0 +1,135 @@
+#!/usr/bin/env bash 
+
+: '
+
+The MIT License (MIT)
+
+Copyright (c) 2015-2020 Kostya Zolotarov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+'
+
+. /home/kz9676/.local/bin/configuration.project
+. /home/kz9676/.local/bin/log
+
+project_uninstall() {
+
+    application_configuration_files=./configuration.*
+
+    for configuration in ${application_configuration_files[@]};
+    do
+
+        if [ -f $configuration ];
+        then
+            log information "Installing $configuration ..."
+            . $configuration
+
+            ## Executables
+
+            for file in ${application_executable_files[@]};
+            do 
+                executable_file=$application_executables_path/$file
+                if [ -f $executable_file ];
+                then
+                    log information "Uninstalling $executable_file ..."
+                    rm -fv $executable_file 
+                fi 
+            done
+
+            for file in ${user_executable_files[@]};
+            do 
+                executable_file=$user_executables_path/${user_name}-$file
+                if [ -f $executable_file ];
+                then
+                    log information "Uninstalling $executable_file ..."
+                    rm -fv $executable_file 
+                fi 
+            done
+
+            ## Libraries
+
+            for file in ${application_library_files[@]};
+            do
+                library_file=$application_libraries_path/$file
+                if [ -f $library_file ];
+                then
+                    log information "Uninstalling $library_file ..."
+                    rm -fv $library_file
+                fi 
+            done
+
+            for file in ${user_library_files[@]};
+            do
+                library_file=$user_libraries_path/$file
+                if [ -f $library_file ];
+                then
+                    log information "Uninstalling $library_file ..."
+                    rm -fv $library_file
+                fi 
+            done
+
+            ## Configurations
+
+            for file in ${application_configuration_files[@]};
+            do
+                configuration_file=$application_configurations_path/$file
+                if [ -f $configuration_file ];
+                then
+                    log information "Uninstalling $configuration_file ..."
+                    rm -fv $configuration_file
+                fi 
+            done
+
+            for file in ${user_configuration_files[@]};
+            do
+                configuration_file="$user_configurations_path"."${application_name}"
+                if [ -f $configuration_file ];
+                then
+                    log information "Uninstalling $configuration_file ..."
+                    rm -fv $configuration_file
+                fi 
+            done
+
+            ## Templates
+
+            for file in ${application_template_files[@]};
+            do
+                template_file=$application_templates_path/$file
+                if [ -f $template_file ];
+                then
+                    log information "Uninstalling $template_file ..."
+                    rm -fv $template_file
+                fi 
+            done
+
+            for file in ${user_template_files[@]};
+            do
+                template_file=$user_templates_path/$file
+                if [ -f $template_file ];
+                then
+                    log information "Uninstalling $template_file ..."
+                    rm -fv $template_file
+                fi 
+            done
+
+        fi
+    done
+
+}

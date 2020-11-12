@@ -26,14 +26,16 @@ SOFTWARE.
 
 '
 
-. $application_configurations_path/configuration.project
-. $application_executables_path/log
+. /home/kz9676/.local/bin/configuration.project
+. /home/kz9676/.local/bin/log
 
-project_authors() {
+project_build() {
 
-    log information "Building list of contributors ..."
-    repository_authors="$(git log --format='%an <%ae>' HEAD -n1)"  
-    echo $repository_authors > ./AUTHORS
+    log information "Building project ..."
+    project_authors
+    project_changelog
+    project_files 
+    project_version 
+    project_readme
 
 }
-

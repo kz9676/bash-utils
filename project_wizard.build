@@ -26,6 +26,7 @@ SOFTWARE.
 
 '
 
+
 project=$1
 target=$2
 name=$3
@@ -60,19 +61,30 @@ c() {
 #       RETURNS:  0 if the the new project workspace is created successfully. 
 #-------------------------------------------------------------------------------
 help() {
+
     echo $"Usage: "${0##*/}" c {cli}"
+
 }
 
-case $project in
+#---  FUNCTION  ----------------------------------------------------------------
+#          NAME:  project_wizard
+#   DESCRIPTION:  Create new software development project.  
+#    PARAMETERS:  Project target and project name. 
+#       RETURNS:  0 if the the new project workspace is created successfully. 
+#-------------------------------------------------------------------------------
+project_wizard() {
 
-    # C project
-    c)
-        c $target $name
-        ;;
+    case $project in
 
-    *)
-        help
-        ;;
+        # C project
+        c)
+            c $target $name
+            ;;
 
-esac
+        *)
+            help
+            ;;
 
+    esac
+
+}

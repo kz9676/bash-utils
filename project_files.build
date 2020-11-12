@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+
+: '
+
+The MIT License (MIT)
+
+Copyright (c) 2015-2020 Kostya Zolotarov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+'
+
+. /home/kz9676/.local/bin/configuration.project
+. /home/kz9676/.local/bin/log
+
+
+input_files=./*
+output_files=()
+index_file_path=.
+index_file_name=FILES
+index_file=$output_file_path/$output_file_name
+index_file_entry_opening_prefix="."
+index_file_entry_prefix="|-- "
+index_file_entry_closing_prefix="\-- "
+
+project_files() {
+
+    log information "Indexing files ..."
+    for input_file in $input_files;
+    do 
+        if [ -L $input_file ];
+        then
+            log warning "Skipping symlink $input_file ..."
+        else 
+            log information "Indexing $input_file ..."
+            output_files+=($input_file)
+        fi 
+    done
+
+    log information "Recording file index to $index_file ..."
+    >$index_file_name
+    printf "$index_file_entry_opening_prefix
+" >> $index_file_name
+    declare -i output_files_count="${#output_files[*]}"
+    for output_file in ${output_files[@]};
+    do
+        let counter++
+        log information "Recording $output_file ..."
+        if [ "$counter" == "$output_files_count" ];
+        then
+            index_file_entry_prefix=$index_file_entry_closing_prefix
+        fi 
+        printf "$index_file_entry_prefix $output_file
+" >> $index_file_name
+    done
+    printf "
+$output_files_count files
+" >> $index_file_name 
+
+}

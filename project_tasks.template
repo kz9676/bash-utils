@@ -1,0 +1,76 @@
+. ./configuration.project
+cat > ./project_tasks.build <<-EOF
+#!/usr/bin/env bash 
+
+: '
+
+The MIT License (MIT)
+
+Copyright (c) 2015-2020 Kostya Zolotarov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+'
+
+# TODO - Implement logging of file line numbers
+# TODO - Implement scanning of ./tasks file
+
+. $application_configurations_path/configuration.project
+. $application_executables_path/log
+
+EOF
+printf 'input_files=./*
+output_file=./TASKS
+exclude_files=(./tasks $output_file ./changelog ./CHANGELOG ./README)
+search_keyword=TODO
+
+project_tasks() {
+
+    > $output_file
+    for input_file in $input_files
+    do
+        log information "Selecting $input_file ..."
+        for exclude_file in ${exclude_files[@]};
+        do 
+            log information "Comparing $input_file and $exclude_file ..."
+            if [ $input_file == $exclude_file ];
+            then
+                log information "Excluding $input_file ..."
+                exclude_file_match_found=true
+                break
+            else 
+                exclude_file_match_found=false
+            fi
+        done
+        if [[ $exclude_file_match_found == false ]];
+        then
+            log information "Scanning $input_file ..."
+            while read line; 
+            do 
+                echo $line | grep $search_keyword > /dev/null
+                if [ $? == 0 ];
+                then
+                    echo "$input_file $line" >> $output_file
+                fi
+            done < $input_file 
+        fi  
+    done
+    exit 0
+
+}' >> ./project_tasks.build 

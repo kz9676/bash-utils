@@ -27,7 +27,7 @@ SOFTWARE.
 '
 
 . ./configuration.project
-. $application_executables_path/log
+. ./log
 
 project_install() {
 
@@ -60,12 +60,15 @@ project_install() {
 
             for file in ${application_executable_files[@]};
             do
+                log information "Installing $file ..."
                 if [ -f $file ];
                 then
-                    log information "Installing $file ..."
-                    cp -v ./$file $application_executables_path/$file
-                    chmod +x -v $application_executables_path/$file
+                    cp -f -v ./$file $application_executables_path/$file
+                else
+                    bash ./$file.template
+                    cp -f -v ./$file.build $application_executables_path/$file
                 fi 
+                chmod +x -v $application_executables_path/$file
             done
 
             # User prefix
@@ -85,11 +88,15 @@ project_install() {
 
             for file in ${user_executable_files[@]};
             do
+                log information "Installing $file ..."
                 if [ -f $file ];
                 then
-                    log information "Installing $file ..."
-                    cp -v ./$file $user_executables_path/${user_name}-$file
+                    cp -f -v ./$file $user_executables_path/${user_name}-$file
+                else
+                    bash ./$file.template
+                    cp -f -v ./$file.build $user_executables_path/${user_name}-$file
                 fi 
+                chmod +x -v $user_executables_path/${user_name}-$file
             done
 
             ## Libraries
@@ -111,10 +118,13 @@ project_install() {
 
             for file in ${application_library_files[@]};
             do
+                log information "Installing $file ..."
                 if [ -f $file ];
                 then
-                    log information "Installing $file ..."
                     cp -v ./$file $application_libraries_path/$file 
+                else
+                    bash ./$file.template
+                    cp -v ./$file.build $application_libraries_path/$file 
                 fi 
             done
 
@@ -135,10 +145,13 @@ project_install() {
 
             for file in ${user_library_files[@]};
             do
+                log information "Installing $file ..."
                 if [ -f $file ];
                 then
-                    log information "Installing $file ..."
                     cp -v ./$file $user_libraries_path/$file 
+                else
+                    bash ./$file.template
+                    cp -v ./$file.build $user_libraries_path/$file 
                 fi 
             done
 
@@ -161,11 +174,13 @@ project_install() {
 
             for file in ${application_configuration_files[@]};
             do
+                log information "Installing $file ..."
                 if [ -f $file ];
                 then
-                    log information "Installing $file ..."
                     cp -v ./$file $application_configurations_path/$file 
-                    echo ". $HOME/.$application_name" >> $application_configurations_path/$file
+                else
+                    bash ./$file.template
+                    cp -v ./$file.build $application_configurations_path/$file 
                 fi 
             done
 
@@ -186,10 +201,13 @@ project_install() {
 
             for file in ${user_configuration_files[@]};
             do
+                log information "Installing $file ..."
                 if [ -f $file ];
                 then
-                    log information "Installing $file ..."
                     cp -v ./$file "$user_configurations_path"."$application_name"
+                else
+                    bash ./$file.template
+                    cp -v ./$file.build "$user_configurations_path"."$application_name"
                 fi 
             done
 
@@ -212,10 +230,13 @@ project_install() {
 
             for file in ${application_template_files[@]};
             do
+                log information "Installing $file ..."
                 if [ -f $file ];
                 then
-                    log information "Installing $file ..."
                     cp -v ./$file $application_templates_path/$file
+                else
+                    bash ./$file.template
+                    cp -v ./$file.build $application_templates_path/$file
                 fi 
             done
 
@@ -236,10 +257,13 @@ project_install() {
 
             for file in ${user_template_files[@]};
             do
+                log information "Installing $file ..."
                 if [ -f $file ];
                 then
-                    log information "Installing $file ..."
                     cp -v ./$file $user_templates_path/$file
+                else
+                    bash ./$file.template
+                    cp -v ./$file.build $user_templates_path/$file
                 fi 
             done
 

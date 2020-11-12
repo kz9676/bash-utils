@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash 
 
 : '
 
@@ -26,16 +26,40 @@ SOFTWARE.
 
 '
 
-. $application_configurations_path/configuration.project
-. $application_executables_path/log
+. /home/kz9676/.local/bin/configuration.project
+. /home/kz9676/.local/bin/log
+. /home/kz9676/.local/bin/file
+. /home/kz9676/.local/bin/version
 
-project_build() {
+version_file_name=VERSION
+version_file_path=. 
+version_file=/
 
-    log information "Building project ..."
-    project_authors
-    project_changelog
-    project_files 
-    project_version 
-    project_readme
+project_version() {
+
+    if [ -f $version_file ];
+    then
+        # If ./VERSION file is empty, initialize it with 0.0.0.0
+        file assert empty "$version_file"
+        if [ $? == 0 ];
+        then
+            version_number=0.0.0.0
+            log information "Initializing $version_file with $version_number ..."
+            printf "$version_number" > "$version_file"
+        fi 
+        log information "Reading version ..."
+        version="$(<$version_file)"
+        if [ -n "$version" ];
+        then
+            log information "Incrementing version $version ..."
+            version_increment $version $version_file 
+        else 
+            log error "Failed to read previous version."
+            exit 1
+        fi 
+    else 
+        log error "Failed to increment version. $version_file not found."
+        return 1
+    fi
 
 }

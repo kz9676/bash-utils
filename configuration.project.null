@@ -1,0 +1,76 @@
+# ----------------------------------------------------------------------------#
+# Application configuration                                                   #
+# ----------------------------------------------------------------------------#
+
+# Application metadata
+unset application_name
+
+# Application installation directories
+unset application_executables_directory
+unset application_libraries_directory
+unset application_configurations_directory
+unset application_templates_directory
+unset application_logs_directory
+
+# Application installation path settings
+unset application_path
+unset application_executables_path
+unset application_libraries_path
+unset application_configurations_path
+unset application_templates_path
+unset application_logs_path
+
+# Application files 
+unset application_executable_files
+unset application_library_files
+unset application_configuration_files
+unset application_template_files
+
+# ----------------------------------------------------------------------------#
+# User configuration                                                          #
+# ----------------------------------------------------------------------------#
+
+# User metadata
+unset user_name
+
+# User installation directories
+unset user_executables_directory
+unset user_libraries_directory
+unset user_configurations_directory
+unset user_templates_directory
+unset user_logs_directory
+
+# User installation path settings
+unset user_path
+unset user_executables_path
+unset user_libraries_path
+unset user_configurations_path
+unset user_templates_path
+unset user_logs_path
+
+# User files 
+unset user_executable_files
+unset user_library_files
+unset user_configuration_files
+unset user_template_files
+
+# ----------------------------------------------------------------------------#
+# Source module configuration                                                 #
+# ----------------------------------------------------------------------------#
+
+# Source module descriptors
+unset source_module_descriptors
+
+# Source module templates
+unset source_module_templates
+
+# ----------------------------------------------------------------------------#
+# Package configuration                                                       #
+# ----------------------------------------------------------------------------#
+
+# Package targets
+unset package_source_files
+unset package_executable_files
+unset package_library_files
+unset package_configuration_files
+unset package_template_files

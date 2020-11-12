@@ -1,3 +1,5 @@
+. ./configuration.project
+cat > ./project_files.build <<-EOF
 #!/usr/bin/env bash
 
 : '
@@ -29,14 +31,16 @@ SOFTWARE.
 . $application_configurations_path/configuration.project
 . $application_executables_path/log
 
+EOF
+printf '
 input_files=./*
 output_files=()
 index_file_path=.
 index_file_name=FILES
 index_file=$output_file_path/$output_file_name
-index_file_entry_opening_prefix='.'
-index_file_entry_prefix='|-- '
-index_file_entry_closing_prefix='\-- '
+index_file_entry_opening_prefix="."
+index_file_entry_prefix="|-- "
+index_file_entry_closing_prefix="\-- "
 
 project_files() {
 
@@ -68,4 +72,4 @@ project_files() {
     done
     printf "\n$output_files_count files\n" >> $index_file_name 
 
-}
+}' >> ./project_files.build

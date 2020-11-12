@@ -26,40 +26,13 @@ SOFTWARE.
 
 '
 
-. $application_configurations_path/configuration.project
-. $application_executables_path/log
+. /home/kz9676/.local/bin/configuration.project
+. /home/kz9676/.local/bin/log
 
-# TODO - Package source files
-# TODO - Package executable files
-# TODO - Package library files
-# TODO - Package configuration files
-# TODO - Package template files
+project_authors() {
 
-# Source files packaging steps
-#
-#   1. Travers through the list of source files and detect
-#      non-empty files
-#
-#   2. Populate the package_source_files array with non-empty 
-#      source files
+    log information "Building list of contributors ..."
+    repository_authors="$(git log --format="0x0p+0n <0x0p+0e>" HEAD -n1)"  
+    echo $repository_authors > ./AUTHORS
 
-#rename_files_that_match_pattern() {
-    #search_path=$1
-    #search_pattern=$2
-    #search_query=$search_path/$search_pattern
-    #search_files=()
-    #matched_files=()
-
-    #printf "$info Building a list of search files ...\n" >&2
-    #for file in $search_query
-    #do 
-        #printf "$info Adding $file ...\n" >&2
-        #search_files+=($file)
-    #done
-
-    #printf "$info Listing search files ...\n" >&2
-    #for file in $search_files
-    #do 
-        #printf "$info File: $file \n" >&2
-    #done
-#}
+}

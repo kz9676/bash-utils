@@ -38,6 +38,7 @@ application_library_files=(
     ${application_name}_package
     ${application_name}_install
     ${application_name}_uninstall
+    ${application_name}_wizard
     ${application_name}_version
 )
 application_configuration_files=(

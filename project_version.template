@@ -1,3 +1,5 @@
+. ./configuration.project
+cat > ./project_version.build <<-EOF
 #!/usr/bin/env bash 
 
 : '
@@ -26,48 +28,41 @@ SOFTWARE.
 
 '
 
-# TODO - Implement logging of file line numbers
-# TODO - Implement scanning of ./tasks file
-
 . $application_configurations_path/configuration.project
 . $application_executables_path/log
+. $application_executables_path/file
+. $application_executables_path/version
 
-input_files=./*
-output_file=./TASKS
-exclude_files=(./tasks $output_file ./changelog ./CHANGELOG ./README)
-search_keyword=TODO
+version_file_name=VERSION
+version_file_path=. 
+version_file=$version_file_path/$version_file_name
 
-project_tasks() {
+EOF
+printf 'project_version() {
 
-    > $output_file
-    for input_file in $input_files
-    do
-        log information "Selecting $input_file ..."
-        for exclude_file in ${exclude_files[@]};
-        do 
-            log information "Comparing $input_file and $exclude_file ..."
-            if [ $input_file == $exclude_file ];
-            then
-                log information "Excluding $input_file ..."
-                exclude_file_match_found=true
-                break
-            else 
-                exclude_file_match_found=false
-            fi
-        done
-        if [[ $exclude_file_match_found == false ]];
+    if [ -f $version_file ];
+    then
+        # If ./VERSION file is empty, initialize it with '0.0.0.0'
+        file assert empty "$version_file"
+        if [ $? == 0 ];
         then
-            log information "Scanning $input_file ..."
-            while read line; 
-            do 
-                echo $line | grep $search_keyword > /dev/null
-                if [ $? == 0 ];
-                then
-                    echo "$input_file $line" >> $output_file
-                fi
-            done < $input_file 
-        fi  
-    done
-    exit 0
+            version_number='0.0.0.0'
+            log information "Initializing $version_file with $version_number ..."
+            printf "$version_number" > "$version_file"
+        fi 
+        log information "Reading version ..."
+        version="$(<$version_file)"
+        if [ -n "$version" ];
+        then
+            log information "Incrementing version $version ..."
+            version_increment $version $version_file 
+        else 
+            log error "Failed to read previous version."
+            exit 1
+        fi 
+    else 
+        log error "Failed to increment version. $version_file not found."
+        return 1
+    fi
 
-}
+}' >> ./project_version.build

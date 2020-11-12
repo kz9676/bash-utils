@@ -1,3 +1,5 @@
+. ./configuration.project
+cat > ./project_uninstall.build <<-EOF
 #!/usr/bin/env bash 
 
 : '
@@ -29,7 +31,8 @@ SOFTWARE.
 . $application_configurations_path/configuration.project
 . $application_executables_path/log
 
-project_uninstall() {
+EOF
+printf 'project_uninstall() {
 
     application_configuration_files=./configuration.*
 
@@ -132,4 +135,4 @@ project_uninstall() {
         fi
     done
 
-}
+}' >> ./project_uninstall.build

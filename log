@@ -79,7 +79,6 @@ log() {
         # Display library usage
         *)
         echo $"Usage: log {information|warning|error|success}"
-        return 1
         ;;
 
     esac 

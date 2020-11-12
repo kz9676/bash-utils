@@ -26,8 +26,14 @@ SOFTWARE.
 
 '
 
-. ./configuration.project
-. ./log
+if [ -f ./configuration.project ];
+then
+    . ./configuration.project
+fi
+if [ -f ./configuration.project ];
+then
+    . ./log
+fi
 
 project_install() {
 

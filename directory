@@ -76,7 +76,6 @@ directory() {
         # Display library usage
         *)
         echo $"Usage: directory {create|delete|copy|move|rename|find|assert}"
-        return 1
         ;;
 
     esac 

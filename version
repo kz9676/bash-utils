@@ -43,7 +43,6 @@ version() {
    
         *)
             echo $"Usage: version {increment}"
-            exit 1
   
     esac 
 

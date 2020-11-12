@@ -88,7 +88,6 @@ file() {
         # Display library usage
         *)
         echo $"Usage: file {create|delete|copy|move|write|read|rename|find|assert}"
-        return 1
         ;;
 
     esac 

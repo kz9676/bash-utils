@@ -58,31 +58,31 @@ log() {
 
         # Log information 
         information)
-        log_information "$information" "$2" "$3"
-        ;;
+            log_information "$information" "$2" "$3"
+            ;;
 
         # Log warning 
         warning)
-        log_warning "$warning" "$2" "$3"
-        ;;
+            log_warning "$warning" "$2" "$3"
+            ;;
 
         # Log error 
         error)
-        log_error "$error" "$2" "$3"
-        ;;
+            log_error "$error" "$2" "$3"
+            ;;
 
         # Log success 
         success)
-        log_success "$success" "$2" "$3"
-        ;;
+            log_success "$success" "$2" "$3"
+            ;;
 
         # Display library usage
         *)
-        echo $"Usage: log {information|warning|error|success}"
-        ;;
+            echo $"Usage: log {information|warning|error|success}"
+            ;;
 
     esac 
 
 }
 
-log "$1" "$2" "$3"
+#log "$1" "$2" "$3"

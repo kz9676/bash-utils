@@ -28,11 +28,25 @@ SOFTWARE.
 
 '
 
+. $application_executables_path/log
+
 EOF
 printf '
-project=$1
-target=$2
-name=$3
+project=$2
+target=$3
+name=$4
+
+#---  FUNCTION  ----------------------------------------------------------------
+#          NAME:  help
+#   DESCRIPTION:  Print usage instructions.  
+#    PARAMETERS:  None 
+#       RETURNS:  0 if the the new project workspace is created successfully. 
+#-------------------------------------------------------------------------------
+help() {
+    
+    echo $"Usage: "${0##*/}" c {cli}"
+
+}
 
 #---  FUNCTION  ----------------------------------------------------------------
 #          NAME:  c
@@ -46,7 +60,10 @@ c() {
 
         # C CLI executable
         cli)
+            log information "Initializing C project target..."
             mkdir $name
+            cd $name
+            project setup
             ;;
 
         *)
@@ -58,21 +75,9 @@ c() {
 }
 
 #---  FUNCTION  ----------------------------------------------------------------
-#          NAME:  help
-#   DESCRIPTION:  Create C command line interface executable project.  
-#    PARAMETERS:  Project target and project name. 
-#       RETURNS:  0 if the the new project workspace is created successfully. 
-#-------------------------------------------------------------------------------
-help() {
-
-    echo $"Usage: "${0##*/}" c {cli}"
-
-}
-
-#---  FUNCTION  ----------------------------------------------------------------
 #          NAME:  project_wizard
 #   DESCRIPTION:  Create new software development project.  
-#    PARAMETERS:  Project target and project name. 
+#    PARAMETERS:  Project, target and name. 
 #       RETURNS:  0 if the the new project workspace is created successfully. 
 #-------------------------------------------------------------------------------
 project_wizard() {
@@ -81,6 +86,7 @@ project_wizard() {
 
         # C project
         c)
+            log information "Generating C project ..."
             c $target $name
             ;;
 

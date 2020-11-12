@@ -61,17 +61,28 @@
 |--  ./log_success
 |--  ./log_warning
 |--  ./project
+|--  ./project_authors.build
 |--  ./project_authors.template
+|--  ./project_build.build
 |--  ./project_build.template
+|--  ./project_changelog.build
 |--  ./project_changelog.template
+|--  ./project_files.build
 |--  ./project_files.template
 |--  ./project_install
+|--  ./project_package.build
 |--  ./project_package.template
+|--  ./project_readme.build
 |--  ./project_readme.template
+|--  ./project_setup.build
 |--  ./project_setup.template
+|--  ./project_tasks.build
 |--  ./project_tasks.template
+|--  ./project_uninstall.build
 |--  ./project_uninstall.template
+|--  ./project_version.build
 |--  ./project_version.template
+|--  ./project_wizard.build
 |--  ./project_wizard.template
 |--  ./README
 |--  ./REQUIREMENTS
@@ -98,4 +109,4 @@
 |--  ./version
 \--  ./version_increment
 
-98 files
+109 files

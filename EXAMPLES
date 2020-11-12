@@ -1,4 +1,7 @@
-Generate new README project template.
+Project
+-------
+
+Generate new project template.
 
     $ project setup
     .
@@ -46,4 +49,18 @@ Collect information form AUTHORS, CHANGELOG, FILES, VERSION, etc and store every
 Build AUTHORS, CHANGELOG, FILES, VERSION, and README with a single key stroke.
 
     $ project build
+
+Wizard
+-----
+
+Generate C CLI executable proejct.
+
+    $ project wizard c cli helloworld
+
+Log
+---
+
+    $ log information "Operation completed successfully"
+    $ log warning "Running out of disk space"
+    $ log error "File not found"
 

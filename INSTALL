@@ -1,7 +1,7 @@
-The following command gets the readme builder installed into a local host environment:
+The following command gets the bash-utils installed into a local host environment:
 
     $ bash ./project install
 
-The following command removes the readme builder from your local host environment:
+The following command removes the bash-utils from your local host environment:
 
     $ bash ./project uninstall

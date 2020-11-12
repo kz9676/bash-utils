@@ -1,16 +1,16 @@
-[100] DESCRIPTION ------------------------------------------------------------
+[99] DESCRIPTION -------------------------------------------------------------
 
 Bash helper scripts.
 
-[101] VERSION ----------------------------------------------------------------
+[100] VERSION ----------------------------------------------------------------
 
-0.0.5.3
+0.0.5.4
 
-[102] AUTHORS ----------------------------------------------------------------
+[101] AUTHORS ----------------------------------------------------------------
 
-Kostya Zolotarov, <kostya.zolotarov@gmail.com>
+Kostya Zolotarov <kostya.zolotarov@gmail.com>
 
-[103] FEATURES ---------------------------------------------------------------
+[102] FEATURES ---------------------------------------------------------------
 
     * setup - Setup new source module 
     * build - Build the source module 
@@ -23,7 +23,7 @@ Kostya Zolotarov, <kostya.zolotarov@gmail.com>
     * install - Install the source module 
     * uninstall - Uninstall the source module 
 
-[104] EXAMPLES ---------------------------------------------------------------
+[103] EXAMPLES ---------------------------------------------------------------
 
 Generate new README project template.
 
@@ -74,13 +74,13 @@ Build AUTHORS, CHANGELOG, FILES, VERSION, and README with a single key stroke.
 
     $ project build
 
-[105] SOURCES ----------------------------------------------------------------
+[104] SOURCES ----------------------------------------------------------------
 
     * origin/development  - is the main branch where the source code of HEAD
                             always reflects a state with the latest delivered
                             development changes for the next release
 
-[106] INSTALL ----------------------------------------------------------------
+[105] INSTALL ----------------------------------------------------------------
 
 The following command gets the readme builder installed into a local host environment:
 
@@ -90,7 +90,7 @@ The following command removes the readme builder from your local host environmen
 
     $ bash ./project uninstall
 
-[107] FILES ------------------------------------------------------------------
+[106] FILES ------------------------------------------------------------------
 
 .
 |--  ./API
@@ -153,7 +153,6 @@ The following command removes the readme builder from your local host environmen
 |--  ./log_error
 |--  ./log_information
 |--  ./log_success
-|--  ./log.txt
 |--  ./log_warning
 |--  ./project
 |--  ./project_authors.template
@@ -193,9 +192,9 @@ The following command removes the readme builder from your local host environmen
 |--  ./version
 \--  ./version_increment
 
-99 files
+98 files
 
-[108] LICENSE ----------------------------------------------------------------
+[107] LICENSE ----------------------------------------------------------------
 
 The MIT License (MIT)
 

@@ -1,7 +1,17 @@
+* 287fe5b 
+|  2020-11-11 
+|  Kostya Zolotarov 
+|  Ignoring the *.build files (HEAD -> development, origin/development, origin/HEAD) 
+| 
+* 2cb03ce 
+|  2020-11-11 
+|  Kostya Zolotarov 
+|  Template fixes 
+| 
 * ac492eb 
 |  2020-11-11 
 |  Kostya Zolotarov 
-|  Version config path fix (HEAD -> development, origin/development, origin/HEAD) 
+|  Version config path fix 
 | 
 * 88dce31 
 |  2020-11-11 

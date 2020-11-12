@@ -35,7 +35,7 @@ EOF
 printf 'project_authors() {
 
     log information "Building list of contributors ..."
-    repository_authors="$(git log --format="%an <%ae>" HEAD -n1)"  
+    repository_authors="$(git log --format="%%an <%%ae>" HEAD -n1)"  
     echo $repository_authors > ./AUTHORS
 
 }' >> ./project_authors.build

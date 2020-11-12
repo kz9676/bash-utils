@@ -59,7 +59,6 @@
 |--  ./log_error
 |--  ./log_information
 |--  ./log_success
-|--  ./log.txt
 |--  ./log_warning
 |--  ./project
 |--  ./project_authors.template
@@ -99,4 +98,4 @@
 |--  ./version
 \--  ./version_increment
 
-99 files
+98 files

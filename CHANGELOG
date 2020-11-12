@@ -1,7 +1,17 @@
+* dc26017 
+|  2020-11-12 
+|  Kostya Zolotarov 
+|  Log CLI (HEAD -> development) 
+| 
+* d31bdf9 
+|  2020-11-12 
+|  Kostya Zolotarov 
+|  Authors list fix (origin/development, origin/HEAD) 
+| 
 * 287fe5b 
 |  2020-11-11 
 |  Kostya Zolotarov 
-|  Ignoring the *.build files (HEAD -> development, origin/development, origin/HEAD) 
+|  Ignoring the *.build files 
 | 
 * 2cb03ce 
 |  2020-11-11 

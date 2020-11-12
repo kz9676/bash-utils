@@ -1,16 +1,16 @@
-[1] DESCRIPTION --------------------------------------------------------------
+[100] DESCRIPTION ------------------------------------------------------------
 
 Bash helper scripts.
 
-[2] VERSION ------------------------------------------------------------------
+[101] VERSION ----------------------------------------------------------------
 
-0.0.5.2
+0.0.5.3
 
-[3] AUTHORS ------------------------------------------------------------------
+[102] AUTHORS ----------------------------------------------------------------
 
-Kostya Zolotarov <kostya.zolotarov@gmail.com>
+Kostya Zolotarov, <kostya.zolotarov@gmail.com>
 
-[4] FEATURES -----------------------------------------------------------------
+[103] FEATURES ---------------------------------------------------------------
 
     * setup - Setup new source module 
     * build - Build the source module 
@@ -23,7 +23,7 @@ Kostya Zolotarov <kostya.zolotarov@gmail.com>
     * install - Install the source module 
     * uninstall - Uninstall the source module 
 
-[5] EXAMPLES -----------------------------------------------------------------
+[104] EXAMPLES ---------------------------------------------------------------
 
 Generate new README project template.
 
@@ -74,13 +74,13 @@ Build AUTHORS, CHANGELOG, FILES, VERSION, and README with a single key stroke.
 
     $ project build
 
-[6] SOURCES ------------------------------------------------------------------
+[105] SOURCES ----------------------------------------------------------------
 
     * origin/development  - is the main branch where the source code of HEAD
                             always reflects a state with the latest delivered
                             development changes for the next release
 
-[7] INSTALL ------------------------------------------------------------------
+[106] INSTALL ----------------------------------------------------------------
 
 The following command gets the readme builder installed into a local host environment:
 
@@ -90,7 +90,7 @@ The following command removes the readme builder from your local host environmen
 
     $ bash ./project uninstall
 
-[8] FILES --------------------------------------------------------------------
+[107] FILES ------------------------------------------------------------------
 
 .
 |--  ./API
@@ -102,6 +102,7 @@ The following command removes the readme builder from your local host environmen
 |--  ./configuration.file
 |--  ./configuration.log
 |--  ./configuration.project
+|--  ./configuration.project.null
 |--  ./configuration.version
 |--  ./DEFECTS
 |--  ./DEPENDENCIES
@@ -152,23 +153,25 @@ The following command removes the readme builder from your local host environmen
 |--  ./log_error
 |--  ./log_information
 |--  ./log_success
+|--  ./log.txt
 |--  ./log_warning
 |--  ./project
-|--  ./project_authors
-|--  ./project_build
-|--  ./project_changelog
-|--  ./project_files
+|--  ./project_authors.template
+|--  ./project_build.template
+|--  ./project_changelog.template
+|--  ./project_files.template
 |--  ./project_install
-|--  ./project_package
-|--  ./project_readme
-|--  ./project_setup
-|--  ./project_tasks
-|--  ./project_uninstall
-|--  ./project_version
-|--  ./project-wizard
+|--  ./project_package.template
+|--  ./project_readme.template
+|--  ./project_setup.template
+|--  ./project_tasks.template
+|--  ./project_uninstall.template
+|--  ./project_version.template
+|--  ./project_wizard.template
 |--  ./README
 |--  ./REQUIREMENTS
 |--  ./SOURCES
+|--  ./tags
 |--  ./TASKS
 |--  ./template.bash.configuration
 |--  ./template.bash.executable
@@ -190,9 +193,9 @@ The following command removes the readme builder from your local host environmen
 |--  ./version
 \--  ./version_increment
 
-96 files
+99 files
 
-[9] LICENSE ------------------------------------------------------------------
+[108] LICENSE ----------------------------------------------------------------
 
 The MIT License (MIT)
 

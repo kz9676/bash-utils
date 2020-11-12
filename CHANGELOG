@@ -1,7 +1,22 @@
-* c7ef6f8 
+* ac492eb 
+|  2020-11-11 
+|  Kostya Zolotarov 
+|  Version config path fix (HEAD -> development, origin/development, origin/HEAD) 
+| 
+* 88dce31 
+|  2020-11-11 
+|  Kostya Zolotarov 
+|  Installer config path fix 
+| 
+* 7fe6f63 
+|  2020-11-11 
+|  Kostya Zolotarov 
+|  Dynamic path 
+| 
+* a4f1eac 
 |  2020-11-10 
 |  Kostya Zolotarov 
-|  Project wizard (HEAD -> development, origin/development, origin/HEAD) 
+|  Project wizard 
 | 
 * 2f807af 
 |  2020-11-03 

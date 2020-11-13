@@ -53,10 +53,44 @@ Build AUTHORS, CHANGELOG, FILES, VERSION, and README with a single key stroke.
 Wizard
 ------
 
+Generate Bash CLI executable proejct.
+
+    $ project wizard bash cli helloworld
+    $ ls -lt helloworld
+
+    total 32
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:58 log
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:58 doc
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:58 etc
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:58 lib
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:58 bin
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:58 src
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:58 include
+    -rw-r--r-- 1 kz9676 kz9676 2229 Nov 12 16:58 tags
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 LICENSE
+    lrwxrwxrwx 1 kz9676 kz9676   55 Nov 12 16:57 Makefile -> /home/kz9676/Sources/makefiles/src/Makefile.debian.bash
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 FILES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 DEFECTS
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 INSTALL
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 BUILD
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 TEST
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 DEPENDENCIES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 SOURCES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 EXAMPLES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 API
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 DESIGN
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 REQUIREMENTS
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 BACKGROUND
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 FEATURES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 AUTHORS
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 VERSION
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 DESCRIPTION
+
 Generate C CLI executable proejct.
 
     $ project wizard c cli helloworld
     $ ls -lt helloworld
+
     total 40
     drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:14 log
     drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:14 doc

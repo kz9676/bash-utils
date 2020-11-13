@@ -49,12 +49,40 @@ help() {
 }
 
 #---  FUNCTION  ----------------------------------------------------------------
-#          NAME:  c
+#          NAME:  bash_project
+#   DESCRIPTION:  Create Bash command line interface executable project.  
+#    PARAMETERS:  Project target and project name. 
+#       RETURNS:  0 if the the new project workspace is created successfully. 
+#-------------------------------------------------------------------------------
+bash_project() {
+
+    case $target in
+
+        # Bash CLI executable
+        cli)
+            log information "Initializing Bash project target..."
+            mkdir $name
+            cd $name
+            project setup
+            ln -s $HOME/Sources/makefiles/src/Makefile.debian.bash Makefile
+            make setup
+            ;;
+
+        *)
+            help
+            ;;
+
+    esac
+
+}
+
+#---  FUNCTION  ----------------------------------------------------------------
+#          NAME:  c_project
 #   DESCRIPTION:  Create C command line interface executable project.  
 #    PARAMETERS:  Project target and project name. 
 #       RETURNS:  0 if the the new project workspace is created successfully. 
 #-------------------------------------------------------------------------------
-c() {
+c_project() {
 
     case $target in
 
@@ -86,10 +114,16 @@ project_wizard() {
 
     case $project in
 
+        # Bash project
+        bash)
+            log information "Generating Bash project ..."
+            bash_project $target $name
+            ;;
+
         # C project
         c)
             log information "Generating C project ..."
-            c $target $name
+            c_project $target $name
             ;;
 
         *)

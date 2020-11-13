@@ -1,29 +1,30 @@
-[110] DESCRIPTION ------------------------------------------------------------
+[99] DESCRIPTION -------------------------------------------------------------
 
 Bash helper scripts.
 
-[111] VERSION ----------------------------------------------------------------
+[100] VERSION ----------------------------------------------------------------
 
-0.0.5.7
+0.0.5.8
 
-[112] AUTHORS ----------------------------------------------------------------
+[101] AUTHORS ----------------------------------------------------------------
 
 Kostya Zolotarov <kostya.zolotarov@gmail.com>
 
-[113] FEATURES ---------------------------------------------------------------
+[102] FEATURES ---------------------------------------------------------------
 
-    * setup - Setup new source module 
-    * build - Build the source module 
-    * readme - Build/update the source module README file 
-    * files - Build/update the source module FILES file 
-    * tasks - Build/update the source module TASKS file 
-    * authors - Build/update list of the source module contributors
-    * changelog - Build/update the source module CHANGELOG file 
-    * version - Increment the source module version inside VERSION file 
-    * install - Install the source module 
-    * uninstall - Uninstall the source module 
+* wizard - Generate new project
+* setup - Setup new source module 
+* build - Build the source module 
+* readme - Build/update the source module README file 
+* files - Build/update the source module FILES file 
+* tasks - Build/update the source module TASKS file 
+* authors - Build/update list of the source module contributors
+* changelog - Build/update the source module CHANGELOG file 
+* version - Increment the source module version inside VERSION file 
+* install - Install the source module 
+* uninstall - Uninstall the source module 
 
-[114] EXAMPLES ---------------------------------------------------------------
+[103] EXAMPLES ---------------------------------------------------------------
 
 Project
 -------
@@ -80,10 +81,44 @@ Build AUTHORS, CHANGELOG, FILES, VERSION, and README with a single key stroke.
 Wizard
 ------
 
+Generate Bash CLI executable proejct.
+
+    $ project wizard bash cli helloworld
+    $ ls -lt helloworld
+
+    total 32
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:58 log
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:58 doc
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:58 etc
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:58 lib
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:58 bin
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:58 src
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:58 include
+    -rw-r--r-- 1 kz9676 kz9676 2229 Nov 12 16:58 tags
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 LICENSE
+    lrwxrwxrwx 1 kz9676 kz9676   55 Nov 12 16:57 Makefile -> /home/kz9676/Sources/makefiles/src/Makefile.debian.bash
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 FILES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 DEFECTS
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 INSTALL
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 BUILD
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 TEST
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 DEPENDENCIES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 SOURCES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 EXAMPLES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 API
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 DESIGN
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 REQUIREMENTS
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 BACKGROUND
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 FEATURES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 AUTHORS
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 VERSION
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:57 DESCRIPTION
+
 Generate C CLI executable proejct.
 
     $ project wizard c cli helloworld
     $ ls -lt helloworld
+
     total 40
     drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:14 log
     drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:14 doc
@@ -121,13 +156,17 @@ Log
     $ log warning "Running out of disk space"
     $ log error "File not found"
 
-[115] SOURCES ----------------------------------------------------------------
+[104] DEPENDENCIES -----------------------------------------------------------
+
+GNU bash, version 5.0.3
+
+[105] SOURCES ----------------------------------------------------------------
 
     * origin/development  - is the main branch where the source code of HEAD
                             always reflects a state with the latest delivered
                             development changes for the next release
 
-[116] INSTALL ----------------------------------------------------------------
+[106] INSTALL ----------------------------------------------------------------
 
 The following command gets the bash-utils installed into a local host environment:
 
@@ -137,7 +176,7 @@ The following command removes the bash-utils from your local host environment:
 
     $ bash ./project uninstall
 
-[117] FILES ------------------------------------------------------------------
+[107] FILES ------------------------------------------------------------------
 
 .
 |--  ./API
@@ -202,28 +241,17 @@ The following command removes the bash-utils from your local host environment:
 |--  ./log_success
 |--  ./log_warning
 |--  ./project
-|--  ./project_authors.build
 |--  ./project_authors.template
-|--  ./project_build.build
 |--  ./project_build.template
-|--  ./project_changelog.build
 |--  ./project_changelog.template
-|--  ./project_files.build
 |--  ./project_files.template
 |--  ./project_install
-|--  ./project_package.build
 |--  ./project_package.template
-|--  ./project_readme.build
 |--  ./project_readme.template
-|--  ./project_setup.build
 |--  ./project_setup.template
-|--  ./project_tasks.build
 |--  ./project_tasks.template
-|--  ./project_uninstall.build
 |--  ./project_uninstall.template
-|--  ./project_version.build
 |--  ./project_version.template
-|--  ./project_wizard.build
 |--  ./project_wizard.template
 |--  ./README
 |--  ./REQUIREMENTS
@@ -250,9 +278,9 @@ The following command removes the bash-utils from your local host environment:
 |--  ./version
 \--  ./version_increment
 
-109 files
+98 files
 
-[118] LICENSE ----------------------------------------------------------------
+[108] LICENSE ----------------------------------------------------------------
 
 The MIT License (MIT)
 

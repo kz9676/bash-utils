@@ -1,7 +1,12 @@
+* e5e9c71 
+|  2020-11-12 
+|  Kostya Zolotarov 
+|  Makefile for C project (HEAD -> development, origin/development, origin/HEAD) 
+| 
 * e945b75 
 |  2020-11-12 
 |  Kostya Zolotarov 
-|  Project wizard and C CLI target (HEAD -> development, origin/development, origin/HEAD) 
+|  Project wizard and C CLI target 
 | 
 * fab0579 
 |  2020-11-12 

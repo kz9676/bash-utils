@@ -1,10 +1,11 @@
-    * setup - Setup new source module 
-    * build - Build the source module 
-    * readme - Build/update the source module README file 
-    * files - Build/update the source module FILES file 
-    * tasks - Build/update the source module TASKS file 
-    * authors - Build/update list of the source module contributors
-    * changelog - Build/update the source module CHANGELOG file 
-    * version - Increment the source module version inside VERSION file 
-    * install - Install the source module 
-    * uninstall - Uninstall the source module 
+* wizard - Generate new project
+* setup - Setup new source module 
+* build - Build the source module 
+* readme - Build/update the source module README file 
+* files - Build/update the source module FILES file 
+* tasks - Build/update the source module TASKS file 
+* authors - Build/update list of the source module contributors
+* changelog - Build/update the source module CHANGELOG file 
+* version - Increment the source module version inside VERSION file 
+* install - Install the source module 
+* uninstall - Uninstall the source module 

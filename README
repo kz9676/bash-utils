@@ -4,7 +4,7 @@ Bash helper scripts.
 
 [111] VERSION ----------------------------------------------------------------
 
-0.0.5.6
+0.0.5.7
 
 [112] AUTHORS ----------------------------------------------------------------
 
@@ -78,16 +78,46 @@ Build AUTHORS, CHANGELOG, FILES, VERSION, and README with a single key stroke.
     $ project build
 
 Wizard
------
+------
 
 Generate C CLI executable proejct.
 
     $ project wizard c cli helloworld
+    $ ls -lt helloworld
+    total 40
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:14 log
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:14 doc
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:14 etc
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:14 lib
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:14 bin
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:14 obj
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:14 asm
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:14 pro
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:14 src
+    drwxr-xr-x 2 kz9676 kz9676 4096 Nov 12 16:14 include
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 LICENSE
+    lrwxrwxrwx 1 kz9676 kz9676   54 Nov 12 16:14 Makefile -> /home/kz9676/Sources/makefiles/src/Makefile.debian.gcc
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 DEFECTS
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 FILES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 INSTALL
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 BUILD
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 TEST
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 SOURCES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 DEPENDENCIES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 EXAMPLES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 API
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 DESIGN
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 REQUIREMENTS
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 BACKGROUND
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 FEATURES
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 AUTHORS
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 DESCRIPTION
+    -rw-r--r-- 1 kz9676 kz9676    0 Nov 12 16:14 VERSION
 
 Log
 ---
 
-    $ log information "Operation completed successfully"
+    $ log success "Operation completed successfully"
     $ log warning "Running out of disk space"
     $ log error "File not found"
 

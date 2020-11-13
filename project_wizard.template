@@ -64,6 +64,8 @@ c() {
             mkdir $name
             cd $name
             project setup
+            ln -s $HOME/Sources/makefiles/src/Makefile.debian.gcc Makefile
+            make setup
             ;;
 
         *)

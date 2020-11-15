@@ -1,7 +1,12 @@
+* 3e2845d 
+|  2020-11-12 
+|  Kostya Zolotarov 
+|  Bash CLI target (HEAD -> development, origin/development, origin/HEAD) 
+| 
 * e5e9c71 
 |  2020-11-12 
 |  Kostya Zolotarov 
-|  Makefile for C project (HEAD -> development, origin/development, origin/HEAD) 
+|  Makefile for C project 
 | 
 * e945b75 
 |  2020-11-12 

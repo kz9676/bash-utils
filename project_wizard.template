@@ -92,7 +92,7 @@ c_project() {
             mkdir $name
             cd $name
             project setup
-            ln -s $HOME/Sources/makefiles/src/Makefile.debian.gcc Makefile
+            ln -s $HOME/Sources/makefiles/src/Makefile.multiplatform.gcc Makefile
             make setup
             ;;
 
